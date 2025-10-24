@@ -345,3 +345,6 @@ Use **different metaphors in different chapters** based on the type of evidence:
 - Metaphor will have more impact through strategic use
 - Book will feel tighter and more professional
 
+
+
+

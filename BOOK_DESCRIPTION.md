@@ -206,3 +206,6 @@ Jesus said "the Father is the only true God" and "the Father is greater than I."
 *Targets: 5 reader profiles*
 *Tone: Empowering, honest, evidence-based, non-threatening*
 
+
+
+

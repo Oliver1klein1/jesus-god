@@ -183,3 +183,6 @@ The drop caps will automatically scale on smaller screens due to rem-based sizin
 *Total edits: 24 (12 CSS additions + 12 class applications)*
 *Estimated visual impact: Significant upgrade to professional presentation*
 
+
+
+

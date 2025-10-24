@@ -55,3 +55,6 @@ All 10 chapters now have professional, concise bullet-point summaries placed jus
 - Paul's eventual victory forcing Gospel edits
 
 ###Human: continue
+
+
+

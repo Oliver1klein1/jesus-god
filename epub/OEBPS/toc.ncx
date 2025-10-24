@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+    <head>
+        <meta name="dtb:uid" content="framing-jesus-2025"/>
+        <meta name="dtb:depth" content="2"/>
+        <meta name="dtb:totalPageCount" content="0"/>
+        <meta name="dtb:maxPageNumber" content="0"/>
+    </head>
+    
+    <docTitle>
+        <text>Framing Jesus</text>
+    </docTitle>
+    
+    <navMap>
+        <navPoint id="navpoint-1" playOrder="1">
+            <navLabel>
+                <text>Cover</text>
+            </navLabel>
+            <content src="Text/cover.xhtml"/>
+        </navPoint>
+        
+        <navPoint id="navpoint-2" playOrder="2">
+            <navLabel>
+                <text>Title Page</text>
+            </navLabel>
+            <content src="Text/titlepage.xhtml"/>
+        </navPoint>
+        
+        <navPoint id="navpoint-3" playOrder="3">
+            <navLabel>
+                <text>Table of Contents</text>
+            </navLabel>
+            <content src="Text/toc.xhtml"/>
+        </navPoint>
+        
+        <navPoint id="navpoint-4" playOrder="4">
+            <navLabel>
+                <text>Introduction: Erased Fingerprints</text>
+            </navLabel>
+            <content src="Text/introduction.xhtml"/>
+        </navPoint>
+        
+        <navPoint id="navpoint-5" playOrder="5">
+            <navLabel>
+                <text>Part I: When the Father Alone Was God</text>
+            </navLabel>
+            <content src="Text/part1.xhtml"/>
+            <navPoint id="navpoint-6" playOrder="6">
+                <navLabel>
+                    <text>Chapter 1: What Irenaeus Saw (That You're Not Supposed To)</text>
+                </navLabel>
+                <content src="Text/chapter1.xhtml"/>
+            </navPoint>
+            <navPoint id="navpoint-7" playOrder="7">
+                <navLabel>
+                    <text>Chapter 2: Marcion's Mistake—Or Theirs?</text>
+                </navLabel>
+                <content src="Text/chapter2.xhtml"/>
+            </navPoint>
+            <navPoint id="navpoint-8" playOrder="8">
+                <navLabel>
+                    <text>Chapter 3: Six Voices, One Truth, Zero Tolerance</text>
+                </navLabel>
+                <content src="Text/chapter3.xhtml"/>
+            </navPoint>
+        </navPoint>
+        
+        <navPoint id="navpoint-9" playOrder="9">
+            <navLabel>
+                <text>Part II: The Counter-Move: Elevating the Son</text>
+            </navLabel>
+            <content src="Text/part2.xhtml"/>
+            <navPoint id="navpoint-10" playOrder="10">
+                <navLabel>
+                    <text>Chapter 4: Paul Never Met Jesus. Why Does He Get the Final Word?</text>
+                </navLabel>
+                <content src="Text/chapter4.xhtml"/>
+            </navPoint>
+            <navPoint id="navpoint-11" playOrder="11">
+                <navLabel>
+                    <text>Chapter 5: Good? Only the Father. (Until They Deleted It.)</text>
+                </navLabel>
+                <content src="Text/chapter5.xhtml"/>
+            </navPoint>
+        </navPoint>
+        
+        <navPoint id="navpoint-12" playOrder="12">
+            <navLabel>
+                <text>Part III: Genealogies, Virgins &amp; Begotten Sons</text>
+            </navLabel>
+            <content src="Text/part3.xhtml"/>
+            <navPoint id="navpoint-13" playOrder="13">
+                <navLabel>
+                    <text>Chapter 6: Baptism or Birth? The Day Jesus Became Divine</text>
+                </navLabel>
+                <content src="Text/chapter6.xhtml"/>
+            </navPoint>
+            <navPoint id="navpoint-14" playOrder="14">
+                <navLabel>
+                    <text>Chapter 7: Royal Blood, Broken Chain</text>
+                </navLabel>
+                <content src="Text/chapter7.xhtml"/>
+            </navPoint>
+            <navPoint id="navpoint-15" playOrder="15">
+                <navLabel>
+                    <text>Chapter 8: Born of a Virgin—Starting in the Second Century</text>
+                </navLabel>
+                <content src="Text/chapter8.xhtml"/>
+            </navPoint>
+        </navPoint>
+        
+        <navPoint id="navpoint-16" playOrder="16">
+            <navLabel>
+                <text>Part IV: Trinity on Trial</text>
+            </navLabel>
+            <content src="Text/part4.xhtml"/>
+            <navPoint id="navpoint-17" playOrder="17">
+                <navLabel>
+                    <text>Chapter 9: The Council Where Jesus Became God</text>
+                </navLabel>
+                <content src="Text/chapter9.xhtml"/>
+            </navPoint>
+            <navPoint id="navpoint-18" playOrder="18">
+                <navLabel>
+                    <text>Chapter 10: When Christianity Overthrew Christ's Religion</text>
+                </navLabel>
+                <content src="Text/chapter10.xhtml"/>
+            </navPoint>
+        </navPoint>
+        
+        <navPoint id="navpoint-19" playOrder="19">
+            <navLabel>
+                <text>Conclusion</text>
+            </navLabel>
+            <content src="Text/conclusion.xhtml"/>
+        </navPoint>
+        
+        <navPoint id="navpoint-20" playOrder="20">
+            <navLabel>
+                <text>Appendix 1: Glossary of Key Terms</text>
+            </navLabel>
+            <content src="Text/appendix1.xhtml"/>
+        </navPoint>
+        
+        <navPoint id="navpoint-21" playOrder="21">
+            <navLabel>
+                <text>Appendix 2: Bibliography</text>
+            </navLabel>
+            <content src="Text/appendix2.xhtml"/>
+        </navPoint>
+    </navMap>
+</ncx>
+
+
+

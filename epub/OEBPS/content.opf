@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="pub-id" prefix="cc: http://creativecommons.org/ns#">
+    
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <!-- Dublin Core Metadata -->
+        <dc:identifier id="pub-id">framing-jesus-2025</dc:identifier>
+        <dc:title id="title-main">Framing Jesus</dc:title>
+        <dc:title id="title-subtitle">How Ancient Bible Changes Elevated Jesus Beyond Our Reach</dc:title>
+        <meta refines="#title-main" property="title-type">main</meta>
+        <meta refines="#title-subtitle" property="title-type">subtitle</meta>
+        <dc:creator id="creator">Ansilo Boff</dc:creator>
+        <dc:subject>biblical contradictions</dc:subject>
+        <dc:subject>textual criticism</dc:subject>
+        <dc:subject>historical Jesus</dc:subject>
+        <dc:subject>early Christianity</dc:subject>
+        <dc:subject>manuscript variants</dc:subject>
+        <dc:subject>Bible changes</dc:subject>
+        <dc:subject>Council of Nicaea</dc:subject>
+        <dc:subject>Trinity origins</dc:subject>
+        <dc:subject>Jesus vs Paul</dc:subject>
+        <dc:subject>biblical manuscripts</dc:subject>
+        <dc:description>How Ancient Bible Changes Elevated Jesus Beyond Our Reach</dc:description>
+        <dc:publisher>Truth Beyond Tradition</dc:publisher>
+        <dc:date>2025</dc:date>
+        <dc:rights>Copyright © 2025 Ansilo Boff. All rights reserved.</dc:rights>
+        <dc:language>en</dc:language>
+        <dc:type>Text</dc:type>
+        
+        <!-- EPUB3 Metadata -->
+        <meta property="file-as">Framing Jesus</meta>
+        <meta property="role" refines="#creator">aut</meta>
+        <meta property="file-as" refines="#creator">Boff, Ansilo</meta>
+        
+        <!-- Cover image -->
+        <meta name="cover" content="cover-image"/>
+        
+        <!-- Additional metadata -->
+        <meta property="dcterms:modified">2025-01-01T00:00:00Z</meta>
+        <meta name="generator" content="Manual EPUB Creation"/>
+    </metadata>
+    
+    <manifest>
+        <!-- Navigation and main content -->
+        <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+        <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+        <item id="cover" href="Text/cover.xhtml" media-type="application/xhtml+xml"/>
+        <item id="titlepage" href="Text/titlepage.xhtml" media-type="application/xhtml+xml"/>
+        <item id="toc" href="Text/toc.xhtml" media-type="application/xhtml+xml"/>
+        
+        <!-- Main content files -->
+        <item id="introduction" href="Text/introduction.xhtml" media-type="application/xhtml+xml"/>
+        <item id="part1" href="Text/part1.xhtml" media-type="application/xhtml+xml"/>
+        <item id="chapter1" href="Text/chapter1.xhtml" media-type="application/xhtml+xml"/>
+        <item id="chapter2" href="Text/chapter2.xhtml" media-type="application/xhtml+xml"/>
+        <item id="chapter3" href="Text/chapter3.xhtml" media-type="application/xhtml+xml"/>
+        <item id="part2" href="Text/part2.xhtml" media-type="application/xhtml+xml"/>
+        <item id="chapter4" href="Text/chapter4.xhtml" media-type="application/xhtml+xml"/>
+        <item id="chapter5" href="Text/chapter5.xhtml" media-type="application/xhtml+xml"/>
+        <item id="part3" href="Text/part3.xhtml" media-type="application/xhtml+xml"/>
+        <item id="chapter6" href="Text/chapter6.xhtml" media-type="application/xhtml+xml"/>
+        <item id="chapter7" href="Text/chapter7.xhtml" media-type="application/xhtml+xml"/>
+        <item id="chapter8" href="Text/chapter8.xhtml" media-type="application/xhtml+xml"/>
+        <item id="part4" href="Text/part4.xhtml" media-type="application/xhtml+xml"/>
+        <item id="chapter9" href="Text/chapter9.xhtml" media-type="application/xhtml+xml"/>
+        <item id="chapter10" href="Text/chapter10.xhtml" media-type="application/xhtml+xml"/>
+        <item id="conclusion" href="Text/conclusion.xhtml" media-type="application/xhtml+xml"/>
+        <item id="appendix1" href="Text/appendix1.xhtml" media-type="application/xhtml+xml"/>
+        <item id="appendix2" href="Text/appendix2.xhtml" media-type="application/xhtml+xml"/>
+        
+        <!-- CSS and Images -->
+        <item id="css" href="Styles/style.css" media-type="text/css"/>
+        <item id="cover-image" href="Images/framing-jesus-cover.jpg" media-type="image/jpeg" properties="cover-image"/>
+        
+        <!-- Additional chapter images will be added as needed -->
+
+        <!-- Images -->
+        <item id="escape_the_hell_myth_cover_final_jpg" href="Images/Escape-the-hell-myth-cover-final.jpg" media-type="image/jpeg"/>
+        <item id="jesus_not_knowing_jpg" href="Images/Jesus-not-knowing.jpg" media-type="image/jpeg"/>
+        <item id="almah_jpg" href="Images/almah.jpg" media-type="image/jpeg"/>
+        <item id="b1_mum_son2_jpg" href="Images/b1-mum-son2.jpg" media-type="image/jpeg"/>
+        <item id="b2_dad_son_cover_jpg" href="Images/b2-dad-son-cover.jpg" media-type="image/jpeg"/>
+        <item id="b3_dad_daughter_cover_jpg" href="Images/b3_dad_daughter_cover.jpg" media-type="image/jpeg"/>
+        <item id="b4-mum-daughter-jpg" href="Images/b4-mum-daughter.jpg" media-type="image/jpeg"/>
+        <item id="bible_contradictions_cover_final_jpg" href="Images/bible-contradictions-cover-final.jpg" media-type="image/jpeg"/>
+        <item id="books_clipart_jpg" href="Images/books-clipart.jpg" media-type="image/jpeg"/>
+        <item id="brain_programming_jpg" href="Images/brain-programming.jpg" media-type="image/jpeg"/>
+        <item id="c003_jesus_david_lineage_jpg" href="Images/c003-jesus-david-lineage.jpg" media-type="image/jpeg"/>
+        <item id="c004_royal_disqualification_jpg" href="Images/c004-royal-disqualification.jpg" media-type="image/jpeg"/>
+        <item id="c072_babylon_to_jesus_jpg" href="Images/c072-babylon-to-jesus.jpg" media-type="image/jpeg"/>
+        <item id="c074_david_to_jesus_jpg" href="Images/c074-david-to-jesus.jpg" media-type="image/jpeg"/>
+        <item id="candle_jpg" href="Images/candle.jpg" media-type="image/jpeg"/>
+        <item id="doc_ebion_jpg" href="Images/doc-ebion.jpg" media-type="image/jpeg"/>
+        <item id="early_christian_factions1_jpg" href="Images/early-christian-factions1.jpg" media-type="image/jpeg"/>
+        <item id="editorial_changes_jpg" href="Images/editorial-changes.jpg" media-type="image/jpeg"/>
+        <item id="elevation_of_jesus_jpg" href="Images/elevation-of-jesus.jpg" media-type="image/jpeg"/>
+        <item id="emperor5_jpg" href="Images/emperor5.jpg" media-type="image/jpeg"/>
+        <item id="fh_book1_cover_jpg" href="Images/fh-book1-cover.jpg" media-type="image/jpeg"/>
+        <item id="fh_book2_cover_jpg" href="Images/fh-book2-cover.jpg" media-type="image/jpeg"/>
+        <item id="fh_book3_cover_jpg" href="Images/fh-book3-cover.jpg" media-type="image/jpeg"/>
+        <item id="fh_book4_cover_jpg" href="Images/fh-book4-cover.jpg" media-type="image/jpeg"/>
+        <item id="fh_book5_cover_jpg" href="Images/fh-book5-cover.jpg" media-type="image/jpeg"/>
+        <item id="fingerprints3_jpg" href="Images/fingerprints3.jpg" media-type="image/jpeg"/>
+        <item id="framing_jesus_cover1_jpg" href="Images/framing-jesus-cover1.jpg" media-type="image/jpeg"/>
+        <item id="framing_jesus_cover1_png" href="Images/framing-jesus-cover1.png" media-type="image/png"/>
+        <item id="greg_trinitarian_shift_jpg" href="Images/greg-trinitarian-shift.jpg" media-type="image/jpeg"/>
+        <item id="ink_parchment_jpg" href="Images/ink-parchment.jpg" media-type="image/jpeg"/>
+        <item id="jesus_baptized_jpg" href="Images/jesus-baptized.jpg" media-type="image/jpeg"/>
+        <item id="jesus_good_jpg" href="Images/jesus-good.jpg" media-type="image/jpeg"/>
+        <item id="jesus_upgrade_jpg" href="Images/jesus-upgrade.jpg" media-type="image/jpeg"/>
+        <item id="jesus_upgrade1_jpg" href="Images/jesus-upgrade1.jpg" media-type="image/jpeg"/>
+        <item id="liberating_humanity_cover_jpg" href="Images/liberating-humanity-cover.jpg" media-type="image/jpeg"/>
+        <item id="modalism_jpg" href="Images/modalism.jpg" media-type="image/jpeg"/>
+        <item id="nicaea_jpg" href="Images/nicaea.jpg" media-type="image/jpeg"/>
+        <item id="nicene_creed_jpg" href="Images/nicene-creed.jpg" media-type="image/jpeg"/>
+        <item id="painting_jpg" href="Images/painting.jpg" media-type="image/jpeg"/>
+        <item id="path_forward_jpg" href="Images/path-forward.jpg" media-type="image/jpeg"/>
+        <item id="pattern1_jpg" href="Images/pattern1.jpg" media-type="image/jpeg"/>
+        <item id="reality_unveiled_cover_jpg" href="Images/reality-unveiled-cover.jpg" media-type="image/jpeg"/>
+        <item id="scroll_jpg" href="Images/scroll.jpg" media-type="image/jpeg"/>
+        <item id="six_witnesses_jpg" href="Images/six-witnesses.jpg" media-type="image/jpeg"/>
+        <item id="trinity_polytheism_jpg" href="Images/trinity-polytheism.jpg" media-type="image/jpeg"/>
+        <item id="twin_towers_jpg" href="Images/twin-towers.jpg" media-type="image/jpeg"/>
+        <item id="unify_doctrine_jpg" href="Images/unify-doctrine.jpg" media-type="image/jpeg"/>
+        <item id="virgin_birth_jpg" href="Images/virgin-birth.jpg" media-type="image/jpeg"/>
+        <item id="when_divine_jpg" href="Images/when-divine.jpg" media-type="image/jpeg"/>
+        <item id="why_paul_overuled_jpg" href="Images/why-paul-overuled.jpg" media-type="image/jpeg"/>
+        
+    </manifest>
+    
+    <spine toc="ncx">
+        <itemref idref="cover"/>
+        <itemref idref="titlepage"/>
+        <itemref idref="toc"/>
+        <itemref idref="introduction"/>
+        <itemref idref="part1"/>
+        <itemref idref="chapter1"/>
+        <itemref idref="chapter2"/>
+        <itemref idref="chapter3"/>
+        <itemref idref="part2"/>
+        <itemref idref="chapter4"/>
+        <itemref idref="chapter5"/>
+        <itemref idref="part3"/>
+        <itemref idref="chapter6"/>
+        <itemref idref="chapter7"/>
+        <itemref idref="chapter8"/>
+        <itemref idref="part4"/>
+        <itemref idref="chapter9"/>
+        <itemref idref="chapter10"/>
+        <itemref idref="conclusion"/>
+        <itemref idref="appendix1"/>
+        <itemref idref="appendix2"/>
+    </spine>
+    
+</package>
+
+
+

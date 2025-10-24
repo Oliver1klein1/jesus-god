@@ -1,0 +1,1186 @@
+@charset "UTF-8";
+
+/* EPUB Styles for Framing Jesus */
+
+:root {
+    --primary-color: #5c6ac4;
+    --secondary-color: #e53e3e;
+    --accent-color: #f6ad55;
+    --text-color: #2d3748;
+    --background-color: #f7fafc;
+    --callout-bg: #edf2f7;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 1rem;
+    font-size: 1em;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.chapter-card {
+    background: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 24px 0 rgba(92, 106, 196, 0.10), 0 1.5px 6px 0 rgba(92, 106, 196, 0.08);
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin: 2rem 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chapter-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.scripture-card {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(66, 153, 225, 0.15);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(66, 153, 225, 0.2);
+    border-left: 5px solid #4299e1;
+}
+
+.scripture-reference {
+    font-weight: bold;
+    color: #2c5282;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.scripture-text {
+    font-style: italic;
+    color: #2d3748;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.books-section {
+    background: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 24px 0 rgba(92, 106, 196, 0.10), 0 1.5px 6px 0 rgba(92, 106, 196, 0.08);
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin: 3rem auto;
+    max-width: 1000px;
+}
+
+.book-entry {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid var(--callout-bg);
+}
+
+.book-entry:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.book-cover {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.book-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.book-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.book-description h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.series-intro {
+    background: var(--callout-bg);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--accent-color);
+}
+
+.glossary-list {
+    margin-top: 2rem;
+}
+
+.glossary-term {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.glossary-definition {
+    margin-bottom: 1.5rem;
+}
+
+.biblio-section {
+    margin-top: 2rem;
+}
+
+.biblio-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.biblio-list {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.biblio-item {
+    margin-bottom: 1rem;
+}
+
+.biblio-subheading {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--callout-bg);
+    border-radius: 0.5rem;
+}
+
+.nav-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.drop-cap::first-letter {
+    float: left;
+    font-size: 4.5rem;
+    line-height: 0.85;
+    margin: 0.05em 0.1em 0 0;
+    color: #5c6ac4;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.list-disc {
+    list-style-type: disc;
+}
+
+.pl-8 {
+    padding-left: 2rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+/* Comparison cards for Chapter 5 */
+.comparison-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(92, 106, 196, 0.15);
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(92, 106, 196, 0.1);
+}
+
+.verse-comparison {
+    margin-bottom: 2rem;
+}
+
+.verse-comparison:last-child {
+    margin-bottom: 0;
+}
+
+.verse-header {
+    color: #5c6ac4;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #5c6ac4;
+}
+
+.verse-version {
+    background: #f0f4f8;
+    padding: 1rem 1.25rem;
+    margin: 0.75rem 0;
+    border-radius: 0.5rem;
+    border-left: 4px solid #4299e1;
+}
+
+.version-label {
+    font-weight: 600;
+    color: #2c5282;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.verse-text {
+    font-style: italic;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+.earliest-form {
+    border-left-color: #48bb78;
+    background: #f0fff4;
+}
+
+.modern-form {
+    border-left-color: #f56565;
+    background: #fff5f5;
+}
+
+/* Problems card for Chapter 5 */
+.problems-card {
+    background: linear-gradient(135deg, #fff5f7 0%, #fef5e7 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(245, 101, 101, 0.15);
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(245, 101, 101, 0.2);
+}
+
+.problem-entry {
+    margin-bottom: 1.75rem;
+    padding: 1.25rem;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    border-left: 4px solid #f56565;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.problem-entry:last-child {
+    margin-bottom: 0;
+}
+
+.problem-title {
+    font-weight: bold;
+    color: #c53030;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.problem-description {
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+/* Process card for Chapter 5 */
+.process-card {
+    background: linear-gradient(135deg, #fef9f3 0%, #fdf4e8 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(246, 173, 85, 0.2);
+    padding: 2rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(246, 173, 85, 0.3);
+}
+
+.process-step {
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    border-left: 4px solid #f6ad55;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 1rem;
+}
+
+.process-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f6ad55;
+    min-width: 2.5rem;
+    text-align: center;
+}
+
+.step-content {
+    flex: 1;
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-gray-600 {
+    color: #6b7280;
+}
+
+.mt-12 {
+    margin-top: 3rem;
+}
+
+.border-t {
+    border-top: 1px solid;
+}
+
+.border-gray-200 {
+    border-color: #e5e7eb;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #5c6ac4;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #5c6ac4;
+}
+
+h2.smaller {
+    font-size: 1.4rem;
+}
+
+.parts-intro {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #e53e3e;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 1em;
+    orphans: 2;
+    widows: 2;
+    text-indent: 0;
+}
+
+/* Bible quotes */
+.bible-quote {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-style: italic;
+    color: #2c5282;
+    background: #f0f4f8;
+    border-left: 4px solid #4299e1;
+    padding: 1.2rem 1.5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    border-radius: 0 0.5rem 0.5rem 0;
+    box-shadow: 0 2px 4px rgba(66, 153, 225, 0.1);
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Quotes */
+.quote {
+    font-style: italic;
+    border-left: 4px solid #f6ad55;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    background: #edf2f7;
+    padding: 1rem;
+}
+
+/* Links */
+a {
+    color: #5c6ac4;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4a59b3;
+}
+
+/* Images - Base responsive styling */
+img {
+    max-width: 85%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    page-break-inside: avoid;
+    border: 0;
+}
+
+/* Image containers for better responsive control */
+.img-card {
+    background: linear-gradient(135deg, #f7fafc 80%, #e3e8f0 100%);
+    border-radius: 0.85em;
+    box-shadow: 0 4px 24px 0 rgba(92, 106, 196, 0.10), 0 1.5px 6px 0 rgba(92, 106, 196, 0.08);
+    margin: 2em auto 2.5em auto;
+    width: 85%;
+    max-width: 100%;
+    min-width: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    overflow: hidden;
+    padding: 0;
+}
+
+.img-card:hover {
+    box-shadow: 0 8px 32px 0 rgba(92, 106, 196, 0.18);
+    transform: translateY(-4px) scale(1.025);
+}
+
+.portrait-img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+/* Witness cards for Chapter 3 */
+.witness-card {
+    background: linear-gradient(135deg, #fdfeff 0%, #f0f4f8 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(72, 187, 120, 0.15);
+    padding: 1.75rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(72, 187, 120, 0.2);
+    border-left: 5px solid #48bb78;
+}
+
+.witness-header {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    gap: 0.75rem;
+}
+
+.witness-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #48bb78;
+    line-height: 1;
+}
+
+.witness-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2c7a5f;
+    flex: 1;
+}
+
+.witness-details {
+    font-size: 0.9rem;
+    color: #718096;
+    font-style: italic;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+}
+
+/* Evidence cards for Chapter 2 */
+.evidence-card {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(229, 62, 62, 0.15);
+    padding: 1.75rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(229, 62, 62, 0.2);
+    border-left: 5px solid #e53e3e;
+}
+
+.evidence-header {
+    font-weight: bold;
+    color: #c53030;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.evidence-item {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 1rem;
+}
+
+.evidence-item:last-child {
+    margin-bottom: 0;
+}
+
+.evidence-number {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.evidence-text {
+    flex: 1;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+/* Chart, diagram, and comparison images - smaller for readability */
+img[alt*="generation"],
+img[alt*="comparison"],
+img[alt*="lineage"],
+img[alt*="genealogy"],
+img[alt*="28"],
+img[alt*="43"] {
+    max-width: 70%;
+    margin: 1rem auto;
+}
+
+/* Historical images and documents */
+img[alt*="manuscript"],
+img[alt*="document"],
+img[alt*="scroll"] {
+    max-width: 75%;
+    margin: 1rem auto;
+}
+
+/* Cover image exception - should be full width */
+.cover img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Book covers and illustrations */
+img[alt*="cover"],
+img[alt*="illustration"],
+img[alt*="book"] {
+    max-width: 90%;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 480px) {
+    img {
+        max-width: 90%;
+    }
+    
+    .img-card img,
+    .portrait-img {
+        max-width: 85%;
+    }
+}
+
+@media (min-width: 768px) {
+    img {
+        max-width: 75%;
+    }
+    
+    .img-card img,
+    .portrait-img {
+        max-width: 70%;
+    }
+    
+    img[alt*="generation"],
+    img[alt*="comparison"] {
+        max-width: 60%;
+    }
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Title page */
+.title-page {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.title-page h1 {
+    margin-bottom: 2rem;
+}
+
+.title-page .author {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.title-page .series {
+    font-style: italic;
+}
+
+/* Table of contents */
+.toc {
+    margin: 2rem 0;
+}
+
+.toc h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+/* Part titles */
+.part-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #5c6ac4;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Chapter titles */
+.chapter-title {
+    border-bottom: 2px solid #5c6ac4;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Cover page */
+.cover {
+    text-align: center;
+    page-break-after: always;
+}
+
+.cover img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Drop caps */
+.drop-cap::first-letter {
+    float: left;
+    font-size: 4.5rem;
+    line-height: 0.85;
+    margin: 0.05em 0.1em 0 0;
+    color: #5c6ac4;
+    font-weight: bold;
+}
+
+/* Strong and emphasis */
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+/* Page breaks */
+.page-break {
+    page-break-before: always;
+}
+
+/* Avoid page breaks */
+.no-break {
+    page-break-inside: avoid;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Table styling for parts table */
+.parts-table {
+    margin: 2.5rem 0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid #e2e8f0;
+}
+
+.part-row {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid rgba(92, 106, 196, 0.1);
+    transition: background-color 0.2s ease;
+    page-break-inside: avoid;
+}
+
+.part-row:last-child {
+    border-bottom: none;
+}
+
+.part-row:hover {
+    background-color: rgba(92, 106, 196, 0.03);
+}
+
+.part-row.header {
+    background: linear-gradient(135deg, #5c6ac4 0%, #4a59b3 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+}
+
+.part-number {
+    font-weight: 600;
+    color: #5c6ac4;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.part-theme {
+    font-weight: 500;
+    color: #2d3748;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.part-question {
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+}
+
+.part-row.header .part-number,
+.part-row.header .part-theme,
+.part-row.header .part-question {
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Table layout - using float-based columns for maximum compatibility */
+.parts-table {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.part-row {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(92, 106, 196, 0.1);
+    overflow: hidden;
+    clear: both;
+}
+
+.part-row > div {
+    display: block;
+    padding: 0.75rem;
+    vertical-align: top;
+    border-right: 1px solid rgba(92, 106, 196, 0.1);
+    box-sizing: border-box;
+    min-height: 3rem;
+}
+
+.part-number {
+    width: 15%;
+    float: left;
+}
+
+.part-theme {
+    width: 35%;
+    float: left;
+}
+
+.part-question {
+    width: 50%;
+    border-right: none;
+    float: left;
+}
+
+/* Header row styling */
+.part-row.header {
+    background: linear-gradient(135deg, #5c6ac4 0%, #4a59b3 100%);
+    color: white;
+}
+
+.part-row.header > div {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+}
+
+.part-row.header .part-question {
+    border-right: none;
+}
+
+/* Clear floats after each row */
+.part-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Timeline styles */
+.timeline-card {
+    background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(139, 92, 246, 0.15);
+    padding: 1.75rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-left: 5px solid #8b5cf6;
+}
+
+.timeline-header {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #6b46c1;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.phase-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0.5rem;
+    border-left: 4px solid #8b5cf6;
+}
+
+.phase-number {
+    background: #8b5cf6;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    min-width: 80px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.phase-content {
+    flex: 1;
+}
+
+.phase-dates {
+    font-weight: bold;
+    color: #6b46c1;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.phase-description {
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* Terms card styles */
+.terms-card {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(72, 187, 120, 0.15);
+    padding: 1.75rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(72, 187, 120, 0.2);
+    border-left: 5px solid #48bb78;
+}
+
+.terms-header {
+    font-weight: bold;
+    color: #22543d;
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.term-item {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    margin: 0.75rem 0;
+    border-left: 4px solid #48bb78;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.term-greek {
+    font-weight: bold;
+    color: #22543d;
+    font-size: 1.15rem;
+    margin-bottom: 0.25rem;
+}
+
+.term-meaning {
+    color: #666;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+/* Revolution card styles */
+.revolution-card {
+    background: linear-gradient(135deg, #fef3f2 0%, #fee2e2 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(239, 68, 68, 0.15);
+    padding: 1.75rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-left: 5px solid #ef4444;
+}
+
+.revolution-header {
+    font-weight: bold;
+    color: #7f1d1d;
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.revolution-item {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 0.75rem 0;
+    border-left: 4px solid #ef4444;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.revolution-number {
+    background: #ef4444;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.revolution-text {
+    color: #2d3748;
+    line-height: 1.7;
+    flex: 1;
+}
+
+/* Consequences card styles */
+.consequences-card {
+    background: linear-gradient(135deg, #fef3f2 0%, #fee2e2 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(239, 68, 68, 0.15);
+    padding: 1.75rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-left: 5px solid #ef4444;
+}
+
+.consequences-header {
+    font-weight: bold;
+    color: #7f1d1d;
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.consequence-item {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1rem 0;
+    border-left: 4px solid #ef4444;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.consequence-label {
+    font-weight: bold;
+    color: #ef4444;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.consequence-text {
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+/* Rules card styles */
+.rules-card {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(66, 153, 225, 0.15);
+    padding: 1.75rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(66, 153, 225, 0.2);
+    border-left: 5px solid #4299e1;
+}
+
+.rules-header {
+    font-weight: bold;
+    color: #2c5282;
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.rule-box {
+    background: white;
+    border: 2px solid #4299e1;
+    border-radius: 0.5rem;
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.rule-number {
+    font-weight: bold;
+    color: #4299e1;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rule-text {
+    color: #2d3748;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* Options card styles */
+.options-card {
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(14, 165, 233, 0.15);
+    padding: 1.75rem;
+    margin: 2rem 0;
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    border-left: 5px solid #0ea5e9;
+}
+
+.options-header {
+    font-weight: bold;
+    color: #0c4a6e;
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.option-item {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    margin: 1rem 0;
+    border-left: 4px solid #0ea5e9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.option-number {
+    font-weight: bold;
+    color: #0ea5e9;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.option-description {
+    color: #2d3748;
+    line-height: 1.7;
+}

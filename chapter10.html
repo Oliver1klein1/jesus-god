@@ -95,15 +95,17 @@
             margin-top: 0.5rem;
         }
 
-        .chapter-card {
-            background: #fff;
-            border-radius: 1.25rem;
-            box-shadow: 0 4px 24px 0 rgba(92, 106, 196, 0.10), 0 1.5px 6px 0 rgba(92, 106, 196, 0.08);
-            padding: 2.5rem 2rem 2rem 2rem;
-            margin: 2rem 0;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+        .chapter-card p {
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+        }
+        
+        @media (max-width: 600px) {
+            .chapter-card p {
+                text-align: left;
+            }
         }
         
         .scripture-card {

@@ -1,0 +1,131 @@
+/* ==============================
+   PRINT STYLESHEET for 6x9" books
+   Author: Ansilo Format Template
+   ============================== */
+
+/* ---- GLOBAL RESET ---- */
+* {
+  box-sizing: border-box;
+}
+
+/* ---- PAGE SIZE & MARGINS ---- */
+@page {
+  size: 6in 9in;          /* paperback trim size */
+  margin: 0.75in;         /* adjust as needed */
+}
+
+/* ---- BODY ---- */
+body {
+  font-family: "Georgia", "Garamond", serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: #000;
+  text-align: justify;
+  hyphens: auto;
+  widows: 2;
+  orphans: 2;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---- HEADINGS ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", "Garamond", serif;
+  font-weight: bold;
+  text-align: center !important;
+  margin: 1.5em 0 0.5em;
+  page-break-after: avoid;
+}
+
+/* ---- PARAGRAPHS ---- */
+p {
+  margin: 0 0 1em;
+  text-indent: 0.25in;
+  text-align: justify !important;
+}
+
+/* ---- CHAPTER OPENERS ---- */
+.chapter-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center !important;
+  margin-top: 3in;
+  page-break-before: right;
+}
+
+/* ---- PAGE BREAK CONTROL ---- */
+h1, h2, h3, .chapter-title {
+  page-break-before: always;
+  page-break-after: avoid;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1em auto;
+  page-break-inside: avoid;
+}
+
+/* ---- ALIGNMENT HELPERS ---- */
+.center { text-align: center !important; }
+.right  { text-align: right !important; }
+.left   { text-align: left !important; }
+
+/* ---- BLOCKQUOTE ---- */
+blockquote {
+  font-style: italic;
+  margin: 1em 1.5em;
+  text-align: justify;
+}
+
+/* ---- FOOTNOTES / SMALL TEXT ---- */
+small, .footnote {
+  font-size: 0.8em;
+  line-height: 1.3;
+}
+
+/* ---- LINKS ---- */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---- PRINT MEDIA OVERRIDES ---- */
+@media print {
+  html, body {
+    width: 6in;
+    height: 9in;
+  }
+
+  /* Force all text-align rules to apply */
+  p, div, h1, h2, h3, h4, h5, h6, blockquote {
+    text-align: inherit !important;
+  }
+
+  /* Remove non-print elements */
+  nav, header, footer, .no-print {
+    display: none !important;
+  }
+
+  /* Optional: add running header/footer later */
+}@media print {
+  /* Global default for all text in print */
+  body, p, div, h1, h2, h3, h4, h5, h6, li {
+    text-align: right !important;
+  }
+
+  /* If some sections must stay centered etc.,
+     you can override with utility classes: */
+  .text-center {
+    text-align: center !important;
+  }
+
+  .text-left {
+    text-align: left !important;
+  }
+
+  .text-right {
+    text-align: right !important;
+  }
+}
+

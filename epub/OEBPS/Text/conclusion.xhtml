@@ -1,326 +1,505 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Conclusion | The Greater Truth We Missed ... Making Only Jesus God</title>
+    <title>Conclusion | The Greater Truth We Missed - Making Only Jesus God</title>
     <link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
+    <style>
+        :root {
+            --primary-color: #5c6ac4;
+            --secondary-color: #e53e3e;
+            --accent-color: #f6ad55;
+            --text-color: #2d3748;
+            --background-color: #f7fafc;
+            --callout-bg: #edf2f7;
+        }
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #ffffff;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1 {
+            color: #5c6ac4;
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+        }
+        .nav-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        .quote {
+            font-style: italic;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .scripture-card {
+            background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%);
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 20px rgba(66, 153, 225, 0.15);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid rgba(66, 153, 225, 0.2);
+            border-left: 5px solid #4299e1;
+        }
+        
+        .scripture-reference {
+            font-weight: bold;
+            color: #2c5282;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .scripture-text {
+            font-style: italic;
+            color: #2d3748;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        .footnote {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        .chapter-card {
+            background: transparent;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 2.5rem 2rem 2rem 2rem;
+            margin: 2rem 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .chapter-card p {
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+        }
+        
+        @media (max-width: 600px) {
+            .chapter-card p {
+                text-align: left;
+            }
+        }
+        .books-section {
+            background: #fff;
+            border-radius: 1.25rem;
+            box-shadow: 0 4px 24px 0 rgba(92, 106, 196, 0.10), 0 1.5px 6px 0 rgba(92, 106, 196, 0.08);
+            padding: 2.5rem 2rem 2rem 2rem;
+            margin: 3rem auto;
+            max-width: 1000px;
+            page-break-before: always;
+        }
+        .books-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+        .book-entry {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 2px solid var(--callout-bg);
+        }
+        .book-entry:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .book-cover {
+            flex: 0 0 30%;
+            max-width: 30%;
+        }
+        .book-cover img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+        .book-cover img:hover {
+            transform: scale(1.05);
+        }
+        .book-description {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .book-description h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        .book-description p {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        .book-description p:last-child {
+            margin-bottom: 0;
+        }
+        .series-intro {
+            background: var(--callout-bg);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-color);
+        }
+        .series-intro h3 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+        .series-intro p {
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .book-entry {
+                flex-direction: column;
+            }
+            .book-cover {
+                flex: 0 0 auto;
+                max-width: 60%;
+                margin: 0 auto;
+            }
+        }
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.5rem;
+            line-height: 0.85;
+            margin: 0.05em 0.1em 0 0;
+            color: #5c6ac4;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mx-auto px-4">
-        <div class="chapter-card">
-            <h1>Conclusion | The Greater Truth We Missed</h1>
-            <p class="mb-4"><em>When we elevate someone from teacher to God, we often miss what they came to teach.</em></p>
-            <p class="mb-4 drop-cap">As our textual investigation concludes, a profound question emerges from the manuscripts, variants, and editorial decisions we've examined: In our eagerness to worship Jesus, did we miss what he actually came to tell us?</p>
-            <p class="mb-4">The evidence suggests we have. By transforming Jesus from the Father's messenger into the Father's metaphysical equal, Christianity created a theological framework that obscured some of his most revolutionary teachings ... particularly about our own identity and relationship with the divine.</p>
-            <h2>The Overlooked Message</h2>
-            <p class="mb-4">Consider Jesus's most startling statements about human potential:</p>
-            
-            <div class="scripture-card">
-                <div class="scripture-reference">John 14:12</div>
-                <div class="scripture-text">"Very truly I tell you, whoever believes in me will do the works I have been doing, and they will do even <strong>greater things</strong> than these."</div>
-            </div>
-            
-            <div class="scripture-card">
-                <div class="scripture-reference">Luke 17:21</div>
-                <div class="scripture-text">"The kingdom of God is <strong>within you</strong>."</div>
-            </div>
-            
-            <div class="scripture-card">
-                <div class="scripture-reference">John 10:34 (quoting Psalm 82:6)</div>
-                <div class="scripture-text">"<strong>You are gods</strong>, sons of the Most High, all of you."</div>
-            </div>
-            
-            <div class="scripture-card">
-                <div class="scripture-reference">Matthew 17:20</div>
-                <div class="scripture-text">"If you have faith as small as a mustard seed, you can say to this mountain, 'Move from here to there,' and it will move. <strong>Nothing will be impossible for you.</strong>"</div>
-            </div>
-            <p class="mb-4">These declarations ... suggesting human beings possess <strong>divine qualities</strong> and <strong><em>near-limitless potential</em></strong> ... make more sense coming from a teacher pointing toward the Father than from someone claiming to be <em>uniquely</em> God. If Jesus is ontologically different from us (God incarnate), his achievements remain <strong>forever beyond our reach</strong>. But if he achieved <strong><em>oneness with the Father</em></strong> while remaining <em>fully human</em>, his path becomes <strong>one we can follow</strong>.</p>
-            <h2>The Father-Centered Framework</h2>
-            <p class="mb-4">Jesus consistently directed attention not to himself but to the Father ... the same Father he called "the only true God" (John 17:3). His most profound teachings centered on our relationship with this Father:</p>
-            
-            <div class="scripture-card">
-                <div class="scripture-reference">Luke 11:2</div>
-                <div class="scripture-text">"When you pray, say: <strong>Father</strong>..."</div>
-            </div>
-            
-            <div class="scripture-card">
-                <div class="scripture-reference">Matthew 6:8</div>
-                <div class="scripture-text">"<strong>Your Father</strong> knows what you need before you ask him."</div>
-            </div>
-            
-            <div class="scripture-card">
-                <div class="scripture-reference">Matthew 5:48</div>
-                <div class="scripture-text">"Be perfect, therefore, as <strong>your heavenly Father</strong> is perfect."</div>
-            </div>
-            <p class="mb-4">By framing our divine connection through the Father rather than through himself, Jesus offered <strong><em>direct access</em></strong> to the <strong>source of all being</strong> ... what quantum physicists might now describe as the <em>unified field</em> underlying all reality, the <strong>consciousness that manifests the material world</strong>.</p>
-            
-            <p class="mb-4">For a deeper understanding of what this means and how to access the powers of which Jesus spoke [a bold claim, I know], be sure to check out <strong>"Reality Unveiled: How Jesus Revealed You Are More Powerful Than You Ever Imagined"</strong> (brief description below.)</p>
-            
-            <p class="mb-4">There, we'll examine how Jesus's original, Father-centered teachings align with quantum discoveries about consciousness, manifestation, and the nature of reality itself.</p>
-            
-            <p class="mb-4">You'll discover how the principles Jesus taught ... often obscured by later theology ... provide a practical framework for manifesting change in your life and world. From the quantum foundations of faith to the neurological basis of transformation, we'll explore how Jesus's most revolutionary ideas anticipated scientific breakthroughs we're only now beginning to understand.</p>
-            
-            <p class="mb-4">The question isn't whether Jesus was divine, but whether he came to show us that we are too ... children of the same Father, heirs to the same kingdom, and capable of the same consciousness that transforms reality itself.</p>
-            
-            <h2>The Path Forward</h2>
-            <p class="mb-4">As we recover Jesus's original teachings from centuries of theological overlay, we discover a message more profound and empowering than the one presented by traditional Christianity. Jesus wasn't primarily concerned with being worshipped but with showing us what we could become through connection with the Father ... the same Father he referenced when he said: <strong>"I am ascending to my Father and your Father, to my God and your God"</strong> (John 20:17).</p>
-            <p class="mb-4">This Father-centered framework offers a radically empowering understanding of human potential, as stated earlier in this chapter, but which I'd like to repeat:</p>
-            <ul class="list-disc pl-8 mb-8">
-                <li>We share Jesus's relationship with the Father ("my Father and your Father")</li>
-                <li>We can do "greater things" than Jesus himself accomplished</li>
-                <li>The kingdom exists within us, not as distant metaphysical reality</li>
-                <li>Faith ... conscious alignment with the Father ... can literally transform physical reality</li>
-            </ul>
-            <p class="mb-4">These aren't metaphors or hyperbole; they're descriptions of <strong>THE NATURE OF CONSCIOUSNESS</strong> and the <strong>NATURE OF REALITY</strong> that science is beginning to comprehend in a different manner than the materialist paradigm allowed.</p>
-            <p class="mb-4">The textual evidence we've examined throughout this book doesn't just challenge traditional theology ... it <strong>opens the door</strong> to recovering Jesus's <strong><em>original, subversive message</em></strong> about human potential. By removing the theological barriers that separated Jesus from humanity and humanity from the Father, we can access the teachings that religious institutions often obscured: that <strong>we are far more powerful than we've been led to believe</strong>.</p>
-            <p class="mb-4">As you close these pages, I invite you to consider that our investigation into textual alterations isn't merely historical curiosity but a <strong><em>gateway to rediscovering your own divine potential</em></strong> ... the same potential Jesus referenced when he said, <em>"The one who believes in me will also do the works that I do."</em></p>
-            <p class="mb-4">The path Jesus illuminated wasn't about <em>worshipping him as God</em> but about <strong>recognizing the divine capacity within yourself</strong> through connection with the Father ... the same Father who, in Jesus's words, <strong>"is greater than all"</strong> (John 10:29).</p>
-            <div class="scripture-card">
-                <div class="scripture-reference">The Greater Truth</div>
-                <div class="scripture-text">As Jesus himself said: <strong>"The truth will set you free."</strong> Perhaps the greatest truth is not that Jesus was God, but that through him, we discover what it means to be fully, divinely human ... <strong>connected to the Father in ways that transcend everything we've been taught about our limitations.</strong></div>
-            </div>
-            
-            <p class="mb-4">The journey continues. The revelation awaits.</p>
-        </div>
-    </div>
+<body>
+<div class="container mx-auto px-4">
+<div class="chapter-card">
+<h1>Conclusion | The Greater Truth We Missed</h1>
+<p class="mb-4"><em>When we elevate someone from teacher to God, we often miss what they came to teach.</em></p>
+<p class="mb-4 drop-cap">As our textual investigation concludes, a profound question emerges from the manuscripts, variants, and editorial decisions we've examined: In our eagerness to worship Jesus, did we miss what he actually came to tell us?</p>
+<p class="mb-4">The evidence suggests we have. By transforming Jesus from the Father's messenger into the Father's metaphysical equal, Christianity created a theological framework that obscured some of his most revolutionary teachings ... particularly about our own identity and relationship with the divine.</p>
+<h2>The Overlooked Message</h2>
+<p class="mb-4">Consider Jesus's most startling statements about human potential:</p>
+<div class="scripture-card">
+<div class="scripture-reference">John 14:12</div>
+<div class="scripture-text">"Very truly I tell you, whoever believes in me will do the works I have been doing, and they will do even <strong>greater things</strong> than these."</div>
+</div>
+<div class="scripture-card">
+<div class="scripture-reference">Luke 17:21</div>
+<div class="scripture-text">"The kingdom of God is <strong>within you</strong>."</div>
+</div>
+<div class="scripture-card">
+<div class="scripture-reference">John 10:34 (quoting Psalm 82:6)</div>
+<div class="scripture-text">"<strong>You are gods</strong>, sons of the Most High, all of you."</div>
+</div>
+<div class="scripture-card">
+<div class="scripture-reference">Matthew 17:20</div>
+<div class="scripture-text">"If you have faith as small as a mustard seed, you can say to this mountain, 'Move from here to there,' and it will move. <strong>Nothing will be impossible for you.</strong>"</div>
+</div>
+<p class="mb-4">These declarations ... suggesting human beings possess <strong>divine qualities</strong> and <strong><em>near-limitless potential</em></strong> ... make more sense coming from a teacher pointing toward the Father than from someone claiming to be <em>uniquely</em> God. If Jesus is ontologically different from us (God incarnate), his achievements remain <strong>forever beyond our reach</strong>. But if he achieved <strong><em>oneness with the Father</em></strong> while remaining <em>fully human</em>, his path becomes <strong>one we can follow</strong>.</p>
+<h2>The Father-Centered Framework</h2>
+<p class="mb-4">Jesus consistently directed attention not to himself but to the Father ... the same Father he called "the only true God" (John 17:3). His most profound teachings centered on our relationship with this Father:</p>
+<div class="scripture-card">
+<div class="scripture-reference">Luke 11:2</div>
+<div class="scripture-text">"When you pray, say: <strong>Father</strong>..."</div>
+</div>
+<div class="scripture-card">
+<div class="scripture-reference">Matthew 6:8</div>
+<div class="scripture-text">"<strong>Your Father</strong> knows what you need before you ask him."</div>
+</div>
+<div class="scripture-card">
+<div class="scripture-reference">Matthew 5:48</div>
+<div class="scripture-text">"Be perfect, therefore, as <strong>your heavenly Father</strong> is perfect."</div>
+</div>
+<p class="mb-4">By framing our divine connection through the Father rather than through himself, Jesus offered <strong><em>direct access</em></strong> to the <strong>source of all being</strong> ... what quantum physicists might now describe as the <em>unified field</em> underlying all reality, the <strong>consciousness that manifests the material world</strong>.</p>
+<p class="mb-4">For a deeper understanding of what this means and how to access the powers of which Jesus spoke [a bold claim, I know], be sure to check out <strong>"Reality Unveiled: How Jesus Revealed You Are More Powerful Than You Ever Imagined"</strong> (brief description below.)</p>
+<p class="mb-4">There, we'll examine how Jesus's original, Father-centered teachings align with quantum discoveries about consciousness, manifestation, and the nature of reality itself.</p>
+<p class="mb-4">You'll discover how the principles Jesus taught ... often obscured by later theology ... provide a practical framework for manifesting change in your life and world. From the quantum foundations of faith to the neurological basis of transformation, we'll explore how Jesus's most revolutionary ideas anticipated scientific breakthroughs we're only now beginning to understand.</p>
+<p class="mb-4">The question isn't whether Jesus was divine, but whether he came to show us that we are too ... children of the same Father, heirs to the same kingdom, and capable of the same consciousness that transforms reality itself.</p>
+<h2>The Path Forward</h2>
+<p class="mb-4">As we recover Jesus's original teachings from centuries of theological overlay, we discover a message more profound and empowering than the one presented by traditional Christianity. Jesus wasn't primarily concerned with being worshipped but with showing us what we could become through connection with the Father ... the same Father he referenced when he said: <strong>"I am ascending to my Father and your Father, to my God and your God"</strong> (John 20:17).</p>
+<p class="mb-4">This Father-centered framework offers a radically empowering understanding of human potential, as stated earlier in this chapter, but which I'd like to repeat:</p>
+<ul class="list-disc pl-8 mb-8">
+<li>We share Jesus's relationship with the Father ("my Father and your Father")</li>
+<li>We can do "greater things" than Jesus himself accomplished</li>
+<li>The kingdom exists within us, not as distant metaphysical reality</li>
+<li>Faith ... conscious alignment with the Father ... can literally transform physical reality</li>
+</ul>
+<p class="mb-4">These aren't metaphors or hyperbole; they're descriptions of <strong>THE NATURE OF CONSCIOUSNESS</strong> and the <strong>NATURE OF REALITY</strong> that science is beginning to comprehend in a different manner than the materialist paradigm allowed.</p>
+<p class="mb-4">The textual evidence we've examined throughout this book doesn't just challenge traditional theology ... it <strong>opens the door</strong> to recovering Jesus's <strong><em>original, subversive message</em></strong> about human potential. By removing the theological barriers that separated Jesus from humanity and humanity from the Father, we can access the teachings that religious institutions often obscured: that <strong>we are far more powerful than we've been led to believe</strong>.</p>
+<p class="mb-4">As you close these pages, I invite you to consider that our investigation into textual alterations isn't merely historical curiosity but a <strong><em>gateway to rediscovering your own divine potential</em></strong> ... the same potential Jesus referenced when he said, <em>"The one who believes in me will also do the works that I do."</em></p>
+<p class="mb-4">The path Jesus illuminated wasn't about <em>worshipping him as God</em> but about <strong>recognizing the divine capacity within yourself</strong> through connection with the Father ... the same Father who, in Jesus's words, <strong>"is greater than all"</strong> (John 10:29).</p>
+<div class="scripture-card">
+<div class="scripture-reference">The Greater Truth</div>
+<div class="scripture-text">As Jesus himself said: <strong>"The truth will set you free."</strong> Perhaps the greatest truth is not that Jesus was God, but that through him, we discover what it means to be fully, divinely human ... <strong>connected to the Father in ways that transcend everything we've been taught about our limitations.</strong></div>
+</div>
+<p class="mb-4">The journey continues. The revelation awaits.</p>
+<p class="mb-4">Thank you for reading till the end. Share your thoughts so we can accelerate our journey to truth and understanding.</p>
+<p class="mb-4">In love,</p>
+<p class="mb-4">Ansilo</p>
+</div>
+</div>
+<!-- Other Books Section -->
+<div class="books-section">
+<h2>Books By Ansilo Boff</h2>
+<!-- Series Intro: The "Rediscovering Jesus' Subverted Teachings and the Father's Love" Series -->
+<div class="series-intro">
+<h3>The "Rediscovering Jesus' Subverted Teachings and the Father's Love" Series</h3>
+<p>For two thousand years, religion has distorted Jesus' message … turning liberation into obedience, and love into fear. It told us God demanded blood, that sin defined us from birth, and that submission (being 'under authority') mattered more than awareness.</p>
+<p><strong>But what if that story wasn't from Jesus at all?</strong></p>
+<p>This series rips through the edits, lies, and power plays that buried his true teachings. It exposes how Yahweh's wrath was mistaken for the Father's love … and how Paul's control replaced Jesus' freedom. From <em>'Liberating Humanity'</em> to <em>'Escape the Hell Myth,'</em> these books uncover a single revelation: Jesus never preached fear, wrath, or blood sacrifice. The scriptures were tampered with. Jesus revealed a Father who restores, not destroys, with whom we are more connected than we realized.</p>
+<p>From fear to freedom. From illusion to truth.</p>
+<p><strong>Raw. Daring. Restorative.</strong></p>
+<p>This isn't the end of faith … it's the beginning of awakening and living abundantly.</p>
+<p><strong>Here are the first 5 books in this Series:</strong></p>
+</div>
+<!-- Book 1: Liberating Humanity -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="Liberating Humanity Book Cover" src="../Images/liberating-humanity-cover.jpg"/>
+</div>
+<div class="book-description">
+<h3>Liberating Humanity: How Jesus Exposed The Evil God Of Moses And Warned Of Paul</h3>
+<p><strong>You've been worshiping the wrong God!</strong></p>
+<p>Jesus exposed Him. Paul enshrined Him.</p>
+<p><strong>Yahweh is not the Father!</strong></p>
+<p>This book is a wrecking ball.</p>
+<p>With scripture as evidence, it unmasks Yahweh's commands ... genocide, slavery, child sacrifice ... and the shocking truth that Paul, not Jesus, built Christianity.</p>
+<p>Our Father's identity has been distorted. As has ours. We'd been neutralized. Mission-accomplished. Potential-stifled.</p>
+<p>This book splits the cracks wide open: no blood sacrifice required, no "original sin," no counterfeit god. Only the Father Jesus revealed … pure love without terms and conditions. United with us.</p>
+<p><strong>Raw. Explosive. Liberating.</strong></p>
+</div>
+</div>
+<!-- Book 2: Reality Unveiled -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="Reality Unveiled Book Cover" src="../Images/reality-unveiled-cover.jpg"/>
+</div>
+<div class="book-description">
+<h3>Reality Unveiled: How Jesus Revealed You Are More Powerful Than You Ever Imagined</h3>
+<p><strong>What if Jesus' most radical teaching wasn't about sin, but about your power to shape reality?</strong></p>
+<p>In Reality Unveiled, the author takes you beyond religion and into revelation - where quantum physics, near-death experiences, and ancient wisdom converge to expose the truth: consciousness, not matter, is the foundation of existence.</p>
+<p>Discover how Jesus' hidden sayings align with cutting-edge science to reveal that "the kingdom of God is within you." You are not a helpless sinner awaiting rescue - you are a divine co-creator in a conscious universe, capable of manifesting healing, abundance, and transformation through awakened awareness.</p>
+<p>If you've begun questioning the old stories and are ready to uncover the breathtaking truth of who you really are, turn the page ... and awaken to the universe Jesus knew all along.</p>
+</div>
+</div>
+<!-- Book 3: Framing Jesus -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="Framing Jesus Book Cover" src="../Images/framing-jesus-cover.jpg"/>
+</div>
+<div class="book-description">
+<h3>Framing Jesus: How Ancient Bible Changes Elevated Jesus Beyond Our Reach</h3>
+<p><strong>Some of what you know of Jesus is a fabrication.</strong></p>
+<p>Not the man himself, but the story we've been told about him.</p>
+<p>For centuries, the church has systematically reframed Jesus' radical message, turning a revolutionary teacher of love and liberation into a religious figurehead who supports the very systems he came to dismantle.</p>
+<p>This book peels back the layers of theological manipulation to reveal the authentic Jesus ... the one who challenged religious authority, championed the marginalized, and taught that the kingdom of God is within you, not in a distant heaven.</p>
+<p><strong>Discover how parts of his identity were touched up for over 2000 years and why it matters.</strong></p>
+</div>
+</div>
+<!-- Book 4: 101 Illustrated Bible Contradictions -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="101 Illustrated Bible Contradictions Book Cover" src="../Images/bible-contradictions-cover-final.jpg"/>
+</div>
+<div class="book-description">
+<h3>101 Illustrated Bible Contradictions: And 12 Keys To Unlock The Truths These Reveal</h3>
+<p><strong>What if the Bible's contradictions are clues ... not merely errors?</strong></p>
+<p>101 Illustrated Bible Contradictions exposes the hidden seams ... verses that clash, timelines that twist, doctrines that collide.</p>
+<p>But beneath the chaos lies some deeper truths.</p>
+<p>These cracks reveal two competing images of God: the wrathful Yahweh of Moses versus the loving Father Jesus revealed. And a divided faith ... torn between Jesus' Kingdom of Love and Paul's empire-friendly gospel.</p>
+<p>In this eye-opening guide, 12 Keys unlock what the contradictions show us ... how Scripture was shaped, edited, and weaponized… and how the Truth still shines through. See the flaws. Find the freedom. Rediscover the Father.</p>
+</div>
+</div>
+<!-- Book 5: Escape the Hell Myth -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="Escape the Hell Myth Book Cover" src="../Images/Escape-the-hell-myth-cover-final.jpg"/>
+</div>
+<div class="book-description">
+<h3>Escape the Hell Myth: Rediscover The Teachings Of Jesus On Love</h3>
+<p><strong>What if the story of eternal torment isn't from Jesus at all?</strong></p>
+<p>In Escape the Hell Myth, Ansilo Boff exposes the shocking truth: the doctrine of everlasting punishment was built on mistranslations, theological bias, and fear-based control ... not on the words of Christ.</p>
+<p>Through deep linguistic study and bold spiritual insight, this book unpacks what Sheol, Hades, Gehenna, and aionios really meant in the original texts, how Jesus' teachings reveal a God of restoration, not retribution, why Yahweh's violent commands contradict the loving Father Jesus revealed, and the breathtaking hope of universal reconciliation ... a divine plan to heal all creation.</p>
+<p>If you've ever questioned how a loving God could condemn souls to eternal fire, this book will help you escape the lie and rediscover the liberating message of Jesus. Jesus never taught Hell. He revealed a Father who restores, not destroys.</p>
+</div>
+</div>
+<!-- Series Intro: The Father's Heart Children's Book Series -->
+<div class="series-intro">
+<h3>The Father's Heart Children's Book Series</h3>
+<p><strong>See others and God through Jesus' eyes.</strong></p>
+<p>By Ansilo Boff</p>
+<p><strong>What if the stories we tell about God helped children feel safe, kind, and deeply loved?</strong></p>
+<p>In The Father's Heart Series, Ansilo Boff re-introduces children to the gentle, forgiving Father that Jesus revealed ... not a God of punishment or fear, but one of peace, mercy, and inclusion.</p>
+<p>Through tender storytelling and luminous watercolor illustrations, each book turns everyday moments into spiritual discoveries: forgiving a friend, using kind words, feeling peace during storms, sharing what we have, and welcoming others at our table.</p>
+<p>Every page helps children (and parents) unlearn fear and rediscover love.</p>
+<p>Because when we see others ... and God ... through Jesus' eyes, the world becomes a brighter, kinder place.</p>
+<p>Perfect for bedtime reading, family devotion, or Sunday-school story time, The Father's Heart Series nurtures young hearts to grow in empathy, peace, and joy.</p>
+</div>
+<!-- Book 6: When My Little Brother Broke My Toy -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="When My Little Brother Broke My Toy Book Cover" src="../Images/fh-book1-cover.jpg"/>
+</div>
+<div class="book-description">
+<h3>When My Little Brother Broke My Toy<br/>So That's What "Forgive" Means!</h3>
+<p><strong>What if forgiveness wasn't about payback ... but about love that keeps going?</strong></p>
+<p>When a child's toy breaks, so does his heart. But through gentle storytelling and bright illustrations, kids discover what Jesus revealed: the Father never punishes or holds grudges ... He only loves and forgives.</p>
+<p>A tender, hope-filled story that helps children let go of anger, make peace quickly, and feel God's smile again.</p>
+</div>
+</div>
+<!-- Book 7: When I Decided I Won't Be Friends with Oliver Anymore -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="When I Decided I Won't Be Friends with Oliver Anymore Book Cover" src="../Images/fh-book2-cover.jpg"/>
+</div>
+<div class="book-description">
+<h3>When I Decided I Won't Be Friends with Oliver Anymore<br/>So That's What "Not Holding a Grudge" Means!</h3>
+<p><strong>Can love start again after friendship breaks?</strong></p>
+<p>When hurt feelings turn heavy, one child learns that real strength isn't in winning … it's in forgiving. Through playful scenes and a whisper of God's voice, readers see that the Father never keeps score; He simply says, "Let's start again."</p>
+<p>A heartfelt reminder for every child that mercy always brings the sunshine back.</p>
+</div>
+</div>
+<!-- Book 8: Why Saying Bad Words To or About Others Makes Everyone Sad -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="Why Saying Bad Words To or About Others Makes Everyone Sad Book Cover" src="../Images/fh-book3-cover.jpg"/>
+</div>
+<div class="book-description">
+<h3>Why Saying Bad Words To or About Others Makes Everyone Sad<br/>So That's What "Guarding Our Tongue" Means!</h3>
+<p><strong>Words can hurt ... or heal.</strong></p>
+<p>After blurting something mean, a young child discovers that words are like colors: some paint gray, others paint joy. With Jesus as the gentle teacher, children learn how the Father's words always bless, never curse.</p>
+<p>A joyful story that helps kids speak kindly, choose bright "heart-colors," and spread love wherever they go.</p>
+</div>
+</div>
+<!-- Book 9: When Thunder Made Me Hide -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="When Thunder Made Me Hide Book Cover" src="../Images/fh-book4-cover.jpg"/>
+</div>
+<div class="book-description">
+<h3>When Thunder Made Me Hide<br/>So That's What "Peace Inside" Means!</h3>
+<p><strong>Even the loudest storm can't shake God's peace.</strong></p>
+<p>When thunder roars, fear whispers, "God is angry." But in the quiet of the child's heart, another voice answers, "I'm here ... always calm, always love."</p>
+<p>This comforting story helps children trade fear for trust and discover that true safety comes from the Father's presence within.</p>
+</div>
+</div>
+<!-- Book 10: When We Made Room at Our Table -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="When We Made Room at Our Table Book Cover" src="../Images/fh-book5-cover.jpg"/>
+</div>
+<div class="book-description">
+<h3>When We Made Room at Our Table<br/>So That's What "Welcome" Means!</h3>
+<p><strong>What happens when we make room for one more?</strong></p>
+<p>A simple bowl of soup becomes a feast of friendship as a family invites new neighbors to share their table. Through warmth and wonder, children learn that love grows by including others ... the way the Father includes everyone.</p>
+<p>A beautiful story of generosity, belonging, and the kind of welcome that feels like home.</p>
+</div>
+</div>
+<!-- Series Intro: The 'Unspoken Hopes and Dreams' Series -->
+<div class="series-intro">
+<h3>The 'Unspoken Hopes and Dreams' Series</h3>
+<p><strong>A whisper. A promise. A lifeline wrapped in verse.</strong></p>
+<p>By Ansilo Boff</p>
+<p>The Unspoken Hopes and Dreams series is a poetic love letter from parent to child ... written before the first breath, the first step, the first word.</p>
+<p>Each book is a tender collection of five-line verses that anchor a child's soul in love, courage, and belonging.</p>
+<p>Perfect for parents to read with little ones aged 3–7, these keepsakes bridge generations and preserve the most sacred moments of early parenthood. Whether you're expecting or already holding your miracle, these books are a timeless gift from your heart to theirs.</p>
+</div>
+<!-- Book 11: Whispers to My Unborn Son – A Mum's Poetic Life Jacket -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="Whispers to My Unborn Son - A Mum's Poetic Life Jacket Book Cover" src="../Images/b1-mum-son2.jpg"/>
+</div>
+<div class="book-description">
+<h3>Whispers to My Unborn Son – A Mum's Poetic Life Jacket</h3>
+<p>Before your son takes his first breath, you've already begun to shape his heart ... with your love, your hope, your dreams for the man he'll become.</p>
+<p>This book captures that sacred whisper.</p>
+<p>Through simple, five-line rhymes and enchanting illustrations, a mother passes on courage, gentleness, and grace.</p>
+<p>A perfect baby shower or bedtime gift ... a keepsake to treasure forever.</p>
+</div>
+</div>
+<!-- Book 12: Whispers to My Unborn Son – A Dad's Poetic Life Jacket -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="Whispers to My Unborn Son - A Dad's Poetic Life Jacket Book Cover" src="../Images/b2-dad-son-cover.jpg"/>
+</div>
+<div class="book-description">
+<h3>Whispers to My Unborn Son – A Dad's Poetic Life Jacket</h3>
+<p>Long before your son opens his eyes, your heartbeat is already teaching him strength and love.</p>
+<p>This book is your voice when words fall short ... a father's legacy in verse.</p>
+<p>Each five-line poem becomes a compass for his soul, guiding him toward truth and tenderness.</p>
+<p>An unforgettable keepsake for new or expecting fathers ... promising wisdom that lasts a lifetime.</p>
+</div>
+</div>
+<!-- Book 13: Whispers to My Unborn Daughter – A Dad's Poetic Life Jacket -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="Whispers to My Unborn Daughter - A Dad's Poetic Life Jacket Book Cover" src="../Images/b3_dad_daughter_cover.jpg"/>
+</div>
+<div class="book-description">
+<h3>Whispers to My Unborn Daughter – A Dad's Poetic Life Jacket</h3>
+<p>A daughter may not remember every word her father says ... but she'll never forget how he made her feel: safe, seen, and loved.</p>
+<p>These verses are his embrace in rhyme ... a father's quiet devotion captured in five lines at a time.</p>
+<p>Each poem plants seeds of confidence, compassion, and strength.</p>
+<p>A heartwarming gift for dads welcoming daughters ... the beginning of a bond that lasts forever.</p>
+</div>
+</div>
+<!-- Book 14: Whispers to My Unborn Daughter – A Mum's Poetic Life Jacket -->
+<div class="book-entry">
+<div class="book-cover">
+<img alt="Whispers to My Unborn Daughter - A Mum's Poetic Life Jacket Book Cover" src="../Images/b4_mum-daughter.jpg"/>
+</div>
+<div class="book-description">
+<h3>Whispers to My Unborn Daughter – A Mum's Poetic Life Jacket</h3>
+<p>Before your daughter sees your face, she already carries your heartbeat within her.</p>
+<p>This book is your soul, written in lullabies.</p>
+<p>Through tender five-line poems and radiant illustrations, a mother weaves lessons of kindness, courage, and freedom.</p>
+<p>A gift every mum-to-be will cherish ... a promise of love wrapped in poetry.</p>
+</div>
+</div>
+</div>
+<div class="container mx-auto px-4">
 
-    <!...... Other Books Section ......>
-    <div class="books-section">
-        <h2>Books By Ansilo Boff</h2>
-
-        <!...... Book 1: Liberating Humanity ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/liberating-humanity-cover.jpg" alt="Liberating Humanity Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>Liberating Humanity: How Jesus Exposed The Evil God Of Moses And Warned Of Paul</h3>
-                <p><strong>You've been worshiping the wrong God!</strong></p>
-                <p>Jesus exposed Him. Paul enshrined Him.</p>
-                <p><strong>Yahweh is not the Father!</strong></p>
-                <p>This book is a wrecking ball.</p>
-                <p>With scripture as evidence, it unmasks Yahweh's commands ... genocide, slavery, child sacrifice ... and the shocking truth that Paul, not Jesus, built Christianity.</p>
-                <p>Our Father's identity has been distorted. As has ours. We'd been neutralized. Mission-accomplished. Potential-stifled.</p>
-                <p>This book splits the cracks wide open: no blood sacrifice required, no "original sin," no counterfeit god. Only the Father Jesus revealed … pure love without terms and conditions. United with us.</p>
-                <p><strong>Raw. Explosive. Liberating.</strong></p>
-            </div>
-        </div>
-
-        <!...... Book 2: Reality Unveiled ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/reality-unveiled-cover.jpg" alt="Reality Unveiled Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>Reality Unveiled: How Jesus Revealed You Are More Powerful Than You Ever Imagined</h3>
-                <p><strong>What if Jesus' most radical teaching wasn't about sin, but about your power to shape reality?</strong></p>
-                <p>In Reality Unveiled, the author takes you beyond religion and into revelation ... where quantum physics, near-death experiences, and ancient wisdom converge to expose the truth: consciousness, not matter, is the foundation of existence.</p>
-                <p>Discover how Jesus' hidden sayings align with cutting-edge science to reveal that "the kingdom of God is within you." You are not a helpless sinner awaiting rescue ... you are a divine co-creator in a conscious universe, capable of manifesting healing, abundance, and transformation through awakened awareness.</p>
-                <p>If you've begun questioning the old stories and are ready to uncover the breathtaking truth of who you really are, turn the page ... and awaken to the universe Jesus knew all along.</p>
-            </div>
-        </div>
-
-        <!...... Book 3: Framing Jesus ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/framing-jesus-cover.jpg" alt="Framing Jesus Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>Framing Jesus: How Ancient Bible Changes Elevated Jesus Beyond Our Reach</h3>
-                <p><strong>Some of what you know of Jesus is a fabrication.</strong></p>
-                <p>Not the man himself, but the story we've been told about him.</p>
-                <p>For centuries, the church has systematically reframed Jesus' radical message, turning a revolutionary teacher of love and liberation into a religious figurehead who supports the very systems he came to dismantle.</p>
-                <p>This book peels back the layers of theological manipulation to reveal the authentic Jesus ... the one who challenged religious authority, championed the marginalized, and taught that the kingdom of God is within you, not in a distant heaven.</p>
-                <p><strong>Discover how parts of his identity were touched up for over 2000 years and why it matters.</strong></p>
-            </div>
-        </div>
-
-        <!...... Book 4: 101 Illustrated Bible Contradictions ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/bible-contradictions-cover-final.jpg" alt="101 Illustrated Bible Contradictions Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>101 Illustrated Bible Contradictions: And 12 Keys To Unlock The Truths These Reveal</h3>
-                <p><strong>What if the Bible's contradictions are clues ... not merely errors?</strong></p>
-                <p>101 Illustrated Bible Contradictions exposes the hidden seams ... verses that clash, timelines that twist, doctrines that collide.</p>
-                <p>But beneath the chaos lies some deeper truths.</p>
-                <p>These cracks reveal two competing images of God: the wrathful Yahweh of Moses versus the loving Father Jesus revealed. And a divided faith ... torn between Jesus' Kingdom of Love and Paul's empire-friendly gospel.</p>
-                <p>In this eye-opening guide, 12 Keys unlock what the contradictions show us ... how Scripture was shaped, edited, and weaponized… and how the Truth still shines through. See the flaws. Find the freedom. Rediscover the Father.</p>
-            </div>
-        </div>
-
-        <!...... Book 5: Escape the Hell Myth ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/Escape-the-hell-myth-cover-final.jpg" alt="Escape the Hell Myth Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>Escape the Hell Myth: Rediscover The Teachings Of Jesus On Love</h3>
-                <p><strong>What if the story of eternal torment isn't from Jesus at all?</strong></p>
-                <p>In Escape the Hell Myth, Ansilo Boff exposes the shocking truth: the doctrine of everlasting punishment was built on mistranslations, theological bias, and fear-based control ... not on the words of Christ.</p>
-                <p>Through deep linguistic study and bold spiritual insight, this book unpacks what Sheol, Hades, Gehenna, and aionios really meant in the original texts, how Jesus' teachings reveal a God of restoration, not retribution, why Yahweh's violent commands contradict the loving Father Jesus revealed, and the breathtaking hope of universal reconciliation ... a divine plan to heal all creation.</p>
-                <p>If you've ever questioned how a loving God could condemn souls to eternal fire, this book will help you escape the lie and rediscover the liberating message of Jesus. Jesus never taught Hell. He revealed a Father who restores, not destroys.</p>
-            </div>
-        </div>
-
-        <!...... Series Intro: The Father's Heart Children's Book Series ......>
-        <div class="series-intro">
-            <h3>The Father's Heart Children's Book Series</h3>
-            <p><strong>See others and God through Jesus' eyes.</strong></p>
-            <p>By Ansilo Boff</p>
-            <p><strong>What if the stories we tell about God helped children feel safe, kind, and deeply loved?</strong></p>
-            <p>In The Father's Heart Series, Ansilo Boff re-introduces children to the gentle, forgiving Father that Jesus revealed ... not a God of punishment or fear, but one of peace, mercy, and inclusion.</p>
-            <p>Through tender storytelling and luminous watercolor illustrations, each book turns everyday moments into spiritual discoveries: forgiving a friend, using kind words, feeling peace during storms, sharing what we have, and welcoming others at our table.</p>
-            <p>Every page helps children (and parents) unlearn fear and rediscover love.</p>
-            <p>Because when we see others ... and God ... through Jesus' eyes, the world becomes a brighter, kinder place.</p>
-            <p>Perfect for bedtime reading, family devotion, or Sunday-school story time, The Father's Heart Series nurtures young hearts to grow in empathy, peace, and joy.</p>
-        </div>
-
-        <!...... Book 6: When My Little Brother Broke My Toy ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/fh-book1-cover.jpg" alt="When My Little Brother Broke My Toy Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>When My Little Brother Broke My Toy<br/>So That's What "Forgive" Means!</h3>
-                <p><strong>What if forgiveness wasn't about payback ... but about love that keeps going?</strong></p>
-                <p>When a child's toy breaks, so does his heart. But through gentle storytelling and bright illustrations, kids discover what Jesus revealed: the Father never punishes or holds grudges ... He only loves and forgives.</p>
-                <p>A tender, hope-filled story that helps children let go of anger, make peace quickly, and feel God's smile again.</p>
-            </div>
-        </div>
-
-        <!...... Book 7: When I Decided I Won't Be Friends with Oliver Anymore ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/fh-book2-cover.jpg" alt="When I Decided I Won't Be Friends with Oliver Anymore Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>When I Decided I Won't Be Friends with Oliver Anymore<br/>So That's What "Not Holding a Grudge" Means!</h3>
-                <p><strong>Can love start again after friendship breaks?</strong></p>
-                <p>When hurt feelings turn heavy, one child learns that real strength isn't in winning … it's in forgiving. Through playful scenes and a whisper of God's voice, readers see that the Father never keeps score; He simply says, "Let's start again."</p>
-                <p>A heartfelt reminder for every child that mercy always brings the sunshine back.</p>
-            </div>
-        </div>
-
-        <!...... Book 8: Why Saying Bad Words To or About Others Makes Everyone Sad ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/fh-book3-cover.jpg" alt="Why Saying Bad Words To or About Others Makes Everyone Sad Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>Why Saying Bad Words To or About Others Makes Everyone Sad<br/>So That's What "Guarding Our Tongue" Means!</h3>
-                <p><strong>Words can hurt ... or heal.</strong></p>
-                <p>After blurting something mean, a young child discovers that words are like colors: some paint gray, others paint joy. With Jesus as the gentle teacher, children learn how the Father's words always bless, never curse.</p>
-                <p>A joyful story that helps kids speak kindly, choose bright "heart-colors," and spread love wherever they go.</p>
-            </div>
-        </div>
-
-        <!...... Book 9: When Thunder Made Me Hide ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/fh-book4-cover.jpg" alt="When Thunder Made Me Hide Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>When Thunder Made Me Hide<br/>So That's What "Peace Inside" Means!</h3>
-                <p><strong>Even the loudest storm can't shake God's peace.</strong></p>
-                <p>When thunder roars, fear whispers, "God is angry." But in the quiet of the child's heart, another voice answers, "I'm here ... always calm, always love."</p>
-                <p>This comforting story helps children trade fear for trust and discover that true safety comes from the Father's presence within.</p>
-            </div>
-        </div>
-
-        <!...... Book 10: When We Made Room at Our Table ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/fh-book5-cover.jpg" alt="When We Made Room at Our Table Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>When We Made Room at Our Table<br/>So That's What "Welcome" Means!</h3>
-                <p><strong>What happens when we make room for one more?</strong></p>
-                <p>A simple bowl of soup becomes a feast of friendship as a family invites new neighbors to share their table. Through warmth and wonder, children learn that love grows by including others ... the way the Father includes everyone.</p>
-                <p>A beautiful story of generosity, belonging, and the kind of welcome that feels like home.</p>
-            </div>
-        </div>
-
-        <!...... Series Intro: The 'Unspoken Hopes and Dreams' Series ......>
-        <div class="series-intro">
-            <h3>The 'Unspoken Hopes and Dreams' Series</h3>
-            <p><strong>A whisper. A promise. A lifeline wrapped in verse.</strong></p>
-            <p>By Ansilo Boff</p>
-            <p>The Unspoken Hopes and Dreams series is a poetic love letter from parent to child ... written before the first breath, the first step, the first word.</p>
-            <p>Each book is a tender collection of five-line verses that anchor a child's soul in love, courage, and belonging.</p>
-            <p>Perfect for parents to read with little ones aged 3-7, these keepsakes bridge generations and preserve the most sacred moments of early parenthood.</p>
-            <p>Whether you're expecting or already holding your miracle, these books are a timeless gift from your heart to theirs.</p>
-        </div>
-
-        <!...... Book 11: Whispers to My Unborn Son ... A Mum's Poetic Life Jacket ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/b1-mum-son2.jpg" alt="Whispers to My Unborn Son ... A Mum's Poetic Life Jacket Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>Whispers to My Unborn Son ... A Mum's Poetic Life Jacket</h3>
-                <p>Before your son takes his first breath, you've already begun to shape his heart ... with your love, your hope, your dreams for the man he'll become.</p>
-                <p>This book captures that sacred whisper.</p>
-                <p>Through simple, five-line rhymes and enchanting illustrations, a mother passes on courage, gentleness, and grace.</p>
-                <p>A perfect baby shower or bedtime gift ... a keepsake to treasure forever.</p>
-            </div>
-        </div>
-
-        <!...... Book 12: Whispers to My Unborn Son ... A Dad's Poetic Life Jacket ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/b2-dad-son-cover.jpg" alt="Whispers to My Unborn Son ... A Dad's Poetic Life Jacket Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>Whispers to My Unborn Son ... A Dad's Poetic Life Jacket</h3>
-                <p>Long before your son opens his eyes, your heartbeat is already teaching him strength and love.</p>
-                <p>This book is your voice when words fall short ... a father's legacy in verse.</p>
-                <p>Each five-line poem becomes a compass for his soul, guiding him toward truth and tenderness.</p>
-                <p>An unforgettable keepsake for new or expecting fathers ... promising wisdom that lasts a lifetime.</p>
-            </div>
-        </div>
-
-        <!...... Book 13: Whispers to My Unborn Daughter ... A Dad's Poetic Life Jacket ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/b3_dad_daughter_cover.jpg" alt="Whispers to My Unborn Daughter ... A Dad's Poetic Life Jacket Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>Whispers to My Unborn Daughter ... A Dad's Poetic Life Jacket</h3>
-                <p>A daughter may not remember every word her father says ... but she'll never forget how he made her feel: safe, seen, and loved.</p>
-                <p>These verses are his embrace in rhyme ... a father's quiet devotion captured in five lines at a time.</p>
-                <p>Each poem plants seeds of confidence, compassion, and strength.</p>
-                <p>A heartwarming gift for dads welcoming daughters ... the beginning of a bond that lasts forever.</p>
-            </div>
-        </div>
-
-        <!...... Book 14: Whispers to My Unborn Daughter ... A Mum's Poetic Life Jacket ......>
-        <div class="book-entry">
-            <div class="book-cover">
-                <img src="../Images/b4-mum-daughter.jpg" alt="Whispers to My Unborn Daughter ... A Mum's Poetic Life Jacket Book Cover"/>
-            </div>
-            <div class="book-description">
-                <h3>Whispers to My Unborn Daughter ... A Mum's Poetic Life Jacket</h3>
-                <p>Before your daughter sees your face, she already carries your heartbeat within her.</p>
-                <p>This book is your soul, written in lullabies.</p>
-                <p>Through tender five-line poems and radiant illustrations, a mother weaves lessons of kindness, courage, and freedom.</p>
-                <p>A gift every mum-to-be will cherish ... a promise of love wrapped in poetry.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container mx-auto px-4">
-        <div class="navigation">
-            <a href="chapter10.xhtml" class="nav-link">← Chapter 10</a>
-            <a href="appendix1.xhtml" class="nav-link">Appendix 1: Glossary of Key Terms →</a>
-            <a href="appendix2.xhtml" class="nav-link">Appendix 2: Bibliography →</a>
-            <a href="toc.xhtml" class="nav-link">Table of Contents</a>
-        </div>
-    </div>
-
-    <footer class="py-8 text-center text-gray-600 mt-12 border-t border-gray-200">
-        <p style="text-align:center;">Copyright © 2025 | "Framing Jesus ... How Ancient Bible Changes Elevated Jesus Beyond our Reach"</p>
-    </footer>
+</div>
+<footer class="py-8 text-center text-gray-600 mt-12 border-t border-gray-200">
+<p style="text-align:center;">Copyright © 2025 | "Framing Jesus — How Ancient Bible Changes Elevated Jesus Beyond our Reach"</p>
+</footer>
+</body>
 </body>
 </html>

@@ -19,7 +19,7 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
             line-height: 1.6;
             color: var(--text-color);
-            background-color: var(--background-color);
+            background-color: #ffffff;
             padding: 0;
             margin: 0;
         }
@@ -29,6 +29,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 1rem;
+            background-color: #ffffff;
         }
 
         /* Add text justification for paragraphs */
@@ -42,6 +43,34 @@
         .callout p, .note p {
             text-align: left;
             text-indent: 0;
+        }
+
+        /* Table of Contents text alignment */
+        .toc p, .toc-part-title, .toc-part-desc, .toc-chapter-link, .toc h2 {
+            text-align: left;
+            text-indent: 0;
+        }
+
+        /* Widen the Table of Contents container */
+        .toc {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 24px 0 rgba(92, 106, 196, 0.10), 0 1.5px 6px 0 rgba(92, 106, 196, 0.08);
+            padding: 2.5rem 1rem;
+            margin: 2rem 0;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        /* Print styles */
+        @media print {
+            .toc {
+                page-break-before: always;
+                box-shadow: none;
+                background: #ffffff;
+            }
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -178,10 +207,10 @@
             background: linear-gradient(135deg, #f7f8fa 60%, #e9eafc 100%);
             border-radius: 1rem;
             box-shadow: 0 2px 12px 0 rgba(92, 106, 196, 0.08);
-            padding: 1.5rem 1.5rem 1rem 1.5rem;
-            min-width: 270px;
-            max-width: 340px;
-            flex: 1 1 270px;
+            padding: 1.5rem 1rem 1rem 1rem;
+            min-width: 500px;
+            max-width: 600px;
+            flex: 1 1 500px;
             display: flex;
             flex-direction: column;
             margin-bottom: 0.5rem;
@@ -239,10 +268,10 @@
             background: linear-gradient(90deg, #e9eafc 60%, #f7f8fa 100%);
             border-radius: 1rem;
             box-shadow: 0 2px 12px 0 rgba(92, 106, 196, 0.08);
-            padding: 1.5rem 1.5rem 1rem 1.5rem;
-            min-width: 270px;
-            max-width: 340px;
-            flex: 1 1 270px;
+            padding: 1.5rem 1rem 1rem 1rem;
+            min-width: 500px;
+            max-width: 600px;
+            flex: 1 1 500px;
             display: flex;
             flex-direction: column;
             margin-bottom: 0.5rem;
@@ -256,10 +285,10 @@
             background: linear-gradient(135deg, #f7f8fa 60%, #e9eafc 100%);
             border-radius: 1rem;
             box-shadow: 0 2px 12px 0 rgba(92, 106, 196, 0.08);
-            padding: 1.5rem 1.5rem 1rem 1.5rem;
-            min-width: 270px;
-            max-width: 340px;
-            flex: 1 1 270px;
+            padding: 1.5rem 1rem 1rem 1rem;
+            min-width: 500px;
+            max-width: 600px;
+            flex: 1 1 500px;
             display: flex;
             flex-direction: column;
             margin-bottom: 0.5rem;
@@ -273,10 +302,10 @@
             background: linear-gradient(135deg, #f7f8fa 60%, #e9eafc 100%);
             border-radius: 1rem;
             box-shadow: 0 2px 12px 0 rgba(92, 106, 196, 0.08);
-            padding: 1.5rem 1.5rem 1rem 1.5rem;
-            min-width: 270px;
-            max-width: 340px;
-            flex: 1 1 270px;
+            padding: 1.5rem 1rem 1rem 1rem;
+            min-width: 500px;
+            max-width: 600px;
+            flex: 1 1 500px;
             display: flex;
             flex-direction: column;
             margin-bottom: 0.5rem;
@@ -287,6 +316,11 @@
             transform: translateY(-4px) scale(1.025);
         }
     </style>
+
+<!-- Add your CSS links here -->
+<link rel="stylesheet" href="style.css" media="all">
+<link rel="stylesheet" href="print.css" media="print">
+
 </head>
 <body>
     <div class="container mx-auto px-4">

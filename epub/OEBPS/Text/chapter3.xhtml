@@ -1,100 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Chapter 3 | Six Voices, One Truth, Zero Tolerance</title>
     <link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
+    <style>
+        body { font-family: Georgia, 'Times New Roman', Times, serif; background: #ffffff; color: #2d3748; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; background: transparent; border-radius: 0; box-shadow: none; }
+        h1 { color: #5c6ac4; font-size: 2.2rem; font-weight: bold; margin-bottom: 1.5rem; text-align: center; }
+        h2 { color: #5c6ac4; font-size: 1.5rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; }
+        p { 
+            text-align: justify; 
+            margin-bottom: 1em;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+        }
+        
+        @media (max-width: 600px) {
+            p {
+                text-align: left;
+            }
+        }
+        .quote { font-style: italic; border-left: 4px solid #f6ad55; padding-left: 1rem; margin: 1.5rem 0; background: #edf2f7; }
+        strong { font-weight: bold; }
+        em { font-style: italic; }
+        th {
+            background-color: var(--callout-bg);
+            color: var(--primary-color);
+            font-size: 1.08rem;
+            font-weight: 600;
+        }
+        .bible-quote {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            font-style: italic;
+            color: #2c5282;
+            background: linear-gradient(to right, #f0f4f8 0%, #e6f0f7 100%);
+            border-left: 4px solid #4299e1;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+            box-shadow: 0 2px 4px rgba(66, 153, 225, 0.1);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        .bible-quote::before {
+            content: '"';
+            font-size: 2.5em;
+            color: #4299e1;
+            position: absolute;
+            margin-left: -0.5rem;
+            margin-top: -0.5rem;
+            opacity: 0.3;
+        }
+        .img-card {
+            background: linear-gradient(135deg, #f7fafc 80%, #e3e8f0 100%);
+            border-radius: 0.85em;
+            box-shadow: 0 4px 24px 0 rgba(92, 106, 196, 0.10), 0 1.5px 6px 0 rgba(92, 106, 196, 0.08);
+            margin: 2em auto 2.5em auto;
+            width: 80%;
+            max-width: 100%;
+            min-width: unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: box-shadow 0.2s, transform 0.2s;
+            overflow: hidden;
+            padding: 0;
+        }
+        .img-card:hover {
+            box-shadow: 0 8px 32px 0 rgba(92, 106, 196, 0.18);
+            transform: translateY(-4px) scale(1.025);
+        }
+        .portrait-img {
+            display: block;
+            margin: 0;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+        }
+        .witness-card {
+            background: linear-gradient(135deg, #fdfeff 0%, #f0f4f8 100%);
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 20px rgba(72, 187, 120, 0.15);
+            padding: 1.75rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(72, 187, 120, 0.2);
+            border-left: 5px solid #48bb78;
+        }
+        .witness-header {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 1rem;
+            gap: 0.75rem;
+        }
+        .witness-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #48bb78;
+            line-height: 1;
+        }
+        .witness-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2c7a5f;
+            flex: 1;
+        }
+        .witness-details {
+            font-size: 0.9rem;
+            color: #718096;
+            font-style: italic;
+            margin-bottom: 1rem;
+            padding-left: 3rem;
+        }
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.5rem;
+            line-height: 0.85;
+            margin: 0.05em 0.1em 0 0;
+            color: #5c6ac4;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mx-auto px-4">
-        <div class="chapter-card">
+<body>
+<div class="container">
 <h1>Chapter 3 | Six Voices, One Truth, Zero Tolerance</h1>
-        <p class="drop-cap"><strong><em>Six witnesses. Six independent testimonies. Six voices from the past, all saying the same thing ... words that no longer exist in your Bible.</em></strong></p>
-        <p class="drop-cap">Imagine a courtroom where six people ... strangers to each other, from different cities, different backgrounds, different centuries ... all testify to witnessing the same event. They didn't coordinate their stories. They didn't compare notes. Yet their accounts align with eerie precision.</p>
-<div class="img-card"><img alt="Six witnesses testifying to the same truth" src="../Images/six-witnesses.jpg" class="portrait-img"/></div>
+<p><strong><em>Six witnesses. Six independent testimonies. Six voices from the past, all saying the same thing ... words that no longer exist in your Bible.</em></strong></p>
+<p class="drop-cap">Imagine a courtroom where six people ... strangers to each other, from different cities, different backgrounds, different centuries ... all testify to witnessing the same event. They didn't coordinate their stories. They didn't compare notes. Yet their accounts align with eerie precision.</p>
+<div class="img-card"><img alt="Six witnesses testifying to the same truth" class="portrait-img" src="../Images/six-witnesses.jpg"/></div>
 <p>That's exactly what we have here.</p>
-        <p>In the shadow-filled manuscript room of Saint Catherine's Monastery at Mount Sinai, where ancient texts sleep in climate-controlled darkness, the <strong>ghost of a deleted theology</strong> lingers. Here, in one of Christianity's oldest continuous libraries, fragments and quotations survive that mainstream Biblical texts have long suppressed ... testimonies to a time when Jesus <strong><em>explicitly subordinated himself to the Father as sole Creator</em></strong>.</p>
+<p>In the shadow-filled manuscript room of Saint Catherine's Monastery at Mount Sinai, where ancient texts sleep in climate-controlled darkness, the <strong>ghost of a deleted theology</strong> lingers. Here, in one of Christianity's oldest continuous libraries, fragments and quotations survive what mainstream Biblical texts have long suppressed: testimonies to a time when Jesus <strong><em>explicitly subordinated himself to the Father as sole Creator</em></strong>.</p>
 <p>Like forensic investigators assembling evidence from scattered witnesses at a crime scene, we now turn to six early Christian sources who quoted Jesus saying words you <strong>won't find in your Bible</strong>: that the Father alone made all things. Not the Son. Not the Spirit. <strong>The Father alone.</strong></p>
-                <div class="witness-card">
-                    <div class="witness-header">
-                        <div class="witness-number">1</div>
-                        <div class="witness-title">Justin Martyr's Testimony</div>
-                    </div>
-                    <div class="witness-details">c. 100-165 CE | Dialogue with Trypho 101</div>
-                    
-                    <div class="bible-quote">
-                        "No one is good except God alone, <strong>who made all things</strong>."
-                    </div>
-                    
-                    <p>Our timeline begins with <strong>Justin Martyr</strong> ... think of him as the Christian world's first major intellectual defender. A pagan philosopher who converted to Christianity, he was writing barely a <strong>century after Jesus' death</strong>. That's like someone today quoting a speech from the 1920s ... close enough to have access to reliable sources, far enough to see patterns emerge.</p>
-                    <p>If you know your Bible, you'll instantly recognize this as based on Mark 10:18 or Luke 18:19. But there's <strong><em>one crucial difference</em></strong>. Grab any modern Bible and look up those verses. They read simply: <em>"No one is good except God alone."</em> Full stop. End of sentence.</p>
-                    <p>Justin's version adds something that's been <strong>surgically removed</strong> from our texts: <strong><em>"who made all things."</em></strong></p>
-                    <p>So which is it? Was Justin <em>inventing</em> words and putting them in Jesus' mouth? Or was he <em>preserving</em> what later editors systematically removed?</p>
-                </div>
-                <div class="witness-card">
-                    <div class="witness-header">
-                        <div class="witness-number">2</div>
-                        <div class="witness-title">Clement of Alexandria</div>
-                    </div>
-                    <div class="witness-details">c. 150-215 CE | Paedagogus 1.8</div>
-                    
-                    <div class="bible-quote">
-                        "No one is good except <strong>my Father in heaven, who made all things</strong>."
-                    </div>
-                    
-                    <p>Now here's where it gets fascinating. <strong>Clement of Alexandria</strong> ... head of the prestigious Catechetical School in Egypt's intellectual capital, basically the Harvard of early Christianity ... <em>independently</em> quotes the exact same expanded verse in his work <em>Paedagogus</em> (The Instructor).</p>
-                    <p><strong>Wait.</strong> Notice what Clement's version adds. Not only does it include <strong><em>"who made all things"</em></strong> (just like Justin), but it also specifies <strong><em>"my Father"</em></strong> rather than the more ambiguous "God alone."</p>
-                    <p>These aren't minor tweaks ... they're <strong>theological bombshells</strong>. Both additions drive home the same point: a clear, unmistakable distinction between Father and Son, with creative power assigned <strong>exclusively to the Father</strong>. Jesus isn't claiming to be the Creator ... he's <em>pointing to</em> the Creator.</p>
-                </div>
-                <div class="witness-card">
-                    <div class="witness-header">
-                        <div class="witness-number">3 & 4</div>
-                        <div class="witness-title">Irenaeus and Hippolytus</div>
-                    </div>
-                    <div class="witness-details">Irenaeus (c. 130-202 CE) | Hippolytus (c. 170-235 CE)</div>
-                    
-                    <p>Remember <strong>Irenaeus</strong> from Chapter 1? The theological Supreme Court justice we met earlier? He <em>explicitly states</em> that Luke's Gospel contained <strong>MULTIPLE instances</strong> ... not just one verse, but <strong><em>multiple passages</em></strong> ... where Jesus "clearly confesses that the Maker of this universe is His Father."</p>
-                    <p>But it gets better. His student <strong>Hippolytus</strong> preserves similar quotations in his <em>Refutation of All Heresies</em>. This is like having both a professor and his graduate student citing the same source material. It shows this wasn't one bishop's <em>idiosyncrasy</em> or personal interpretation ... it was a <strong>recognized textual tradition</strong>, part of the mainstream Gospel text that everyone was reading.</p>
-                </div>
-                <div class="witness-card">
-                    <div class="witness-header">
-                        <div class="witness-number">5</div>
-                        <div class="witness-title">The Pseudo-Clementine Homilies</div>
-                    </div>
-                    <div class="witness-details">Mid-third century | Homily 18.4</div>
-                    
-                    <div class="bible-quote">
-                        "There is one God, <strong>the Father of all, who made the beginning of all things</strong>."
-                    </div>
-                    
-                    <p>Enter a fascinating mid-third-century document: the <strong>Pseudo-Clementine Homilies</strong>. Despite being falsely attributed to Pope Clement I (hence the "Pseudo"), it preserves another independent witness to Jesus' words.</p>
-                    <p>While the wording is adapted slightly, the <strong>core theological formula remains intact</strong>: <strong><em>the Father alone is identified as Creator</em></strong>. Not Jesus. Not a Trinity. Just the Father.</p>
-                </div>
-                <div class="witness-card">
-                    <div class="witness-header">
-                        <div class="witness-number">6</div>
-                        <div class="witness-title">Tertullian's Citation</div>
-                    </div>
-                    <div class="witness-details">c. 155-220 CE | Against Marcion 4.36</div>
-                    
-                    <div class="bible-quote">
-                        "No one is good except one, that is, <strong>the God who made all things</strong>."
-                    </div>
-                    
-                    <p>And finally, even <strong>Tertullian</strong> ... writing from Carthage in North Africa, thousands of miles from Alexandria and Rome ... quotes the expanded version of Jesus' saying in his treatise <em>Against Marcion</em>.</p>
-                    <p>Let that sink in for a moment.</p>
-                    <p>Despite <strong>geographical separation</strong> (Rome, Alexandria, Carthage, Asia Minor), despite <strong>linguistic differences</strong> (Greek, Latin, Syriac), despite <strong>theological variations</strong> (some were more conservative, some more liberal), these six early sources <em>independently preserve</em> a version of Jesus' words that systematically disappears from later manuscripts.</p>
-                    <p>The pattern is <strong><em>too consistent to be coincidental</em></strong>. This isn't six people misremembering the same verse. This is six people all quoting from a textual tradition that <strong>no longer exists</strong>.</p>
-                </div>
+<div class="witness-card">
+<div class="witness-header">
+<div class="witness-number">1</div>
+<div class="witness-title">Justin Martyr's Testimony</div>
+</div>
+<div class="witness-details">c. 100-165 CE | Dialogue with Trypho 101</div>
+<div class="bible-quote">
+                "No one is good except God alone, <strong>who made all things</strong>."
+            </div>
+<p>Our timeline begins with <strong>Justin Martyr</strong> ... think of him as the Christian world's first major intellectual defender. A pagan philosopher who converted to Christianity, he was writing barely a <strong>century after Jesus' death</strong>. That's like someone today quoting a speech from the 1920s ... close enough to have access to reliable sources, far enough to see patterns emerge.</p>
+<p>If you know your Bible, you'll instantly recognize this as based on Mark 10:18 or Luke 18:19. But there's <strong><em>one crucial difference</em></strong>. Grab any modern Bible and look up those verses. They read simply: <em>"No one is good except God alone."</em> Full stop. End of sentence.</p>
+<p>Justin's version adds something that's been <strong>surgically removed</strong> from our texts: <strong><em>"who made all things."</em></strong></p>
+<p>So which is it? Was Justin <em>inventing</em> words and putting them in Jesus' mouth? Or was he <em>preserving</em> what later editors systematically removed?</p>
+</div>
+<div class="witness-card">
+<div class="witness-header">
+<div class="witness-number">2</div>
+<div class="witness-title">Clement of Alexandria</div>
+</div>
+<div class="witness-details">c. 150-215 CE | Paedagogus 1.8</div>
+<div class="bible-quote">
+                "No one is good except <strong>my Father in heaven, who made all things</strong>."
+            </div>
+<p>Now here's where it gets fascinating. <strong>Clement of Alexandria</strong> ... head of the prestigious Catechetical School in Egypt's intellectual capital, basically the Harvard of early Christianity ... <em>independently</em> quotes the exact same expanded verse in his work <em>Paedagogus</em> (The Instructor).</p>
+<p><strong>Wait.</strong> Notice what Clement's version adds. Not only does it include <strong><em>"who made all things"</em></strong> (just like Justin), but it also specifies <strong><em>"my Father"</em></strong> rather than the more ambiguous "God alone."</p>
+<p>These aren't minor tweaks ... they're <strong>theological bombshells</strong>. Both additions drive home the same point: a clear, unmistakable distinction between Father and Son, with creative power assigned <strong>exclusively to the Father</strong>. Jesus isn't claiming to be the Creator ... he's <em>pointing to</em> the Creator.</p>
+</div>
+<div class="witness-card">
+<div class="witness-header">
+<div class="witness-number">3 &amp; 4</div>
+<div class="witness-title">Irenaeus and Hippolytus</div>
+</div>
+<div class="witness-details">Irenaeus (c. 130-202 CE) | Hippolytus (c. 170-235 CE)</div>
+<p>Remember <strong>Irenaeus</strong> from Chapter 1? The theological Supreme Court justice we met earlier? He <em>explicitly states</em> that Luke's Gospel contained <strong>MULTIPLE instances</strong> ... not just one verse, but <strong><em>multiple passages</em></strong> ... where Jesus "clearly confesses that the Maker of this universe is His Father."</p>
+<p>But it gets better. His student <strong>Hippolytus</strong> preserves similar quotations in his <em>Refutation of All Heresies</em>. This is like having both a professor and his graduate student citing the same source material. It shows this wasn't one bishop's <em>idiosyncrasy</em> or personal interpretation ... it was a <strong>recognized textual tradition</strong>, part of the mainstream Gospel text that everyone was reading.</p>
+</div>
+<div class="witness-card">
+<div class="witness-header">
+<div class="witness-number">5</div>
+<div class="witness-title">The Pseudo-Clementine Homilies</div>
+</div>
+<div class="witness-details">Mid-third century | Homily 18.4</div>
+<div class="bible-quote">
+                "There is one God, <strong>the Father of all, who made the beginning of all things</strong>."
+            </div>
+<p>Enter a fascinating mid-third-century document: the <strong>Pseudo-Clementine Homilies</strong>. Despite being falsely attributed to Pope Clement I (hence the "Pseudo"), it preserves another independent witness to Jesus' words.</p>
+<p>While the wording is adapted slightly, the <strong>core theological formula remains intact</strong>: <strong><em>the Father alone is identified as Creator</em></strong>. Not Jesus. Not a Trinity. Just the Father.</p>
+</div>
+<div class="witness-card">
+<div class="witness-header">
+<div class="witness-number">6</div>
+<div class="witness-title">Tertullian's Citation</div>
+</div>
+<div class="witness-details">c. 155-220 CE | Against Marcion 4.36</div>
+<div class="bible-quote">
+                "No one is good except one, that is, <strong>the God who made all things</strong>."
+            </div>
+<p>And finally, even <strong>Tertullian</strong> ... writing from Carthage in North Africa, thousands of miles from Alexandria and Rome ... quotes the expanded version of Jesus' saying in his treatise <em>Against Marcion</em>.</p>
+<p>Let that sink in for a moment.</p>
+<p>Despite <strong>geographical separation</strong> (Rome, Alexandria, Carthage, Asia Minor), despite <strong>linguistic differences</strong> (Greek, Latin, Syriac), despite <strong>theological variations</strong> (some were more conservative, some more liberal), these six early sources <em>independently preserve</em> a version of Jesus' words that systematically disappears from later manuscripts.</p>
+<p>The pattern is <strong><em>too consistent to be coincidental</em></strong>. This isn't six people misremembering the same verse. This is six people all quoting from a textual tradition that <strong>no longer exists</strong>.</p>
+</div>
 <h2>The Pruner's Sharp Blade</h2>
-        <p>Now do this: grab your Bible ... any Bible ... and open it to Mark 10:18 and Luke 18:19. Go ahead, I'll wait.</p>
+<p>Now do this: grab your Bible ... any Bible ... and open it to Mark 10:18 and Luke 18:19. Go ahead, I'll wait.</p>
 <p>Got it? Now read what's actually there in any contemporary translation ... NIV, ESV, KJV, doesn't matter which:</p>
-                <div class="bible-quote">
-                    "No one is good except God alone." (Mark 10:18)
-                </div>
-                <div class="bible-quote">
-                    "No one is good except God alone." (Luke 18:19)
-                </div>
+<div class="bible-quote">
+            "No one is good except God alone." (Mark 10:18)
+        </div>
+<div class="bible-quote">
+            "No one is good except God alone." (Luke 18:19)
+        </div>
 <p><strong>Two decisive clauses have vanished.</strong></p>
 <p>Compare this to what our six witnesses quoted: <strong><em>"my Father"</em></strong> and <strong><em>"who made all things."</em></strong> Gone. Deleted. Erased from history.</p>
 <p>This isn't just an academic footnote. One stroke of the editorial knife <strong>subtly shifts the entire focus</strong> from the Father-Creator to an ambiguous "God" ... allowing later readers to assume Jesus might even be referencing himself. After all, if Jesus <em>is</em> God (as later theology would insist), then maybe he's including himself in that statement.</p>
@@ -103,44 +217,47 @@
 <p>The edited version? It <em>blurs</em> this distinction into a theological fog. If Jesus is himself divine (as later theology insists), then his statement becomes a <strong>subtle claim to divinity</strong> rather than a clear subordination to the Father.</p>
 <p><strong><em>Text serves theology.</em></strong> Always has. Always will.</p>
 <h2>The Pattern Emerges</h2>
-<p>When you lay out these six witnesses alongside surviving manuscripts, a <strong>crystal-clear sequence</strong> emerges-like watching a time-lapse video of something slowly disappearing:</p>
-<ul>
+<p>When you lay out these six witnesses alongside surviving manuscripts, a <strong>crystal-clear sequence</strong> emerges ... like watching a time-lapse video of something slowly disappearing:</p>
+<ul class="list-decimal pl-8 mb-8">
 <li><strong>Stage One:</strong> The original text (attested by multiple early sources across different regions) had Jesus <strong>explicitly identifying his Father as the sole Creator</strong></li>
 <br/>
-<li><strong>Stage Two:</strong> By the late second century, these Father-Creator references begin <strong><em>disappearing from manuscripts</em></strong>...not all at once, but gradually, like a photograph fading in sunlight</li>
+<li><strong>Stage Two:</strong> By the late second century, these Father-Creator references begin <strong><em>disappearing from manuscripts</em></strong> ... not all at once, but gradually, like a photograph fading in sunlight</li>
 <br/>
-<li><strong>Stage Three:</strong> The remaining text becomes <em>ambiguous enough</em> to accommodate evolving doctrine where Jesus shares in creation-mission accomplished</li>
+<li><strong>Stage Three:</strong> The remaining text becomes <em>ambiguous enough</em> to accommodate evolving doctrine where Jesus shares in creation ... mission accomplished</li>
 </ul>
-<div class="img-card"><img alt="Pattern of textual evolution illustration" src="../Images/pattern1.jpg" class="portrait-img"/></div>
-<p>This pattern aligns <strong>perfectly</strong> with broader theological developments. In the earliest Christian communities-especially those with strong Jewish roots-the Father alone was Creator. Jesus was the <em>Messiah</em>, God's appointed Son, absolutely-but <strong>distinct from and subordinate to the Creator</strong>.</p>
-<p>As Christianity spread through Greco-Roman society, this strict delineation began to <em>soften</em> like butter in the Mediterranean sun. Especially in communities influenced by Paul's letters, Jesus began assuming <strong>divine prerogatives</strong>...including creation itself. In Colossians 1:15-16, we read that Christ is <em>"the firstborn over all creation"</em> and that <em>"by him all things were created."</em></p>
-<p>This picture dovetailed <em>perfectly</em> with familiar Greco-Roman mythology, where Zeus begets Apollo or Dionysus, the divine firstborn who fashions or renovates the world. The pagan converts got it instantly-they'd been hearing these kinds of stories their whole lives.</p>
+<div class="img-card"><img alt="Pattern of textual evolution illustration" class="portrait-img" src="../Images/pattern1.jpg"/></div>
+<p>This pattern aligns <strong>perfectly</strong> with broader theological developments. In the earliest Christian communities ... especially those with strong Jewish roots ... the Father alone was Creator. Jesus was the <em>Messiah</em>, God's appointed Son, absolutely ... but <strong>distinct from and subordinate to the Creator</strong>.</p>
+<p>As Christianity spread through Greco-Roman society, this strict delineation began to <em>soften</em> like butter in the Mediterranean sun. Especially in communities influenced by Paul's letters, Jesus began assuming <strong>divine prerogatives</strong> ... including creation itself. In Colossians 1:15-16, we read that Christ is <em>"the firstborn over all creation"</em> and that <em>"by him all things were created."</em></p>
+<p>This picture dovetailed <em>perfectly</em> with familiar Greco-Roman mythology, where Zeus begets Apollo or Dionysus, the divine firstborn who fashions or renovates the world. The pagan converts got it instantly ... they'd been hearing these kinds of stories their whole lives.</p>
+<div class="img-card"><img alt="Greco-Roman mythology and divine hierarchy" class="portrait-img" src="../Images/greek_god.jpg"/></div>
 <p>The Father-only-as-Creator model, by contrast, was <strong>distinctly, stubbornly Jewish</strong>. Monotheistic. Uncompromising. And increasingly <em>problematic</em> as the church moved away from its Jewish roots.</p>
 <h2>The Whispers Between Lines</h2>
 <p>What makes these editorial changes so <strong>devastatingly effective</strong> is their <em>subtlety</em>. There were no dramatic church councils debating whether to delete the Father-Creator clauses. No papal announcements. No theological manifestos. Just scribes, working quietly in monastery scriptoria, "correcting" manuscripts according to what they believed was the <em>evolving theological understanding</em> of their time.</p>
-<p>With each generation, with each new copy, the original readings faded a little more-like a game of telephone played across centuries, where the message gets progressively distorted until it's unrecognizable.</p>
-<p>Yet the evidence <strong>persists</strong> in these six witnesses-scholarly ghosts that <em>refuse to be silenced</em>, testifying to a version of Christianity where Jesus himself drew <strong>clear, non-negotiable boundaries</strong> between his identity and the Father's creative role.</p>
-                <div class="bible-quote">
-                    <strong>John 14:28</strong><br/>
-                    "The Father is <strong>greater than I</strong>."
-                </div>
-                
-                <div class="bible-quote">
-                    <strong>John 17:3</strong><br/>
-                    "This is eternal life, that they may know you, <strong>the only true God</strong>, and Jesus Christ whom you have sent."
-                </div>
-<p>These surviving textual fragments are like <strong>geological fault lines</strong>...visible cracks that reveal the massive theological earthquakes that reshaped Christianity's landscape, transforming it from a Jewish messianic movement into a Greco-Roman mystery religion.</p>
-<p>As we move into Part II, we'll examine how Paul's <strong>cosmic Christ concept</strong> directly challenged Jesus' own words about the Father. We'll explore how scribal decisions-made quietly, deliberately, confidently-gradually elevated the Son to the Father's status, creating a theological trajectory that would eventually climax in the Trinitarian doctrine we know today.</p>
-<p><strong>But never forget this:</strong> six early witnesses preserve what mainstream manuscripts erased-Jesus <strong><em>explicitly identifying his Father alone as Creator of all</em></strong>. Six voices. One message. And a conspiracy of silence that has lasted two thousand years.</p>
-                <div style="background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%); border-left: 4px solid #4299e1; padding: 1.5rem; margin: 2rem 0; border-radius: 0.5rem;">
-                    <h3 style="color: #2c5282; margin-top: 0; margin-bottom: 1rem;">Chapter Summary</h3>
-                    <ul style="margin: 0; padding-left: 1.5rem;">
-                        <li>Six early Christian witnesses (Justin Martyr, Irenaeus, Clement, Hippolytus, Novatian, Tertullian) independently quoted Jesus identifying "the Father as Creator of all"</li>
-                        <li>These writers were separated by geography, theology, and time-yet all preserved the same Father-Creator formula</li>
-                        <li>This phrase systematically disappeared from later Gospel manuscripts as Jesus's divine status was elevated to co-Creator</li>
-                        <li>The pattern is undeniable: multiple independent sources preserve what no longer exists in our Bibles today</li>
-                    </ul>
-                        </div>
-    </div>
+<p>With each generation, with each new copy, the original readings faded a little more ... like a game of telephone played across centuries, where the message gets progressively distorted until it's unrecognizable.</p>
+<p>Yet the evidence <strong>persists</strong> in these six witnesses ... scholarly ghosts that <em>refuse to be silenced</em>, testifying to a version of Christianity where Jesus himself drew <strong>clear, non-negotiable boundaries</strong> between his identity and the Father's creative role.</p>
+<p>And even where the original text has been pruned away, <strong>significant theological echoes remain</strong>. Consider John's Gospel ... despite being the most "divine Jesus" of all four Gospels, despite its high Christology that makes Jesus sound almost god-like ... even <em>John</em> preserves Jesus saying:</p>
+<div class="bible-quote">
+<strong>John 14:28</strong><br/>
+            "The Father is <strong>greater than I</strong>."
+        </div>
+<div class="bible-quote">
+<strong>John 17:3</strong><br/>
+            "This is eternal life, that they may know you, <strong>the only true God</strong>, and Jesus Christ whom you have sent."
+        </div>
+<p>These surviving textual fragments are like <strong>geological fault lines</strong> ... visible cracks that reveal the massive theological earthquakes that reshaped Christianity's landscape, transforming it from a Jewish messianic movement into a Greco-Roman mystery religion.</p>
+<p>As we move into Part II, we'll examine how Paul's <strong>cosmic Christ concept</strong> directly challenged Jesus' own words about the Father. We'll explore how scribal decisions ... made quietly, deliberately, confidently ... gradually elevated the Son to the Father's status, creating a theological trajectory that would eventually climax in the Trinitarian doctrine we know today.</p>
+<p><strong>But never forget this:</strong> six early witnesses preserve what mainstream manuscripts erased ... Jesus <strong><em>explicitly identifying his Father alone as Creator of all</em></strong>. Six voices. One message. And a conspiracy of silence that has lasted two thousand years.</p>
+<div style="background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%); border-left: 4px solid #4299e1; padding: 1.5rem; margin: 2rem 0; border-radius: 0.5rem;">
+<h3 style="color: #2c5282; margin-top: 0; margin-bottom: 1rem;">Chapter Summary</h3>
+<ul style="margin: 0; padding-left: 1.5rem;">
+<li>Six early Christian witnesses (Justin Martyr, Irenaeus, Clement, Hippolytus, Novatian, Tertullian) independently quoted Jesus identifying "the Father as Creator of all"</li>
+<li>These writers were separated by geography, theology, and time ... yet all preserved the same Father-Creator formula</li>
+<li>This phrase systematically disappeared from later Gospel manuscripts as Jesus's divine status was elevated to co-Creator</li>
+<li>The pattern is undeniable: multiple independent sources preserve what no longer exists in our Bibles today</li>
+</ul>
+</div>
+
+</div>
+</body>
 </body>
 </html>

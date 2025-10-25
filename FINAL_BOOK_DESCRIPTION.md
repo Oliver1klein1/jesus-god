@@ -266,3 +266,6 @@ Ancient manuscripts prove Bible verses were changed to elevate Jesus from subord
 
 
 
+
+
+

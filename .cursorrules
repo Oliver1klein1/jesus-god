@@ -1,0 +1,183 @@
+# EPUB Conversion Rules for Book Publishing
+
+## Overview
+These rules ensure consistent, high-quality EPUB generation from HTML source files while preserving all styling, classes, and formatting.
+
+## EPUB Conversion Workflow
+
+### 1. Always Use Enhanced Conversion Script
+When converting HTML files to EPUB format, ALWAYS use the enhanced conversion script:
+```bash
+python create_epub_enhanced.py
+```
+
+**Never use basic conversion scripts** that strip CSS classes or inline styles.
+
+### 2. Mandatory Verification Step
+After conversion, ALWAYS run verification to ensure content integrity:
+```bash
+python verify_epub_conversion.py
+```
+
+This script checks:
+- CSS class preservation
+- Inline style preservation  
+- Image count matching
+- Bible quote formatting
+- Navigation element removal (appropriate for EPUB)
+
+### 3. Final EPUB Creation
+Only create the final EPUB after verification passes:
+```bash
+python create_final_epub.py
+```
+
+## Required Scripts for Every Book Project
+
+### Core Scripts (Must Exist)
+1. **`create_epub_enhanced.py`** - Enhanced conversion with style preservation
+2. **`verify_epub_conversion.py`** - Automatic verification of HTML vs XHTML
+3. **`create_final_epub.py`** - Final EPUB creation with proper structure
+
+### Script Requirements
+- All scripts must preserve CSS classes and inline styles
+- Navigation elements should be removed for EPUB (but preserved in HTML)
+- Image paths must be converted to EPUB format (`../Images/filename`)
+- XHTML structure must be valid and EPUB-compliant
+
+## HTML File Standards
+
+### Required Structure
+- All HTML files must have proper `<head>` sections with CSS
+- Bible quotes must use `class="bible-quote"` for proper styling
+- Images must have proper `src` attributes
+- Navigation elements should use `class="navigation"` and `class="nav-link"`
+
+### CSS Class Standards
+- **Bible quotes**: Always use `class="bible-quote"`
+- **Callouts/Highlights**: Use descriptive class names
+- **Navigation**: Use `class="navigation"` and `class="nav-link"`
+- **Styling**: Preserve all inline styles and CSS classes
+
+## EPUB Directory Structure
+```
+epub/
+├── META-INF/
+│   └── container.xml
+├── mimetype
+└── OEBPS/
+    ├── content.opf
+    ├── nav.xhtml
+    ├── toc.ncx
+    ├── Styles/
+    │   └── style.css
+    ├── Images/
+    │   └── [all image files]
+    └── Text/
+        └── [all .xhtml files]
+```
+
+## Quality Assurance Checklist
+
+### Before EPUB Creation
+- [ ] All HTML files have proper CSS classes
+- [ ] Bible quotes use `bible-quote` class
+- [ ] Images are properly referenced
+- [ ] Navigation elements are present in HTML (will be removed for EPUB)
+
+### After Conversion
+- [ ] Verification script shows "Perfect matches" for all files
+- [ ] No missing CSS classes in XHTML files
+- [ ] Inline styles preserved (accounting for navigation removal)
+- [ ] Image counts match between HTML and XHTML
+- [ ] Bible quote classes preserved
+
+### Final EPUB
+- [ ] EPUB structure verification passes
+- [ ] All required files present (mimetype, container.xml, etc.)
+- [ ] Images properly linked
+- [ ] CSS styling renders correctly in EPUB readers
+
+## Error Handling
+
+### If Verification Fails
+1. **Do NOT create final EPUB** until issues are resolved
+2. Check specific error messages from verification script
+3. Compare HTML source with XHTML output manually
+4. Fix conversion script if needed
+5. Re-run conversion and verification
+
+### Common Issues
+- **Missing CSS classes**: Check conversion script preserves all classes
+- **Inline style mismatches**: Usually navigation elements (expected)
+- **Image path issues**: Ensure proper EPUB path conversion
+- **Bible quote styling**: Verify `bible-quote` class is preserved
+
+## File Naming Conventions
+
+### HTML Files
+- `introduction.html`
+- `chapter1.html`, `chapter2.html`, etc.
+- `part1.html`, `part2.html`, etc.
+- `conclusion.html`
+- `appendix1.html`, `appendix2.html`, etc.
+
+### EPUB Files
+- `[BookName]_Final.epub` - Final EPUB file
+- `epub/` - Source directory for EPUB creation
+
+## Automation Commands
+
+### Complete EPUB Workflow
+```bash
+# 1. Convert HTML to XHTML with style preservation
+python create_epub_enhanced.py
+
+# 2. Verify conversion integrity
+python verify_epub_conversion.py
+
+# 3. Create final EPUB (only if verification passes)
+python create_final_epub.py
+```
+
+### Quick Check
+```bash
+# Verify current EPUB matches HTML sources
+python verify_epub_conversion.py
+```
+
+## Best Practices
+
+1. **Always verify before finalizing** - Never skip the verification step
+2. **Preserve all styling** - EPUB should look identical to HTML
+3. **Test in multiple readers** - Verify styling works across devices
+4. **Keep scripts updated** - Ensure scripts work with latest HTML changes
+5. **Document any customizations** - Note any project-specific modifications
+
+## Troubleshooting
+
+### Script Not Found
+- Ensure all three scripts exist in project root
+- Check file permissions allow execution
+- Verify Python environment is working
+
+### Conversion Issues
+- Check HTML files are valid
+- Ensure CSS classes are properly formatted
+- Verify image files exist and are accessible
+
+### Verification Failures
+- Review specific error messages
+- Compare HTML and XHTML files manually
+- Check for navigation elements (should be removed)
+- Verify image counts match
+
+## Success Criteria
+- ✅ All files pass verification with "Perfect matches"
+- ✅ Bible quotes display with proper styling
+- ✅ All CSS classes and inline styles preserved
+- ✅ Images properly linked and displayed
+- ✅ EPUB structure meets standards
+- ✅ Final EPUB file created successfully
+
+Remember: **Quality over speed** - Always verify before finalizing EPUB files.

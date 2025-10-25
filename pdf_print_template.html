@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Print Template</title>
+    <style>
+        /* Screen styles */
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navigation {
+            background: #007bff;
+            padding: 1rem;
+            margin: -2rem -2rem 2rem -2rem;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        
+        .bible-quote {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            font-style: italic;
+            color: #2c5282;
+            background: linear-gradient(to right, #f0f4f8 0%, #e6f0f7 100%);
+            border-left: 4px solid #4299e1;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+            box-shadow: 0 2px 4px rgba(66, 153, 225, 0.1);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-left: 4px solid #0ea5e9;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+            box-shadow: 0 2px 8px rgba(14, 165, 233, 0.1);
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        /* Print styles */
+        @media print {
+            @page {
+                size: 16in 9in;
+                margin: 1in;
+            }
+            
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 12pt;
+                line-height: 1.6;
+                color: #000;
+                background: #fff;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .container {
+                max-width: none;
+                margin: 0;
+                padding: 0;
+                background: transparent;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .navigation,
+            .nav-link {
+                display: none !important;
+            }
+            
+            .bible-quote {
+                font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+                font-style: italic;
+                color: #2c5282;
+                background: #f0f4f8;
+                border-left: 4px solid #4299e1;
+                padding: 1.2rem 1.5rem;
+                margin: 1.5rem 0;
+                border-radius: 0 0.5rem 0.5rem 0;
+                page-break-inside: avoid;
+                box-shadow: none;
+            }
+            
+            .highlight {
+                background: #f8f9fa;
+                border-left: 4px solid #007bff;
+                padding: 1rem;
+                margin: 1rem 0;
+                page-break-inside: avoid;
+                box-shadow: none;
+            }
+            
+            h1, h2, h3, h4, h5, h6 {
+                page-break-after: avoid;
+                page-break-inside: avoid;
+                color: #2d3748;
+            }
+            
+            h1 {
+                font-size: 18pt;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+            
+            h2 {
+                font-size: 16pt;
+                margin-top: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            p, li {
+                page-break-inside: avoid;
+                orphans: 3;
+                widows: 3;
+                margin-bottom: 0.5rem;
+                text-align: justify;
+            }
+            
+            img {
+                max-width: 100% !important;
+                height: auto !important;
+                page-break-inside: avoid;
+                display: block;
+                margin: 1rem auto;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <a href="#" class="nav-link">← Previous</a>
+            <a href="#" class="nav-link">Table of Contents</a>
+            <a href="#" class="nav-link">Next →</a>
+        </div>
+        
+        <h1>PDF Print Template</h1>
+        
+        <p>This template demonstrates how HTML content will appear when printed to PDF. The navigation elements will be hidden, and all styling will be preserved for professional print output.</p>
+        
+        <h2>Bible Quote Example</h2>
+        
+        <div class="bible-quote">
+            "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."<br><br>
+            — John 3:16
+        </div>
+        
+        <h2>Highlight Box Example</h2>
+        
+        <div class="highlight">
+            <p><strong>Important Note:</strong> This is a highlighted callout box that will maintain its styling in the PDF output. The background color and border will be preserved for print.</p>
+        </div>
+        
+        <h2>Page Break Example</h2>
+        
+        <p>This content appears before a forced page break. The next section will start on a new page when printed.</p>
+        
+        <div class="page-break"></div>
+        
+        <h2>Content After Page Break</h2>
+        
+        <p>This content appears after the page break. In the PDF, this will start on a new page, demonstrating proper page break control.</p>
+        
+        <h2>Typography Examples</h2>
+        
+        <p>This paragraph demonstrates <strong>bold text</strong>, <em>italic text</em>, and <u>underlined text</u>. All formatting will be preserved in the PDF output.</p>
+        
+        <ul>
+            <li>First list item with proper formatting</li>
+            <li>Second list item with proper formatting</li>
+            <li>Third list item with proper formatting</li>
+        </ul>
+        
+        <h2>Another Bible Quote</h2>
+        
+        <div class="bible-quote">
+            "The Lord is my shepherd, I lack nothing. He makes me lie down in green pastures, he leads me beside quiet waters, he refreshes my soul."<br><br>
+            — Psalm 23:1-3
+        </div>
+        
+        <p>This template shows how your book content will look when converted to PDF. All the styling, formatting, and layout will be preserved while navigation elements are properly hidden for print.</p>
+    </div>
+</body>
+</html>

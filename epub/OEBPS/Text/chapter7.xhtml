@@ -1,45 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Chapter 7 | Royal Blood, Broken Chain</title>
     <link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
+    <style>
+        :root {
+            --primary-color: #5c6ac4;
+            --secondary-color: #e53e3e;
+            --accent-color: #f6ad55;
+            --text-color: #2d3748;
+            --background-color: #f7fafc;
+            --callout-bg: #edf2f7;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #ffffff;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        h1 {
+            color: #5c6ac4;
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: var(--callout-bg);
+            border-radius: 0.5rem;
+        }
+
+        .nav-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            line-height: 1.8;
+        }
+        
+        .content p {
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+        }
+        
+        @media (max-width: 600px) {
+            .content p {
+                text-align: left;
+            }
+        }
+
+        .chapter-card p {
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+        }
+        
+        @media (max-width: 600px) {
+            .chapter-card p {
+                text-align: left;
+            }
+        }
+
+        .quote {
+            font-style: italic;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1rem;
+            margin: 2rem 0;
+        }
+
+        .footnote {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+        }
+        
+        .scripture-card {
+            background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%);
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 20px rgba(66, 153, 225, 0.15);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid rgba(66, 153, 225, 0.2);
+            border-left: 5px solid #4299e1;
+        }
+        
+        .scripture-reference {
+            font-weight: bold;
+            color: #2c5282;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .scripture-text {
+            font-style: italic;
+            color: #2d3748;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        .img-card {
+            background: linear-gradient(135deg, #f7fafc 80%, #e3e8f0 100%);
+            border-radius: 0.85em;
+            box-shadow: 0 4px 24px 0 rgba(92, 106, 196, 0.10), 0 1.5px 6px 0 rgba(92, 106, 196, 0.08);
+            margin: 2em auto 2.5em auto;
+            width: 80%;
+            max-width: 100%;
+            min-width: unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: box-shadow 0.2s, transform 0.2s;
+            overflow: hidden;
+            padding: 0;
+        }
+        
+        .img-card:hover {
+            box-shadow: 0 8px 32px 0 rgba(92, 106, 196, 0.18);
+            transform: translateY(-4px) scale(1.025);
+        }
+        
+        .portrait-img {
+            display: block;
+            margin: 0;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+        }
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.5rem;
+            line-height: 0.85;
+            margin: 0.05em 0.1em 0 0;
+            color: #5c6ac4;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mx-auto px-4">
-        <div class="chapter-card">
+<body>
+<div class="container mx-auto px-4">
+<div class="chapter-card">
 <h1>Chapter 7 | Royal Blood, Broken Chain</h1>
-<p><strong><em>Two family trees tell completely different stories about Jesus's ancestry. One is missing kings, the other has extra generations. Both can't be right-but both serve the same theological purpose.</em></strong></p>
-<p class="drop-cap">Imagine sitting down with your grandfather who proceeds to tell you have <strong>two completely different genealogies</strong>...one tracing through your father's side, the other through your mother's. That's normal enough. But what if both claimed to trace the <em>same</em> lineage? What if one said your great-grandfather was John Smith and the other insisted it was Robert Johnson? What if the dates didn't match, the names didn't align, and the math simply didn't add up?</p>
-<p>That's exactly what we find in the New Testament-and it's not a minor detail. It's a <strong>fundamental contradiction</strong> that strikes at the heart of Jesus's messianic credentials. We pointed out this contradiction earlier in the book's opening chapter. Here we'll explore a little deeper to try to understand why this came about.</p>
+<div class="content my-8">
+<p><strong><em>Two family trees tell completely different stories about Jesus's ancestry. One is missing kings, the other has extra generations. Both can't be right ... but both serve the same theological purpose.</em></strong></p>
+<p class="drop-cap">Imagine sitting down with your grandfather who proceeds to tell you have <strong>two completely different genealogies</strong> ... one tracing through your father's side, the other through your mother's. That's normal enough. But what if both claimed to trace the <em>same</em> lineage? What if one said your great-grandfather was John Smith and the other insisted it was Robert Johnson? What if the dates didn't match, the names didn't align, and the math simply didn't add up?</p>
+<p>That's exactly what we find in the New Testament ... and it's not a minor detail. It's a <strong>fundamental contradiction</strong> that strikes at the heart of Jesus's messianic credentials. We pointed out this contradiction earlier in the book's opening chapter. Here we'll explore a little deeper to try to understand why this came about.</p>
 <div class="scripture-card">
 <div class="scripture-reference">Matthew 1:1</div>
 <div class="scripture-text">"The book of the genealogy of Jesus Christ, the son of David, the son of Abraham."</div>
 </div>
-<p>Matthew opens his Gospel with this bold claim: Jesus is the <strong>son of David</strong>, the long-awaited Messiah. But to prove this, he needs to show Jesus's royal bloodline through Solomon-and that's where things get <em>interesting</em>.</p>
+<p>Matthew opens his Gospel with this bold claim: Jesus is the <strong>son of David</strong>, the long-awaited Messiah. But to prove this, he needs to show Jesus's royal bloodline through Solomon ... and that's where things get <em>interesting</em>.</p>
 <h2>The Numbers Game</h2>
-<p>Matthew doesn't just list names-he creates a <strong>mathematical masterpiece</strong>. He divides Jesus's ancestry into three neat sections, each containing exactly fourteen generations. It's like a perfectly balanced equation:</p>
+<p>Matthew doesn't just list names ... he creates a <strong>mathematical masterpiece</strong>. He divides Jesus's ancestry into three neat sections, each containing exactly fourteen generations. It's like a perfectly balanced equation:</p>
 <div class="scripture-card">
 <div class="scripture-reference">Matthew 1:17</div>
 <div class="scripture-text">"So all the generations from Abraham to David are fourteen generations; from David to the deportation to Babylon, fourteen generations; and from the deportation to Babylon to the Christ, fourteen generations."</div>
 </div>
-<p>Beautiful symmetry. Perfect balance. <strong>14-14-14</strong>...like a divine mathematical code.</p>
+<p>Beautiful symmetry. Perfect balance. <strong>14-14-14</strong> ... like a divine mathematical code.</p>
 <p>As we pointed out in the 'Introduction' chapter ... when you actually <em>count</em> the names in that final section, you only find <strong>thirteen</strong>.</p>
-<p>This isn't a typo. It's not a counting error. It's the first clue that something deeper is happening here-something that has nothing to do with historical accuracy and everything to do with <strong>theological messaging</strong>.</p>
+<p>This isn't a typo. It's not a counting error. It's the first clue that something deeper is happening here ... something that has nothing to do with historical accuracy and everything to do with <strong>theological messaging</strong>.</p>
 <h2>The Vanishing Kings</h2>
-<p>But the problems run deeper than missing generations. In the second section-David to Babylonian exile-Matthew claims fourteen generations, but the historical record shows <strong>seventeen kings</strong> ruled during this period.</p>
+<p>But the problems run deeper than missing generations. In the second section ... David to Babylonian exile ... Matthew claims fourteen generations, but the historical record shows <strong>seventeen kings</strong> ruled during this period.</p>
 <p>Three kings simply <em>disappear</em> from Matthew's list:</p>
 <ul class="list-disc pl-8 mb-8">
 <li><strong>Ahaziah</strong> (reigned 1 year)</li>
 <li><strong>Joash</strong> (reigned 40 years)</li>
 <li><strong>Amaziah</strong> (reigned 29 years)</li>
 </ul>
-<p>That's <strong>seventy years</strong> of royal history-gone. Poof. Like they never existed.</p>
-<p>Matthew jumps directly from Jehoram to Uzziah, claiming "Jehoram begat Uzziah." But historically, Jehoram was Uzziah's <em>great-great-grandfather</em>. It's like saying your grandfather was your father-the family tree doesn't work that way.</p>
-<p>Why would Matthew do this? Because he needed that perfect <strong>14-14-14</strong> pattern. The number fourteen wasn't random-in Hebrew numerology, the name David (דוד) equals fourteen. Three sets of fourteen generations proclaimed Jesus as the <strong>thrice-perfect son of David</strong>.</p>
+<p>That's <strong>seventy years</strong> of royal history ... gone. Poof. Like they never existed.</p>
+<p>Matthew jumps directly from Jehoram to Uzziah, claiming "Jehoram begat Uzziah." But historically, Jehoram was Uzziah's <em>great-great-grandfather</em>. It's like saying your grandfather was your father ... the family tree doesn't work that way.</p>
+<p>Why would Matthew do this? Because he needed that perfect <strong>14-14-14</strong> pattern. The number fourteen wasn't random ... in Hebrew numerology, the name David (דוד) equals fourteen. Three sets of fourteen generations proclaimed Jesus as the <strong>thrice-perfect son of David</strong>.</p>
 <p>Theology trumped history. Symbolism beat accuracy. The message mattered more than the math.</p>
 <h2>When Two Stories Collide</h2>
-<p>But here's where it gets really interesting. Luke also wrote a genealogy for Jesus-and it tells a <strong>completely different story</strong>.</p>
+<p>But here's where it gets really interesting. Luke also wrote a genealogy for Jesus ... and it tells a <strong>completely different story</strong>.</p>
 <p>Let's compare just the differences between David and Jesus:</p>
 <ul class="list-disc pl-8 mb-8">
 <li><strong>Different fathers for Joseph:</strong> Matthew says Jacob; Luke says Heli</li>
@@ -47,9 +219,9 @@
 <li><strong>Different generation counts:</strong> Matthew lists 28 generations; Luke lists 43</li>
 <li><strong>Different names:</strong> Between David and Jesus, only two names appear in both lists</li>
 </ul>
-<div class="img-card"><img alt="Comparing Matthew and Luke's genealogies from David to Jesus" src="../Images/c003-jesus-david-lineage.jpg" class="portrait-img"/></div>
+<div class="img-card"><img alt="Comparing Matthew and Luke's genealogies from David to Jesus" class="portrait-img" src="../Images/c003-jesus-david-lineage.jpg"/></div>
 <p>These aren't minor discrepancies. These are <strong>fundamental contradictions</strong>.</p>
-<p>Most strikingly, Luke counts <strong>18 generations</strong> from Zerubbabel to Jesus where Matthew counts only <strong>9</strong>. That's not a rounding error-that's a mathematical impossibility if both are accurate.</p>
+<p>Most strikingly, Luke counts <strong>18 generations</strong> from Zerubbabel to Jesus where Matthew counts only <strong>9</strong>. That's not a rounding error ... that's a mathematical impossibility if both are accurate.</p>
 <p>So which genealogy is correct? The answer might surprise you: <strong>probably neither</strong>.</p>
 <h2>The Theological Tightrope</h2>
 <p>Here's the deeper problem. Both genealogies face the same <strong>impossible theological bind</strong>:</p>
@@ -58,9 +230,9 @@
 <div class="scripture-reference">Rabbi Shraga Simmons</div>
 <div class="scripture-text">"There is no biblical basis for the idea of a father passing on his tribal line by adoption. A priest who adopts a son from another tribe cannot make him a priest by adoption."</div>
 </div>
-<p>But if Jesus was born of a virgin-if Joseph wasn't his biological father-then <strong>neither genealogy establishes his Davidic descent</strong>, regardless of their historical accuracy.</p>
+<p>But if Jesus was born of a virgin ... if Joseph wasn't his biological father ... then <strong>neither genealogy establishes his Davidic descent</strong>, regardless of their historical accuracy.</p>
 <p>It's an impossible choice: either Jesus is Joseph's biological son (contradicting virgin birth) or he isn't a blood descendant of David (contradicting messianic requirements).</p>
-<p>Both genealogies try to solve this problem, but they solve it differently-and incompatibly.</p>
+<p>Both genealogies try to solve this problem, but they solve it differently ... and incompatibly.</p>
 <h2>The Manuscript Trail</h2>
 <p>The contradictions don't stop there. The earliest manuscripts reveal even more complexity:</p>
 <ul class="list-disc pl-8 mb-8">
@@ -68,17 +240,17 @@
 <li>The Syriac Sinaiticus (c.160 CE) presents Matthew's genealogy with <strong>"Joseph begat Jesus"</strong></li>
 <li>Various manuscripts attempt harmonizations, adding explanatory notes</li>
 </ul>
-<p>These variations suggest the genealogies weren't fixed elements of the original Jesus tradition but <strong>later constructions</strong>...constructions that evolved as theological needs changed.</p>
+<p>These variations suggest the genealogies weren't fixed elements of the original Jesus tradition but <strong>later constructions</strong> ... constructions that evolved as theological needs changed.</p>
 <h2>Why This Matters</h2>
 <p>These aren't academic curiosities. They reveal something crucial about how early Christianity developed:</p>
-<p>As Christianity spread beyond its Jewish origins, proving Jesus's Davidic lineage became increasingly important. Creating genealogies-even imperfect ones-provided a response to Jewish objections that Jesus couldn't be Messiah without proper ancestry.</p>
+<p>As Christianity spread beyond its Jewish origins, proving Jesus's Davidic lineage became increasingly important. Creating genealogies ... even imperfect ones ... provided a response to Jewish objections that Jesus couldn't be Messiah without proper ancestry.</p>
 <p>But the genealogies also had to accommodate developing theology. If Joseph wasn't Jesus's biological father, how could Jesus claim Davidic descent? Matthew addresses this by making Joseph Jesus's legal father through a royal genealogy. Luke possibly traces Mary's lineage (though the text explicitly names Joseph).</p>
 <p>The result? <strong>Two competing family trees</strong> that can't both be historically accurate but both serve theological purposes.</p>
 <h2>The Scholarly Reality</h2>
 <p>Even conservative Christian scholars acknowledge these problems. Craig Keener admits Matthew's list is "plainly incomplete." R.T. France notes the genealogy is "schematic rather than comprehensive." Raymond Brown concludes both genealogies are "artificial" and "of no historical value in determining Jesus's ancestry."</p>
-<p>These aren't radical positions. They're mainstream scholarly recognitions that the genealogies serve <strong>theological rather than historical purposes</strong>...they're statements about who Jesus is theologically, not factual family trees.</p>
+<p>These aren't radical positions. They're mainstream scholarly recognitions that the genealogies serve <strong>theological rather than historical purposes</strong> ... they're statements about who Jesus is theologically, not factual family trees.</p>
 <h2>The Curse That Couldn't Be Ignored</h2>
-<p>But there's another problem lurking in Matthew's genealogy-one that makes the virgin birth issue even more complicated. Matthew traces Jesus's lineage through <strong>Jeconiah</strong> (also called Jehoiakim or Coniah), a king who carried a devastating curse.</p>
+<p>But there's another problem lurking in Matthew's genealogy ... one that makes the virgin birth issue even more complicated. Matthew traces Jesus's lineage through <strong>Jeconiah</strong> (also called Jehoiakim or Coniah), a king who carried a devastating curse.</p>
 <p>In Jeremiah 22:30, God pronounces judgment on this king:</p>
 <div class="scripture-card">
 <div class="scripture-reference">Jeremiah 22:30</div>
@@ -86,29 +258,29 @@
 </div>
 <p>Read that carefully. God declares that <strong>no descendant of Jeconiah</strong> would ever sit on David's throne. Yet Matthew's genealogy runs directly through Jeconiah to get to Jesus.</p>
 <p>This creates an impossible bind: If Jesus is Joseph's biological son descended through Solomon and Jeconiah, he's <em>disqualified</em> from being the Messiah by the curse. If Jesus isn't Joseph's biological son (virgin birth), he's <em>disqualified</em> from Davidic descent by Jewish law.</p>
-<p>Luke's genealogy appears to sidestep this problem by tracing through <strong>Nathan</strong> (David's other son) instead of Solomon-thereby avoiding the cursed royal line entirely. But this creates its own problem: Nathan's line wasn't the <em>royal</em> line. The Messiah was expected to come through the <strong>throne of Solomon</strong>, not through a non-ruling branch of David's family.</p>
-<p>So we're left with two genealogies, each trying to solve problems the other creates-neither fully succeeding.</p>
+<p>Luke's genealogy appears to sidestep this problem by tracing through <strong>Nathan</strong> (David's other son) instead of Solomon ... thereby avoiding the cursed royal line entirely. But this creates its own problem: Nathan's line wasn't the <em>royal</em> line. The Messiah was expected to come through the <strong>throne of Solomon</strong>, not through a non-ruling branch of David's family.</p>
+<p>So we're left with two genealogies, each trying to solve problems the other creates ... neither fully succeeding.</p>
 <h2>The Modern Dilemma</h2>
 <p>Modern believers face these <strong>compounding tensions</strong>. Those claiming biblical inerrancy must explain <em>irreconcilable genealogical contradictions</em>. Those emphasizing Jesus's Davidic credentials must address how virgin birth <strong>severs the paternal line</strong> required by Jewish law. And those defending Matthew's royal lineage through Solomon must explain how Jesus <em>escapes the Jeconiah curse</em>.</p>
-<p>The missing kings, the mathematical impossibilities, and the theological curses aren't scribal sloppiness. They're evidence of <strong><em>theological evolution</em></strong> inscribed directly into the text-competing attempts to solve problems that <strong>kept multiplying</strong> as doctrines developed.</p>
-<p>As we turn to Chapter 8, we'll examine perhaps the <strong>most significant textual development</strong>: the late emergence of virgin birth narratives. The genealogical manipulations we've examined prepare the ground for this theological innovation-an innovation that would transform Jesus from <em>Jewish Messiah</em> to <em>incarnate deity</em>.</p>
-<p><strong>The contradictions aren't bugs-they're features.</strong> They reveal a faith in transition, adapting its stories to serve evolving theological needs.</p>
+<p>The missing kings, the mathematical impossibilities, and the theological curses aren't scribal sloppiness. They're evidence of <strong><em>theological evolution</em></strong> inscribed directly into the text ... competing attempts to solve problems that <strong>kept multiplying</strong> as doctrines developed.</p>
+<p>As we turn to Chapter 8, we'll examine perhaps the <strong>most significant textual development</strong>: the late emergence of virgin birth narratives. The genealogical manipulations we've examined prepare the ground for this theological innovation ... an innovation that would transform Jesus from <em>Jewish Messiah</em> to <em>incarnate deity</em>.</p>
+<p><strong>The contradictions aren't bugs ... they're features.</strong> They reveal a faith in transition, adapting its stories to serve evolving theological needs.</p>
 <div style="background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%); border-left: 4px solid #4299e1; padding: 1.5rem; margin: 2rem 0; border-radius: 0.5rem;">
 <h3 style="color: #2c5282; margin-top: 0; margin-bottom: 1rem;">Chapter Summary</h3>
 <ul style="margin: 0; padding-left: 1.5rem;">
-<li>Matthew and Luke present wildly different genealogies for Jesus-different ancestors, different numbers of generations (28 vs. 43), traced through different sons of David (Solomon vs. Nathan)</li>
-<li>Matthew claims exactly 14 generations from Babylon to Jesus, but lists only 13 names-the math doesn't work</li>
+<li>Matthew and Luke present wildly different genealogies for Jesus—different ancestors, different numbers of generations (28 vs. 43), traced through different sons of David (Solomon vs. Nathan)</li>
+<li>Matthew claims exactly 14 generations from Babylon to Jesus, but lists only 13 names—the math doesn't work</li>
 <li>Both genealogies trace through Joseph, making them pointless if Joseph wasn't Jesus's biological father (virgin birth)</li>
-<li>The Jehoiakim curse (Jeremiah 36:30) declared none of his descendants could sit on David's throne-yet Matthew traces Jesus through him</li>
+<li>The Jehoiakim curse (Jeremiah 36:30) declared none of his descendants could sit on David's throne—yet Matthew traces Jesus through him</li>
 </ul>
 </div>
 </div>
 
 </div>
-<footer>
-<p>Copyright © 2025 | "Framing Jesus ... How Ancient Bible Changes Elevated Jesus Beyond our Reach"</p>
+<footer class="py-8 text-center text-gray-600 mt-12 border-t border-gray-200">
+<p style="text-align:center;">Copyright © 2025 | "Framing Jesus — How Ancient Bible Changes Elevated Jesus Beyond our Reach"</p>
 </footer>
-                </div>
-    </div>
+</div>
+</body>
 </body>
 </html>

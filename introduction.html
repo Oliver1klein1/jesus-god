@@ -6,10 +6,17 @@
     <title>Introduction: Erased Fingerprints</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <style>
-        body { font-family: Georgia, 'Times New Roman', Times, serif; background: #f7fafc; color: #2d3748; }
-        .container { max-width: 800px; margin: 0 auto; padding: 2rem; background: #fff; border-radius: 0.5rem; box-shadow: 0 2px 8px #0001; }
-        h1 { color: #5c6ac4; font-size: 2.2rem; font-weight: bold; margin-bottom: 1.5rem; }
-        h2 { color: #5c6ac4; font-size: 1.5rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; }
+        body { font-family: Georgia, 'Times New Roman', Times, serif; background: #ffffff; color: #2d3748; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; background: transparent; border-radius: 0; box-shadow: none; }
+        h1 { color: #5c6ac4; font-size: 2.2rem; font-weight: bold; margin-bottom: 1.5rem; text-align: center; }
+        h2 { 
+            color: #5c6ac4; 
+            font-size: 1.5rem; 
+            font-weight: bold; 
+            margin-top: 2rem; 
+            margin-bottom: 1rem; 
+            page-break-before: avoid;
+        }
         p { 
             text-align: justify !important; 
             margin-bottom: 1em;
@@ -92,12 +99,10 @@
             box-shadow: none;
             padding: 0;
         }
-        .parts-table {
-            margin: 2.5rem 0;
-            border-radius: 0.75rem;
-            overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        .parts-intro {
+            page-break-before: avoid !important;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
         .part-row {
             display: grid;
@@ -156,6 +161,7 @@
             font-family: Georgia, 'Times New Roman', serif;
         }
     </style>
+    <link rel="stylesheet" href="print.css" media="print">
 </head>
 <body>
     <div class="container">
@@ -240,7 +246,23 @@
         <h2>Uncovering the Clues</h2>
         <p>This book will help us get to the good stuff: the evidence. This isn't late-night conspiracy theory material or theological fan fiction. We're talking about <strong>concrete, verifiable clues</strong> that create a trail of breadcrumbs leading us back to the original Jesus.</p>
         
-        <p>We're trying to discover his <strong><em>UNTAINTED teachings</em></strong> because there is no question there is <strong>WISDOM, TRUTH and POWER</strong> in those words that go beyond the insecurities of institutions and governments. There is <strong>no doubt in my mind as to his divinity</strong>. He kept pointing to us to alert us to <strong><em>our own divinity</em></strong>. But let me not get ahead of myself.</p>
+        <p>We're trying to discover his <strong><em>UNTAINTED teachings</em></strong> because there is no question there is <strong>WISDOM, TRUTH and POWER</strong> in those words that go beyond the insecurities of institutions and governments. There is <strong>no doubt in my mind as to his divinity</strong>. He kept pointing to us to alert us to <strong><em>our own divinity</em></strong>.</p>
+        
+        <div class="bible-quote">"For which of these good works are you going to stone me?"<br><br>"We're not stoning you for any good work, but for blasphemy, because you, a mere man, claim to be God."<br><br>— John 10:32-33</div>
+        
+        <p>But here's where it gets interesting. Instead of backing down or clarifying that he's <em>not</em> claiming to be God, Jesus quotes Psalm 82:</p>
+        
+        <div class="bible-quote">"Is it not written in your Law, 'I have said you are gods'?"<br><br>— Psalm 82:6 (quoted by Jesus)</div>
+        
+        <p>He's basically saying, <em>"Look, if Scripture calls you gods, why are you so upset when, according to you, I make statements suggesting the same about myself?"</em></p>
+        
+        <p>That's the Jesus I'm talking about: the one who addressed the question about a <strong>perceived divinity claim</strong>, by pointed to <strong><em>our shared divine nature</em></strong>. It seems to me that, at least in this particular interaction, he wasn't trying to elevate himself above us; he was trying to <strong>wake us up to who we really are</strong>. But let me not get ahead of myself.</p>
+        
+        <p>I already hear you screaming, <em>"But what about when he said 'Before Abraham was, I AM...' in John 8:58!" Surely he was calling himself God in this verse!"</em></p>
+        
+        <div class="bible-quote">"Before Abraham was, I AM."<br><br>— John 8:58</div>
+        
+        <p>Let me say the following: when you dig into the <strong>manuscript evidence</strong>, something interesting emerges. This verse appears <strong>nowhere in the earliest Christian writings</strong> ... not in Paul, not in the other Gospels, not even in the earliest Church Fathers who were obsessed with proving Jesus' divinity. It only shows up in John's Gospel, which was written <strong>decades later</strong> and contains several passages that read like <strong>theological additions</strong> rather than historical accounts. The fact that this explosive claim about pre-existence appears in <strong>isolation</strong>, without any corroboration from earlier sources, suggests it might be exactly the kind of <strong>textual enhancement</strong> we'll be investigating throughout this book.</p>
         
         <p>Think of what follows as the theological equivalent of a textual investigation. Each clue tells a story, and together they paint a picture that's impossible to ignore.</p>
         
@@ -363,7 +385,7 @@
         <p>This isn't conspiracy theory territory ... these are documented <em>textual shifts</em> visible in the ink itself, preserved in the manuscript record for anyone willing to look.</p>
         
         <p>Still, a fair-minded believer might ask, <em>"But couldn't God have guided those changes?"</em> Of course He could ... yet the Bible we cherish also commands us to <em>test everything</em> and hold fast to what is good. If we never look, we never test. And if we never test, we never discover what's real.</p>
-        <h2>This book will follow the breadcrumbs through four PARTS:</h2>
+        <p class="parts-intro"><strong>This book will follow the breadcrumbs through four PARTS:</strong></p>
         <div class="parts-table">
             <div class="part-row header">
                 <div class="part-number">PART</div>

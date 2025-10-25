@@ -1,0 +1,316 @@
+/* ==============================
+   PRINT STYLESHEET for 6x9" books
+   Author: Ansilo Format Template
+   ============================== */
+
+/* ---- GLOBAL RESET ---- */
+* {
+  box-sizing: border-box;
+}
+
+/* ---- PAGE SIZE & MARGINS ---- */
+@page {
+  size: 6in 9in;          /* paperback trim size */
+  margin: 0.75in;         /* adjust as needed */
+}
+
+/* ---- BODY ---- */
+body {
+  font-family: "Georgia", "Garamond", serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: #000;
+  text-align: justify;
+  hyphens: auto;
+  widows: 2;
+  orphans: 2;
+  margin: 0;
+  padding: 0;
+  background: white !important;
+}
+
+/* ---- BACKGROUND CONTROL ---- */
+.container, .chapter-card {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* ---- HEADINGS ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", "Garamond", serif;
+  font-weight: bold;
+  text-align: center !important;
+  margin: 1.5em 0 0.5em;
+  page-break-after: avoid;
+}
+
+/* ---- PARAGRAPHS ---- */
+p, .chapter-card p, .container p, .content p {
+  margin: 0 0 1em !important;
+  text-indent: 0 !important;
+  text-align: justify !important;
+}
+
+/* ---- CHAPTER OPENERS ---- */
+.chapter-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center !important;
+  margin-top: 3in;
+  page-break-before: right;
+}
+
+/* ---- PAGE BREAK CONTROL ---- */
+h1 {
+  page-break-before: always;
+  page-break-after: avoid;
+}
+
+h2, h3, .chapter-title {
+  page-break-before: avoid !important;
+  page-break-after: avoid;
+}
+
+.parts-intro {
+  page-break-before: avoid !important;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+  .books-section {
+    page-break-before: always !important;
+  }
+
+.books-section h2 {
+  page-break-after: avoid !important;
+  page-break-inside: avoid !important;
+  margin-bottom: 0 !important;
+}
+
+.books-section h2 + .series-intro {
+  page-break-before: avoid !important;
+  margin-top: 0 !important;
+}
+
+.books-section .book-entry {
+  page-break-inside: avoid !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 1rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.books-section .book-cover {
+  page-break-after: avoid !important;
+  flex: 0 0 30% !important;
+  max-width: 30% !important;
+}
+
+.books-section .book-cover img {
+  width: 100% !important;
+  height: auto !important;
+  page-break-after: avoid !important;
+}
+
+.books-section .book-description {
+  page-break-before: avoid !important;
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+.series-intro {
+  page-break-before: always !important;
+  page-break-inside: avoid !important;
+}
+
+.series-intro p {
+  page-break-before: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+/* Additional rules for problematic book entries */
+.books-section .book-entry img {
+  page-break-after: avoid !important;
+}
+
+.books-section .book-entry h3 {
+  page-break-before: avoid !important;
+}
+
+.books-section .book-entry p {
+  page-break-before: avoid !important;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1em auto;
+  page-break-inside: avoid;
+}
+
+/* ---- ALIGNMENT HELPERS ---- */
+.center { text-align: center !important; }
+.right  { text-align: right !important; }
+.left   { text-align: left !important; }
+
+/* ---- BLOCKQUOTE ---- */
+blockquote {
+  font-style: italic;
+  margin: 1em 1.5em;
+  text-align: justify;
+}
+
+/* ---- FOOTNOTES / SMALL TEXT ---- */
+small, .footnote {
+  font-size: 0.8em;
+  line-height: 1.3;
+}
+
+/* ---- LINKS ---- */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---- NAVIGATION HIDING ---- */
+.navigation, .nav-link, div.navigation, a.nav-link {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Additional aggressive navigation hiding */
+div.navigation, div.navigation *, 
+a.nav-link, a[class*="nav-link"] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ---- PRINT MEDIA OVERRIDES ---- */
+@media print {
+  html, body {
+    width: 6in;
+    height: 9in;
+  }
+
+  /* Force all text-align rules to apply with maximum specificity */
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center !important;
+  }
+  
+  p, div, blockquote, 
+  .chapter-card p, .container p, .content p, 
+  .bible-quote, .quote, .scripture-card p {
+    text-align: justify !important;
+    text-indent: 0 !important;
+  }
+
+  /* Remove non-print elements - Enhanced navigation hiding */
+  nav, header, footer, .no-print, 
+  .navigation, .nav-link, div.navigation, a.nav-link,
+  div.navigation *, a[class*="nav-link"] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Force clean white backgrounds */
+  body, html {
+    background: white !important;
+  }
+  
+  .container, .chapter-card {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* Prevent page breaks in book entries - Books section only */
+  .books-section .book-entry {
+    page-break-inside: avoid !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .books-section .book-cover {
+    page-break-after: avoid !important;
+    flex: 0 0 30% !important;
+    max-width: 30% !important;
+  }
+
+  .books-section .book-description {
+    page-break-before: avoid !important;
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+
+  .books-section .book-cover img {
+    width: 100% !important;
+    height: auto !important;
+    page-break-after: avoid !important;
+  }
+
+  .series-intro {
+    page-break-before: always !important;
+    page-break-inside: avoid !important;
+  }
+
+  .series-intro p {
+    page-break-before: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  .books-section h2 {
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+    margin-bottom: 0 !important;
+  }
+
+  .books-section h2 + .series-intro {
+    page-break-before: avoid !important;
+    margin-top: 0 !important;
+  }
+
+  /* Additional rules for problematic book entries */
+  .book-entry img {
+    page-break-after: avoid !important;
+  }
+
+  /* Make book subtitles smaller in print */
+  .books-section .book-description h3 {
+    font-size: 1.2rem !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Use a different approach - target h3 elements and make them smaller overall, then override for main titles */
+  .books-section .book-description h3 {
+    font-size: 1.1rem !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Make the first line (main title) larger */
+  .books-section .book-description h3::first-line {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+  }
+
+  .book-entry h3 {
+    page-break-before: avoid !important;
+  }
+
+  .book-entry p {
+    page-break-before: avoid !important;
+  }
+
+  /* Optional: add running header/footer later */
+}

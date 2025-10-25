@@ -1,25 +1,281 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Chapter 10 | When Christianity Overthrew Christ's Religion</title>
     <link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
+    <style>
+        :root {
+            --primary-color: #5c6ac4;
+            --secondary-color: #e53e3e;
+            --accent-color: #f6ad55;
+            --text-color: #2d3748;
+            --background-color: #f7fafc;
+            --callout-bg: #edf2f7;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #ffffff;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        h1 {
+            color: #5c6ac4;
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: var(--callout-bg);
+            border-radius: 0.5rem;
+        }
+
+        .nav-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            line-height: 1.8;
+        }
+        
+        .content p {
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+        }
+        
+        @media (max-width: 600px) {
+            .content p {
+                text-align: left;
+            }
+        }
+
+        .quote {
+            font-style: italic;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1rem;
+            margin: 2rem 0;
+        }
+
+        .footnote {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        .chapter-card p {
+            text-align: justify;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+        }
+        
+        @media (max-width: 600px) {
+            .chapter-card p {
+                text-align: left;
+            }
+        }
+        
+        .scripture-card {
+            background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%);
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 20px rgba(66, 153, 225, 0.15);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid rgba(66, 153, 225, 0.2);
+            border-left: 5px solid #4299e1;
+        }
+        
+        .scripture-reference {
+            font-weight: bold;
+            color: #2c5282;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .scripture-text {
+            font-style: italic;
+            color: #2d3748;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        .jesus-card {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 20px rgba(72, 187, 120, 0.15);
+            padding: 1.75rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(72, 187, 120, 0.2);
+            border-left: 5px solid #48bb78;
+        }
+        
+        .jesus-header {
+            font-weight: bold;
+            color: #22543d;
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .jesus-content {
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+        
+        .jesus-quote {
+            font-style: italic;
+            color: #2d3748;
+            background: white;
+            padding: 1rem 1.25rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            border-left: 3px solid #48bb78;
+            font-size: 1.05rem;
+        }
+        
+        .jesus-emphasis {
+            background: #d1fae5;
+            padding: 1rem 1.25rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #22543d;
+            color: #22543d;
+            font-weight: bold;
+        }
+        
+        .img-card {
+            background: linear-gradient(135deg, #f7fafc 80%, #e3e8f0 100%);
+            border-radius: 0.85em;
+            box-shadow: 0 4px 24px 0 rgba(92, 106, 196, 0.10), 0 1.5px 6px 0 rgba(92, 106, 196, 0.08);
+            margin: 2em auto 2.5em auto;
+            width: 80%;
+            max-width: 100%;
+            min-width: unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: box-shadow 0.2s, transform 0.2s;
+            overflow: hidden;
+            padding: 0;
+        }
+        
+        .img-card:hover {
+            box-shadow: 0 8px 32px 0 rgba(92, 106, 196, 0.18);
+            transform: translateY(-4px) scale(1.025);
+        }
+        
+        .portrait-img {
+            display: block;
+            margin: 0;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+        }
+        
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.5rem;
+            line-height: 0.85;
+            margin: 0.05em 0.1em 0 0;
+            color: #5c6ac4;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+        
+        .paradox-card {
+            background: linear-gradient(135deg, #fef3f2 0%, #fee2e2 100%);
+            border-radius: 0.75rem;
+            box-shadow: 0 6px 24px rgba(239, 68, 68, 0.2);
+            padding: 2rem;
+            margin: 2.5rem 0;
+            border: 2px solid #ef4444;
+            text-align: center;
+        }
+        
+        .paradox-label {
+            font-weight: bold;
+            color: #7f1d1d;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+        
+        .paradox-text {
+            color: #1f2937;
+            font-size: 1.25rem;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        .bible-quote {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            font-style: italic;
+            color: #2c5282;
+            background: linear-gradient(to right, #f0f4f8 0%, #e6f0f7 100%);
+            border-left: 4px solid #4299e1;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+            box-shadow: 0 2px 4px rgba(66, 153, 225, 0.1);
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mx-auto px-4">
-        <div class="chapter-card">
+<body>
+<div class="container mx-auto px-4">
+<div class="chapter-card">
 <h1>Chapter 10 | When Christianity Overthrew Christ's Religion</h1>
-<p class="drop-cap"><strong><em>What if someone openly admitted that Christianity deliberately replaced Jesus's understanding of God with something completely different?</em></strong></p>
-<p>Cappadocia, 380 CE.</p>
-<p>A bishop sits writing in the quiet of his study. <strong>Gregory of Nyssa</strong>...brother of the famous Basil the Great, one of the most brilliant theologians of his era-is putting together his arguments for the Trinity.</p>
+<p><strong><em>What if someone openly admitted that Christianity deliberately replaced Jesus's understanding of God with something completely different?</em></strong></p>
+<p class="drop-cap">Cappadocia, 380 CE.</p>
+<p>A bishop sits writing in the quiet of his study. <strong>Gregory of Nyssa</strong>—brother of the famous Basil the Great, one of the most brilliant theologians of his era—is putting together his arguments for the Trinity.</p>
 <p>And unlike most theologians who hide their innovations behind claims of "ancient tradition," Gregory does something remarkable: He's <strong>brutally honest</strong>.</p>
 <p>He openly declares that Christian theology must <strong>overthrow</strong> what he calls <strong>"the Jewish dogma."</strong></p>
 <p>Not refine it. Not fulfill it. <em>Overthrow</em> it.</p>
-<p>And what is this "Jewish dogma" he's so eager to discard? It's the belief that <strong>God is one</strong>...the same monotheism Jesus himself taught and prayed to.</p>
+<p>And what is this "Jewish dogma" he's so eager to discard? It's the belief that <strong>God is one</strong>—the same monotheism Jesus himself taught and prayed to.</p>
 <h2>What Gregory Actually Said</h2>
 <p>In his treatise <em>That There Are Not Three Gods</em>, Gregory writes:</p>
 <div class="scripture-card">
-<div class="scripture-reference">Gregory of Nyssa ... That There Are Not Three Gods</div>
+<div class="scripture-reference">Gregory of Nyssa - That There Are Not Three Gods</div>
 <div class="scripture-text">"The Jewish dogma is overthrown by the acceptance of the Word and by belief in the Spirit, while the polytheistic error of the Greek schools is made to vanish by the unity of the nature abrogating this imagination of plurality."</div>
 </div>
 <p>Let me try to break this down in simple English.</p>
@@ -27,85 +283,83 @@
 <p>In other words: Jewish monotheism has to go. Greek polytheism has to go. Trinity splits the difference.</p>
 <p>Read that again. <strong>"The Jewish dogma is overthrown."</strong></p>
 <p>Not <em>fulfilled</em>. Not <em>completed</em>. Not <em>expanded</em>. <strong>Overthrown</strong>.</p>
-<p>This isn't a casual comment. This is a <strong>deliberate program</strong> to replace Jewish monotheism-the understanding of God that <em>Jesus himself held</em>...with a new formulation that could accommodate Jesus's full divinity.</p>
+<p>This isn't a casual comment. This is a <strong>deliberate program</strong> to replace Jewish monotheism—the understanding of God that <em>Jesus himself held</em>—with a new formulation that could accommodate Jesus's full divinity.</p>
 <p>Gregory isn't pretending to preserve ancient tradition. He's openly declaring himself a <strong>theological revolutionary</strong>, explicitly rejecting the religious framework of Christianity's founder.</p>
 <p>And he doubles down. In <em>Against Eunomius</em>, he writes:</p>
 <div class="scripture-card">
-<div class="scripture-reference">Gregory of Nyssa ... Against Eunomius</div>
+<div class="scripture-reference">Gregory of Nyssa - Against Eunomius</div>
 <div class="scripture-text">"The Jewish conception of God is corrected by the doctrine of the Only-begotten, and polytheism is cured by the teaching concerning the Spirit."</div>
 </div>
 <p>There it is again. <strong>"Corrected."</strong></p>
-<p>Gregory openly acknowledges that Trinitarian doctrine <em>corrects</em> and <em>replaces</em> Jewish monotheism-the same monotheism Jesus affirmed when he quoted the Shema: <strong>"Hear, O Israel: The Lord our God, the Lord is one"</strong> (Mark 12:29).</p>
+<p>Gregory openly acknowledges that Trinitarian doctrine <em>corrects</em> and <em>replaces</em> Jewish monotheism—the same monotheism Jesus affirmed when he quoted the Shema: <strong>"Hear, O Israel: The Lord our God, the Lord is one"</strong> (Mark 12:29).</p>
 <p>For Gregory, this replacement is <em>necessary</em>. Jewish monotheism simply cannot accommodate Jesus's divinity. So it has to go. The "correction" involves introducing philosophical distinctions between <strong>"essence"</strong> and <strong>"person"</strong> that have zero precedent in Hebrew thought or Scripture.</p>
 <h2>What "Jewish Dogma" Actually Means</h2>
 <p>So what exactly is this "Jewish dogma" Gregory wants to overthrow?</p>
 <p>Simple: <strong>God is one.</strong> Not three. Not divided into "persons." Just <em>one</em>.</p>
 <p>This isn't some obscure theological position. It's the bedrock of the entire Hebrew Bible:</p>
-                <div class="scripture-card">
-                    <div class="scripture-reference">Deuteronomy 6:4 ... The Shema</div>
-                    <div class="scripture-text"><strong>"Hear, O Israel: The LORD our God, the LORD is one"</strong></div>
-                </div>
-                
-                <div class="scripture-card">
-                    <div class="scripture-reference">Deuteronomy 32:39</div>
-                    <div class="scripture-text"><strong>"See now that I, even I, am he, and there is no god beside me"</strong></div>
-                </div>
-                
-                <div class="scripture-card">
-                    <div class="scripture-reference">Isaiah 43:10</div>
-                    <div class="scripture-text"><strong>"Before me no god was formed, nor shall there be any after me"</strong></div>
-                </div>
+<div class="scripture-card">
+<div class="scripture-reference">Deuteronomy 6:4 - The Shema</div>
+<div class="scripture-text"><strong>"Hear, O Israel: The LORD our God, the LORD is one"</strong></div>
+</div>
+<div class="scripture-card">
+<div class="scripture-reference">Deuteronomy 32:39</div>
+<div class="scripture-text"><strong>"See now that I, even I, am he, and there is no god beside me"</strong></div>
+</div>
+<div class="scripture-card">
+<div class="scripture-reference">Isaiah 43:10</div>
+<div class="scripture-text"><strong>"Before me no god was formed, nor shall there be any after me"</strong></div>
+</div>
 <p>And Jesus? He affirmed this understanding completely. He identified the Father alone as <strong>"the only true God"</strong> (John 17:3). He quoted the Shema as Judaism's greatest commandment.</p>
-                <div class="scripture-card">
-                    <div class="scripture-reference">Jesus's Affirmation of Jewish Monotheism</div>
-                    <div class="scripture-text">
-                        <p>In Mark 12, when a scribe responded to Jesus:</p>
-                        <div>"You are right, Teacher. You have truly said that <strong>he is one, and there is no other besides him</strong>."</div>
-                        <p>Jesus told him:</p>
-                        <div>"You are not far from the kingdom of God" (Mark 12:32-34)</div>
-                        <div>Jesus PRAISED someone for affirming strict monotheism..."he is one, and there is no other besides him."</div>
-                    </div>
-                </div>
+<div class="jesus-card">
+<div class="jesus-header">Jesus's Affirmation of Jewish Monotheism</div>
+<div class="jesus-content">
+<p>In Mark 12, when a scribe responded to Jesus:</p>
+<div class="jesus-quote">"You are right, Teacher. You have truly said that <strong>he is one, and there is no other besides him</strong>."</div>
+<p>Jesus told him:</p>
+<div class="jesus-quote">"You are not far from the kingdom of God" (Mark 12:32-34)</div>
+<div class="jesus-emphasis">Jesus PRAISED someone for affirming strict monotheism—"he is one, and there is no other besides him."</div>
+</div>
+</div>
 <p>That's the theological framework Gregory explicitly rejects. The monotheism of <strong>Jesus himself</strong>.</p>
 <h2>The Greek Solution</h2>
 <p>So how do Gregory and his Cappadocian colleagues (his brother Basil and friend Gregory of Nazianzus) replace Jewish monotheism?</p>
 <p>With Greek philosophy.</p>
 <p>They create a distinction between:</p>
-<ul>
-<li><strong>Ousia</strong> (essence/substance): <em>What</em> God is-the single divine nature shared by Father, Son, and Spirit</li>
-<li><strong>Hypostasis</strong> (person/subsistence): <em>Who</em> God is-the three distinct persons of the divine nature</li>
+<ul class="list-disc pl-8 mb-8">
+<li><strong>Ousia</strong> (essence/substance): <em>What</em> God is—the single divine nature shared by Father, Son, and Spirit</li>
+<li><strong>Hypostasis</strong> (person/subsistence): <em>Who</em> God is—the three distinct persons of the divine nature</li>
 </ul>
-<p>This clever distinction lets them keep saying "one God" while effectively dividing God into <strong>three eternally distinct consciousnesses</strong>. It's verbal monotheism masking functional tritheism-a concept utterly foreign to Jewish thought and Jesus's own understanding.</p>
+<p>This clever distinction lets them keep saying "one God" while effectively dividing God into <strong>three eternally distinct consciousnesses</strong>. It's verbal monotheism masking functional tritheism—a concept utterly foreign to Jewish thought and Jesus's own understanding.</p>
 <p>And Gregory <em>admits</em> where this came from:</p>
-                <div class="scripture-card">
-                    <div class="scripture-reference">Gregory of Nyssa ... Source of Trinitarian Theology</div>
-                    <div class="scripture-text">"We have been brought to a more refined conception of the doctrine about the Holy Spirit by the profound thinkers among the Greeks."</div>
-                </div>
-<p>Did you catch that? Trinitarian theology relies on <strong>"the profound thinkers among the Greeks"</strong>...not Hebrew revelation, not Jesus's teachings, but <em>Greek philosophical refinement</em>.</p>
+<div class="scripture-card">
+<div class="scripture-reference">Gregory of Nyssa - Source of Trinitarian Theology</div>
+<div class="scripture-text">"We have been brought to a more refined conception of the doctrine about the Holy Spirit by the profound thinkers among the Greeks."</div>
+</div>
+<p>Did you catch that? Trinitarian theology relies on <strong>"the profound thinkers among the Greeks"</strong>—not Hebrew revelation, not Jesus's teachings, but <em>Greek philosophical refinement</em>.</p>
 <p>Which is ironic, considering Paul himself warned: <strong>"See to it that no one takes you captive through philosophy and empty deceit, according to human tradition"</strong> (Colossians 2:8).</p>
 <h2>The Problem Gregory Couldn't Solve</h2>
 <p>Even Gregory saw the obvious problem with his formulation: If Father, Son, and Spirit are each fully God yet distinct persons, aren't you teaching <strong>three Gods</strong>?</p>
 <p>His treatise <em>That There Are Not Three Gods</em> tries to answer this objection:</p>
-                <div class="scripture-card">
-                    <div class="scripture-reference">Gregory of Nyssa ... Defending Against Polytheism</div>
-                    <div class="scripture-text">"We do not deny that the Holy Trinity is, by the Hebrew method of expression, called collectively 'the Only Deity,' but what we deny is that this leads us to the Greek polytheism."</div>
-                </div>
+<div class="scripture-card">
+<div class="scripture-reference">Gregory of Nyssa - Defending Against Polytheism</div>
+<div class="scripture-text">"We do not deny that the Holy Trinity is, by the Hebrew method of expression, called collectively 'the Only Deity,' but what we deny is that this leads us to the Greek polytheism."</div>
+</div>
 <p>Gregory's solution? Analogies. Just as multiple humans share one "humanity," the three divine persons share one "divinity."</p>
-<p>But this creates <em>exactly</em> the problem he's trying to avoid. It treats "God" like a species or category with multiple instances-Peter, James, and John share one "humanity," Father, Son, and Spirit share one "divinity."</p>
+<p>But this creates <em>exactly</em> the problem he's trying to avoid. It treats "God" like a species or category with multiple instances—Peter, James, and John share one "humanity," Father, Son, and Spirit share one "divinity."</p>
 <p>That's functionally polytheistic. Three divine beings sharing a divine nature.</p>
-<div class="img-card"><img alt="The Trinity's proximity to polytheism" src="../Images/trinity-polytheism.jpg" class="portrait-img"/></div>
-<p>The intellectual gymnastics required to avoid this conclusion reveal the fundamental problem: You can't maintain <em>meaningful distinction</em> between three divine persons while avoiding polytheism-not without the philosophical abstractions Gregory admits he borrowed from "the profound thinkers among the Greeks."</p>
+<div class="img-card"><img alt="The Trinity's proximity to polytheism" class="portrait-img" src="../Images/trinity-polytheism.jpg"/></div>
+<p>The intellectual gymnastics required to avoid this conclusion reveal the fundamental problem: You can't maintain <em>meaningful distinction</em> between three divine persons while avoiding polytheism—not without the philosophical abstractions Gregory admits he borrowed from "the profound thinkers among the Greeks."</p>
 <h2>Imperial Backing Makes It Official</h2>
 <p>Gregory didn't develop his theology in some ivory tower. He was writing during intense imperial pressure for theological conformity.</p>
-<p>Emperor <strong>Theodosius I</strong> took power in 379 CE with one agenda: enforce Nicene orthodoxy. Not through persuasion-through <strong>legislative and military force</strong>.</p>
+<p>Emperor <strong>Theodosius I</strong> took power in 379 CE with one agenda: enforce Nicene orthodoxy. Not through persuasion—through <strong>legislative and military force</strong>.</p>
 <p>In 381 CE, Theodosius convened the Council of Constantinople. Mission: reinforce Nicene theology and nail down the doctrine of the Holy Spirit. Gregory played a major role. The result? The expanded Nicene Creed that most churches still recite today.</p>
 <p>The imperial context explains everything. How did a theological formulation that <em>explicitly rejected Jesus's own monotheistic framework</em> become Christian orthodoxy?</p>
 <p>Simple: <strong>State power</strong>. With the emperor behind it, the new understanding didn't need to win through scriptural argument. It could <em>compel</em> through imperial decree.</p>
-<div class="img-card"><img alt="Emperor Theodosius enforcing Nicene orthodoxy" src="../Images/emperor5.jpg" class="portrait-img"/></div>
+<div class="img-card"><img alt="Emperor Theodosius enforcing Nicene orthodoxy" class="portrait-img" src="../Images/emperor5.jpg"/></div>
 <h2>How The Text Was Prepared</h2>
-<p>But wait-how could Gregory overthrow "Jewish dogma" when the Christian scriptures themselves are <em>Jewish</em> documents?</p>
+<p>But wait—how could Gregory overthrow "Jewish dogma" when the Christian scriptures themselves are <em>Jewish</em> documents?</p>
 <p>The answer: the textual changes we've been tracking through this entire book made it possible.</p>
-<ul>
+<ul class="list-disc pl-8 mb-8">
 <li>Remove Jesus's statements identifying the Father alone as Creator → Jesus can now share creative power</li>
 <li>Delete "Today I have begotten you" → Jesus's Sonship has no temporal beginning</li>
 <li>Insert virgin birth narratives → Jesus is ontologically divine from conception</li>
@@ -114,74 +368,75 @@
 <p>Without these edits, Gregory's theological program would have crashed into Jesus's actual words at every turn. The edited text provided just enough ambiguity for the new Trinitarian reading to squeeze through.</p>
 <h2>The Ultimate Irony</h2>
 <p>Let's pause and appreciate the supreme irony here:</p>
-<p>Jesus-the person Christianity worships as God-held exactly the "Jewish dogma" Gregory wants to overthrow.</p>
-<p>When Jesus prayed to "the only true God" (John 17:3), when he distinguished himself from "the one who is good" (Mark 10:18), when he affirmed the Shema as Judaism's greatest commandment-he was operating <strong>entirely within Jewish monotheistic understanding</strong>.</p>
-                <div class="scripture-card">
-                    <div class="scripture-reference">Christianity's Central Paradox</div>
-                    <div class="scripture-text">The religion worships as God someone who himself <em>worshipped God as someone else</em> (the Father).</div>
-                </div>
-<p>Gregory's solution-dividing God into persons while maintaining unity of essence-would have been completely <strong>unintelligible</strong> to Jesus. His theological framework was thoroughly, unapologetically <em>Jewish</em>.</p>
-                <div class="scripture-card">
-                    <div class="scripture-reference">James D.G. Dunn ... Biblical Scholar</div>
-                    <div class="scripture-text">"The evidence indicates that Jesus was a charismatic Rabbi who was wholly devoted to the one God of Israel and who interpreted his mission in terms of Israel's hope."</div>
-                </div>
+<p>Jesus ... the person Christianity worships as God ... held exactly the "Jewish dogma" Gregory wants to overthrow.</p>
+<p>When Jesus prayed to "the only true God" (John 17:3), when he distinguished himself from "the one who is good" (Mark 10:18), when he affirmed the Shema as Judaism's greatest commandment ... he was operating <strong>entirely within Jewish monotheistic understanding</strong>.</p>
+<p>Gregory's solution, dividing God into persons while maintaining unity of essence, would have been completely <strong>unintelligible</strong> to Jesus. His theological framework was thoroughly, unapologetically <em>Jewish</em>.</p>
+<div class="scripture-card">
+<div class="scripture-reference">James D.G. Dunn - Biblical Scholar</div>
+<div class="scripture-text">"The evidence indicates that Jesus was a charismatic Rabbi who was wholly devoted to the one God of Israel and who interpreted his mission in terms of Israel's hope."</div>
+</div>
+<div class="paradox-card">
+<div class="paradox-label">Christianity's Central Paradox</div>
+<div class="paradox-text">The religion worships as God someone who himself <em>worshipped God as someone else</em> (the Father).</div>
+</div>
+<p>But the evidence goes beyond theological statements ... it shows up in <strong>JESUS' ACTUAL BEHAVIOR TOWARD WORSHIP ITSELF</strong>. To understand this, we need to distinguish between two Greek words that English translations often blur together: <strong>proskuneo</strong> (meaning to bow down, show reverence, or pay homage) and <strong>latreia</strong> (meaning true worship, service, or devotion reserved exclusively for God).</p>
+<div class="img-card"><img alt="Distinction between proskuneo and latreia worship" class="portrait-img" src="../Images/proskuneo_vs_latreia.jpg"/></div>
+<p>Throughout the Hebrew Scriptures, <strong>proskuneo</strong> was routinely offered to kings, prophets, and other humans ... David received it (1 Chronicles 29:20), as did other biblical figures like Abraham's servant bowing to Laban (Genesis 24:52), and people bowing before Joseph in Egypt (Genesis 43:28). This was respectful homage, not divine worship. But <strong>latreia</strong> was reserved exclusively for the true God alone.</p>
+<p>When Jesus accepted proskuneo from people ... respectful bowing or homage ... he never redirected it. We see this pattern repeated <strong>approximately 17 times</strong> throughout the Gospels: a leper bowing before him requesting healing (Matthew 8:2), disciples worshiping after he calmed the storm (Matthew 14:33), the blind man worshiping after his healing (John 9:38), and women clasping his feet after the resurrection (Matthew 28:9). In every single instance, Jesus accepted this respectful homage without objection.</p>
+<div class="img-card"><img alt="Jesus accepting proskuneo worship" class="portrait-img" src="../Images/proskuneo.jpg"/></div>
+<p>But when people attempted to offer him <strong>latreia</strong> ... true worship ... <strong><em>he consistently redirected it toward the Father.</em></strong></p>
+<div class="bible-quote">"True worshipers will worship the Father in spirit and truth."<br/><br/>— John 4:23</div>
+<div class="bible-quote">"Worship the Lord your God and serve him only."<br/><br/>— Matthew 4:10 (Jesus quoting Deuteronomy)</div>
+<p>This behavioral pattern is <strong>remarkable</strong>: Jesus never rejected proskuneo (respectful homage) but <strong><em>always redirected latreia (divine worship) toward the Father!</em></strong></p>
+<div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-left: 4px solid #0ea5e9; padding: 1.5rem; margin: 1.5rem 0; border-radius: 0 0.5rem 0.5rem 0; box-shadow: 0 2px 8px rgba(14, 165, 233, 0.1);">
+<p style="margin-bottom: 0; font-size: 1.1rem; line-height: 1.6;"><strong>The distinction matters because it reveals Jesus' own understanding of his relationship to the Father:</strong> <em>honored servant worthy of reverence, but not the proper object of divine worship.</em></p>
+</div>
 <h2>What Changed Forever</h2>
-<p>Gregory's triumph-the replacement of Jewish monotheism with Trinitarian doctrine-fundamentally altered Christianity:</p>
-<p><strong>It shifted the focus.</strong> Instead of Jesus's teachings about the Father, Christianity became obsessed with metaphysical speculations about Jesus's <em>nature</em>.</p>
-<p><strong>It imported foreign philosophy.</strong> Greek concepts like <em>ousia</em> and <em>hypostasis</em>...with zero scriptural foundation-became essential to orthodox faith.</p>
-<p><strong>It required reinterpretation.</strong> Jesus's straightforward statements about the Father's primacy now needed complex hermeneutical gymnastics to explain away.</p>
-<p><strong>It severed Jewish roots.</strong> Christianity split from its Jewish monotheistic foundation, creating a religious divide that persists today.</p>
+<p>Gregory's triumph ... the replacement of Jewish monotheism with Trinitarian doctrine ... <strong>FUNDAMENTALLY ALTERED CHRISTIANITY:</strong></p>
+<p><strong>It shifted the focus.</strong> Instead of Jesus's teachings about the Father, Christianity became obsessed with <strong>metaphysical speculations about Jesus's nature</strong>.</p>
+<p><strong>It imported foreign philosophy.</strong> Greek concepts like <em>ousia</em> and <em>hypostasis</em> ... with <strong>zero scriptural foundation</strong> ... became essential to orthodox faith.</p>
+<p><strong>It required reinterpretation.</strong> Jesus's straightforward statements about the Father's primacy now needed <strong>complex hermeneutical gymnastics</strong> to explain away.</p>
+<p><strong>It severed Jewish roots.</strong> Christianity split from its Jewish monotheistic foundation, creating a <strong>religious divide that persists today</strong>.</p>
 <p>Most significantly, it established a remarkable precedent: <strong>Later theological development could "correct" the understanding held by Jesus himself</strong>.</p>
 <p>Think about that. A religion supposedly founded on Jesus's teachings now openly claimed it needed to <em>correct</em> what Jesus believed about God.</p>
-<div class="img-card"><img alt="Gregory's Trinitarian transformation of Christianity" src="../Images/greg-trinitarian-shift.jpg" class="portrait-img"/></div>
+<div class="img-card"><img alt="Gregory's Trinitarian transformation of Christianity" class="portrait-img" src="../Images/greg-trinitarian-shift.jpg"/></div>
 <h2>Today's Disconnect</h2>
-<p>Gregory's program succeeded so completely that most Christians today think Trinitarian doctrine is <em>foundational</em> Christianity-not a fourth-century philosophical innovation.</p>
+<p>Gregory's program succeeded so completely that most Christians today think Trinitarian doctrine is <em>foundational</em> Christianity—not a fourth-century philosophical innovation.</p>
 <p>Modern believers rarely confront the stark reality: <strong>Their understanding of God differs fundamentally from Jesus's own</strong>.</p>
-<p>When Jesus praised a scribe for affirming strict monotheism...<strong>"You are right, Teacher. You have truly said that he is one, and there is no other besides him"</strong>...he endorsed precisely the theological framework Gregory would later condemn as inadequate.</p>
+<p>When Jesus praised a scribe for affirming strict monotheism, he endorsed precisely the theological framework Gregory would later condemn as inadequate.</p>
+<div class="bible-quote">"You are right, Teacher. You have truly said that <strong>he is one, and there is no other BESIDES HIM</strong>."<br/><br/>— Mark 12:32 (Scribe's response to Jesus)</div>
 <p>This disconnect between Jesus's monotheism and Christianity's Trinitarianism remains Christianity's most profound internal tension. Gregory acknowledged it openly. Modern believers often ignore it completely, even though, for most, this is at a more subconscious level.</p>
 <h2>Two Paths Forward</h2>
 <p>What does Gregory's candid rejection of "Jewish dogma" mean for you today? I would suggest you have TWO realistic options:</p>
-
-<div class="options-card">
-    <div class="options-header">Two Realistic Options</div>
-    
-    <div class="option-item">
-        <div class="option-number">Option 1: Acceptance of the world we find ourselves in today.</div>
-        <div class="option-description">Embrace the Cappadocian innovation as legitimate theological development guided by the Holy Spirit-even though it deviates from Jesus's own understanding. It is what it is. The "I'd rather not swim upstream" approach.</div>
-    </div>
-    
-    <div class="option-item">
-        <div class="option-number">Option 2: Radical Return.</div>
-        <div class="option-description">Go back to Jesus's teachings and embrace his view on the world and his Father, recognizing him as someone who clearly had a powerful message to convey about his own divinity as well as that of our own, as it relates to the Father.</div>
-    </div>
-</div>
-
+<p><strong>Option 1: Acceptance of the world we find ourselves in today.</strong> Embrace the Cappadocian innovation as legitimate theological development guided by the Holy Spirit ... <strong>EVEN THOUGH IT DEVIATES FROM JESUS'S OWN UNDERSTANDING</strong>. It is what it is. The "I'd rather not swim upstream" approach.</p>
+<p><strong>Option 2: Radical Return.</strong> Go back to Jesus's teachings and <strong>EMBRACE HIS VIEW ON THE WORLD AND HIS FATHER</strong>, recognizing him as someone who clearly had a powerful message to convey about his own divinity as well as that of our own, as it relates to the Father.</p>
 <p>Whichever way you go, it seems unrealistic not to acknowledge the historical developments.</p>
-<p>Whichever path you choose, intellectual honesty requires acknowledging what Gregory openly admitted: Trinitarian doctrine doesn't preserve Jesus's teaching-it <strong>"corrects"</strong> it through concepts completely foreign to his Jewish worldview.</p>
-<div class="img-card"><img alt="Two paths forward: acceptance or return to Jesus's original teaching" src="../Images/path-forward.jpg" class="portrait-img"/></div>
+<p>Whichever path you choose, intellectual honesty requires acknowledging what Gregory openly admitted: Trinitarian doctrine doesn't preserve Jesus's teaching. Instead, it <strong>"corrects"</strong> it through concepts completely foreign to his Jewish worldview.</p>
+<div class="img-card"><img alt="Two paths forward: acceptance or return to Jesus's original teaching" class="portrait-img" src="../Images/path-forward.jpg"/></div>
 <h2>The Transformation Complete</h2>
 <p>From the Father-Creator lines deleted from Luke to Gregory's explicit rejection of Jewish monotheism, the pattern is unmistakable: Christianity underwent <strong>profound transformation</strong>.</p>
 <p>The Jesus who prayed to the Father as "the only true God" became the Second Person of the Trinity.</p>
 <p>The Father who alone "made the heavens and the earth" gained a co-creator.</p>
 <p>The strictly monotheistic faith of a Jewish prophet evolved into a religion that would have been unintelligible to its founder.</p>
-<p>This wasn't conspiracy. It was sincere theological evolution. But the evidence of the original understanding remains-preserved in textual fragments, early quotations, and candid admissions by figures like Gregory.</p>
+<p>This wasn't conspiracy. It was sincere theological evolution. But the evidence of the original understanding remains. It has been preserved in textual fragments, early quotations, and candid admissions by figures like Gregory.</p>
 <p>The question for modern believers isn't <em>whether</em> this transformation occurred. The evidence is overwhelming.</p>
 <p>The question is: <strong>What do you do with that knowledge?</strong></p>
-                <div style="background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%); border-left: 4px solid #4299e1; padding: 1.5rem; margin: 2rem 0; border-radius: 0.5rem;">
-                    <h3 style="color: #2c5282; margin-top: 0; margin-bottom: 1rem;">Chapter Summary</h3>
-                    <ul style="margin: 0; padding-left: 1.5rem;">
-                        <li>Gregory of Nyssa (c. 375 CE) openly admitted Trinitarian doctrine required rejecting "Jewish dogma" about God being simply one</li>
-                        <li>Jesus himself affirmed strict Jewish monotheism: "Hear, O Israel: the Lord our God, the Lord is one" (Mark 12:29)</li>
-                        <li>The Trinity treats "God" as a category with three instances-functionally polytheistic despite claims otherwise</li>
-                        <li>This theological shift was enforced by Emperor Theodosius I through legislative and military power at the Council of Constantinople (381 CE)</li>
-                        <li>Christianity fundamentally altered from Jesus's Jewish monotheism to Greek philosophical Trinitarianism-admittedly"correcting" what Jesus himself believed</li>
-                    </ul>
-                </div>
+<div style="background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%); border-left: 4px solid #4299e1; padding: 1.5rem; margin: 2rem 0; border-radius: 0.5rem;">
+<h3 style="color: #2c5282; margin-top: 0; margin-bottom: 1rem;">Chapter Summary</h3>
+<ul style="margin: 0; padding-left: 1.5rem;">
+<li>Gregory of Nyssa (c. 375 CE) openly admitted Trinitarian doctrine required rejecting "Jewish dogma" about God being simply one</li>
+<li>Jesus himself affirmed strict Jewish monotheism: "Hear, O Israel: the Lord our God, the Lord is one" (Mark 12:29)</li>
+<li>The Trinity treats "God" as a category with three instances—functionally polytheistic despite claims otherwise</li>
+<li>This theological shift was enforced by Emperor Theodosius I through legislative and military power at the Council of Constantinople (381 CE)</li>
+<li>Christianity fundamentally altered from Jesus's Jewish monotheism to Greek philosophical Trinitarianism—admittedly "correcting" what Jesus himself believed</li>
+</ul>
+</div>
 
 </div>
 </div>
-<footer>
-<p>Copyright © 2025 | "Framing Jesus ... How Ancient Bible Changes Elevated Jesus Beyond our Reach"</p>
+<footer class="py-8 text-center text-gray-600 mt-12 border-t border-gray-200">
+<p style="text-align:center;">Copyright © 2025 | "Framing Jesus — How Ancient Bible Changes Elevated Jesus Beyond our Reach"</p>
 </footer>
+</body>
 </body>
 </html>

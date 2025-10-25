@@ -18,9 +18,22 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
             line-height: 1.6;
             color: var(--text-color);
-            background-color: var(--background-color);
+            background-color: #ffffff;
             padding: 0;
             margin: 0;
+        }
+        .chapter-card {
+            background: #ffffff;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 2.5rem 2rem 2rem 2rem;
+            margin: 2rem 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            text-align: center;
         }
         .container {
             width: 100%;
@@ -33,16 +46,6 @@
             font-size: 2.2rem;
             font-weight: bold;
             margin-bottom: 1.5rem;
-        }
-        .chapter-card {
-            background: #fff;
-            border-radius: 1.25rem;
-            box-shadow: 0 4px 24px 0 rgba(92, 106, 196, 0.10), 0 1.5px 6px 0 rgba(92, 106, 196, 0.08);
-            padding: 2.5rem 2rem 2rem 2rem;
-            margin: 2rem 0;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
         }
         .navigation {
             display: flex;
@@ -71,6 +74,7 @@
             margin-bottom: 1.5rem;
         }
     </style>
+    <link rel="stylesheet" href="print.css" media="print">
 </head>
 <body>
     <div class="container mx-auto px-4">

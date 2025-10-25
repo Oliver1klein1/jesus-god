@@ -1,113 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Chapter 2 | Marcion's Mistake—Or Theirs?</title>
+    <title>Chapter 2 | Marcion's Mistake ... Or Theirs?</title>
     <link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
+    <style>
+        body { font-family: Georgia, 'Times New Roman', Times, serif; background: #ffffff; color: #2d3748; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem; background: transparent; border-radius: 0; box-shadow: none; }
+        h1 { color: #5c6ac4; font-size: 2.2rem; font-weight: bold; margin-bottom: 1.5rem; text-align: center; }
+        h2 { color: #5c6ac4; font-size: 1.5rem; font-weight: bold; margin-top: 2rem; margin-bottom: 1rem; }
+        p { 
+            text-align: justify; 
+            margin-bottom: 1em;
+            hyphens: auto;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+        }
+        
+        @media (max-width: 600px) {
+            p {
+                text-align: left;
+            }
+        }
+        .quote { 
+            background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%);
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 20px rgba(66, 153, 225, 0.15);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border: 1px solid rgba(66, 153, 225, 0.2);
+            border-left: 5px solid #4299e1;
+            font-style: italic;
+            color: #2d3748;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        strong { font-weight: bold; }
+        em { font-style: italic; }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #edf2f7;
+            border-radius: 0.5rem;
+        }
+        .nav-link {
+            color: #5c6ac4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        .img-card {
+            background: linear-gradient(135deg, #f7fafc 80%, #e3e8f0 100%);
+            border-radius: 0.85em;
+            box-shadow: 0 4px 24px 0 rgba(92, 106, 196, 0.10), 0 1.5px 6px 0 rgba(92, 106, 196, 0.08);
+            margin: 2em auto 2.5em auto;
+            width: 80%;
+            max-width: 100%;
+            min-width: unset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: box-shadow 0.2s, transform 0.2s;
+            overflow: hidden;
+            padding: 0;
+        }
+        .img-card:hover {
+            box-shadow: 0 8px 32px 0 rgba(92, 106, 196, 0.18);
+            transform: translateY(-4px) scale(1.025);
+        }
+        .portrait-img {
+            display: block;
+            margin: 0;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+        }
+        .evidence-card {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 20px rgba(229, 62, 62, 0.15);
+            padding: 1.75rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(229, 62, 62, 0.2);
+            border-left: 5px solid #e53e3e;
+        }
+        .evidence-header {
+            font-weight: bold;
+            color: #c53030;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .evidence-item {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            display: flex;
+            gap: 1rem;
+        }
+        .evidence-item:last-child {
+            margin-bottom: 0;
+        }
+        .evidence-number {
+            flex-shrink: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .evidence-text {
+            flex: 1;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.5rem;
+            line-height: 0.85;
+            margin: 0.05em 0.1em 0 0;
+            color: #5c6ac4;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', serif;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mx-auto px-4">
-        <div class="chapter-card">
-<h1>Chapter 2 | Marcion's Mistake—Or Theirs?</h1>
-<p class="drop-cap"><strong><em>In a dimly-lit Roman apartment, a wealthy ship-owner's son pulls Luke's Gospel from his satchel and reaches for his knife—the most dangerous weapon in theological history.</em></strong></p>
-<p>Rome, AD 144. While Emperor Antoninus Pius busies himself with the empire's borders, a different kind of border—between <strong><em>gods</em></strong>—is being redrawn in the capital's Christian underground. Think of it as theological hacking before the internet existed. Marcion of Sinope, son of a bishop and heir to a shipping fortune that would make him a billionaire by today's standards, sits at his writing desk. Oil lamps flicker across his workspace, casting dancing shadows on the scroll before him: Luke's Gospel. Beside him? A sharp blade, ink, and fresh parchment.</p>
-                <div class="img-card"><img alt="Ancient ink and parchment on writing desk" src="../Images/ink-parchment.jpg" class="portrait-img"/></div>
+<body>
+<div class="container">
+<h1>Chapter 2 | Marcion's Mistake ... Or Theirs?</h1>
+<p><strong><em>In a dimly-lit Roman apartment, a wealthy ship-owner's son pulls Luke's Gospel from his satchel and reaches for his knife: the most dangerous weapon in theological history.</em></strong></p>
+<p class="drop-cap">Rome, AD 144. While Emperor Antoninus Pius busies himself with the empire's borders, a different kind of border ... between <strong><em>gods</em></strong> ... is being redrawn in the capital's Christian underground. Think of it as theological hacking before the internet existed. Marcion of Sinope, son of a bishop and heir to a shipping fortune that would make him a billionaire by today's standards, sits at his writing desk. Oil lamps flicker across his workspace, casting dancing shadows on the scroll before him: Luke's Gospel. Beside him? A sharp blade, ink, and fresh parchment.</p>
+<div class="img-card"><img alt="Ancient ink and parchment on writing desk" class="portrait-img" src="../Images/ink-parchment.jpg"/></div>
 <p>He's not preparing to copy the text. He's preparing to <strong><em>edit</em></strong> it.</p>
-<p>What's about to happen in that room will echo through two millennia of Christian history—the most <strong>infamous editorial surgery</strong> ever performed on sacred text.</p>
-<p>Years earlier, Marcion had been excommunicated from his own father's church for "corrupting a virgin"—whether that meant an actual woman or virgin doctrine depends on who's telling the story. Either way, the scandal drove him to develop a theology so radical it would make modern conspiracy theories look tame: the God of the Hebrew Bible—the one who created the material world—was an <strong>inferior, even malevolent deity</strong>. A cosmic tyrant. A divine dictator.</p>
-<p>The <em>true</em> God, Marcion believed, was revealed through Christ. This higher God had <strong>nothing to do with the creation we see in its current form</strong>. Jesus came from this superior deity to rescue humanity from the Creator's fundamentally flawed world—like a whistleblower exposing a corrupt system from the inside.</p>
+<p>What's about to happen in that room will echo through two millennia of Christian history: the most <strong>infamous editorial surgery</strong> ever performed on sacred text.</p>
+<p>Years earlier, Marcion had been excommunicated from his own father's church for "corrupting a virgin" ... whether that meant an actual woman or virgin doctrine depends on who's telling the story. Either way, the scandal drove him to develop a theology so radical it would make modern conspiracy theories look tame: the God of the Hebrew Bible ... the one who created the material world ... was an <strong>inferior, even malevolent deity</strong>. A cosmic tyrant. A divine dictator.</p>
+<p>The <em>true</em> God, Marcion believed, was revealed through Christ. This higher God had <strong>nothing to do with the creation we see in its current form</strong>. Jesus came from this superior deity to rescue humanity from the Creator's fundamentally flawed world ... like a whistleblower exposing a corrupt system from the inside.</p>
 <p>Here's where it gets interesting: <em>This theology demanded textual changes.</em> If Jesus couldn't be associated with the Creator God, then <strong>any passage identifying his Father as the Creator had to go</strong>. It was theological housecleaning with a sledgehammer.</p>
 <h2>The Surgical Strike</h2>
-<p>Tertullian, writing sixty years later in his massive work <em>Against Marcion</em>, gives us the clearest eyewitness account of what happened next. And let me tell you—it's not pretty:</p>
-<div class="bible-quote">
+<p>Tertullian, writing sixty years later in his massive work <em>Against Marcion</em>, gives us the clearest eyewitness account of what happened next. And let me tell you ... it's not pretty:</p>
+<div class="quote">
             "Marcion, finding the Epistle of Paul to the Galatians, wherein he rebukes even apostles for not walking uprightly according to the truth of the gospel... set himself to undermine the authority of those Gospels which are truly such and are published under the names of apostles or at least contemporaries of the apostles."
         </div>
-        <p>It's a bit confusing so here's a rough translation of what he was saying: Marcion found a passage where Paul was <strong>criticizing other apostles</strong> for getting the gospel wrong. That gave him license to think: <em>"If Paul could call out the apostles, then I can call out their gospels too."</em> So he took it upon himself to <strong>reject and discredit</strong> the very Gospels written by (or attributed to) those apostles and their contemporaries ... Matthew, Mark, Luke, and John.</p>
+<p>It's a bit confusing so here's a rough translation of what he was saying: Marcion found a passage where Paul was <strong>criticizing other apostles</strong> for getting the gospel wrong. That gave him license to think: <em>"If Paul could call out the apostles, then I can call out their gospels too."</em> So he took it upon himself to <strong>reject and discredit</strong> the very Gospels written by (or attributed to) those apostles and their contemporaries ... Matthew, Mark, Luke, and John.</p>
 <p>What followed was <strong>theological censorship on a scale</strong> that would make modern book-burners look like amateurs. Imagine someone taking scissors to the Constitution because they didn't like certain amendments. That's essentially what Marcion did to Scripture.</p>
-        <p>He <strong><em>rejected Matthew, Mark, and John entirely</em></strong> ... three-quarters of the Gospels, gone with a stroke of the pen. He accepted only Paul's letters (which he carefully edited to fit his agenda) and a brutally stripped-down version of Luke ... which he never even attributed to Luke, calling it simply "the Gospel." Generic. Neutered. Safe.</p>
+<p>He <strong><em>rejected Matthew, Mark, and John entirely</em></strong> ... three-quarters of the Gospels, gone with a stroke of the pen. He accepted only Paul's letters (which he carefully edited to fit his agenda) and a brutally stripped-down version of Luke ... which he never even attributed to Luke, calling it simply "the Gospel." Generic. Neutered. Safe.</p>
 <p>From this text, Marcion's blade excised:</p>
-        <ul class="list-disc pl-8 mb-8">
-            <li><strong>The entire birth narrative</strong> (Chapters 1-2): no manger, no shepherds, no angels</li>
-            <li><strong>Jesus' baptism by John</strong>: too connected to Jewish prophecy</li>
-            <li><strong>The genealogy tracing Jesus to David</strong>: can't have Jesus linked to the Old Testament god</li>
-            <li><strong>All references to Hebrew Scriptures</strong>: every single one</li>
-            <li>And, <strong><em>crucially for our investigation</em></strong>: <strong>ALL passages where Jesus identifies his Father as the Creator</strong></li>
-        </ul>
+<ul class="list-disc pl-8 mb-8">
+<li><strong>The entire birth narrative</strong> (Chapters 1-2): no manger, no shepherds, no angels</li>
+<li><strong>Jesus' baptism by John</strong>: too connected to Jewish prophecy</li>
+<li><strong>The genealogy tracing Jesus to David</strong>: can't have Jesus linked to the Old Testament god</li>
+<li><strong>All references to Hebrew Scriptures</strong>: every single one</li>
+<li>And, <strong><em>crucially for our investigation</em></strong>: <strong>ALL passages where Jesus identifies his Father as the Creator</strong></li>
+</ul>
 <p>That last one? Irenaeus is <strong>brutally specific</strong> about it in <em>Against Heresies</em> I.27.2. He's not mincing words:</p>
-<div class="bible-quote">
-            "[Marcion] mutilates the Gospel according to Luke, removing everything about the Lord's generation and deleting many teachings in which the Lord clearly confesses that the Maker of this universe is His Father."
+<div class="quote">
+            "[Marcion] mutilates the Gospel according to Luke, removing everything about the Lord's generation and deleting many teachings in which <strong>the Lord clearly confesses that the Maker of this universe is His Father.</strong>"
         </div>
 <p><strong><em>This is our smoking gun.</em></strong></p>
-        <p>Read that again slowly. Irenaeus says Luke's Gospel contained <strong>MANY teachings</strong> ... not just one verse, but <strong>multiple passages</strong> ... where Jesus <em>clearly confesses</em> that the Maker of the universe is His Father. These aren't ambiguous statements. These aren't open to interpretation. Jesus was <strong>explicitly identifying his Father as Creator of the universe</strong>.</p>
+<p>Read that again slowly. Irenaeus says Luke's Gospel contained <strong>MANY teachings</strong> ... not just one verse, but <strong>multiple passages</strong> ... where Jesus <em>clearly confesses</em> that the Maker of the universe is His Father. These aren't ambiguous statements. These aren't open to interpretation. Jesus was <strong>explicitly identifying his Father as Creator of the universe</strong>.</p>
 <p>And Marcion <em>deleted them all</em>.</p>
 <h2>The Orthodox Counter-Strike</h2>
-        <p>The Church's response to Marcion was <strong>swift and severe</strong> ... like an immune system attacking a foreign virus. By AD 150, Justin Martyr was already composing refutations. Twenty years later, Irenaeus would produce his <em>massive</em> five-volume critique of heresy, with Marcion as a primary target. The theological big guns were out in force.</p>
+<p>The Church's response to Marcion was <strong>swift and severe</strong> ... like an immune system attacking a foreign virus. By AD 150, Justin Martyr was already composing refutations. Twenty years later, Irenaeus would produce his <em>massive</em> five-volume critique of heresy, with Marcion as a primary target. The theological big guns were out in force.</p>
 <p>But here's where our mystery takes a <strong>dark turn</strong>.</p>
 <p>While the orthodox fathers loudly <em>condemned</em> Marcion's deletions, they <strong>never restored</strong> the specific "Father-Creator" lines to Luke's Gospel. At least, not in any manuscript that survived to our time. Those verses that Irenaeus said Marcion deleted? The ones where Jesus <em>"clearly confesses that the Maker of this universe is His Father"</em>? They stayed deleted.</p>
 <p><strong><em>Why?</em></strong></p>
 <p>Think about that for a moment. The church is fighting tooth and nail against Marcion's mutilation of Scripture, writing thousands of pages denouncing his textual vandalism, calling him a heretic, an enemy of truth. Yet they quietly let his most significant deletions stand. It's like condemning theft while keeping the stolen goods.</p>
-        <p>The answer lies in what happened <strong>between</strong> Marcion's edits and the Church's response: the <strong><em>rapid development</em></strong> of a theology that, while rejecting Marcion's two-gods model, increasingly embraced the concept of <strong>Jesus as Creator</strong> ... precisely what the missing Luke passages contradicted.</p>
+<p>The answer lies in what happened <strong>between</strong> Marcion's edits and the Church's response: the <strong><em>rapid development</em></strong> of a theology that, while rejecting Marcion's two-gods model, increasingly embraced the concept of <strong>Jesus as Creator</strong> ... precisely what the missing Luke passages contradicted.</p>
 <p>Do you see the delicious irony? In fighting Marcion's <em>division</em> of gods, the orthodox side began <em>merging</em> Father and Son in ways that made Jesus' original subordination to the Father-Creator... <strong>awkward</strong>. Inconvenient. Better left forgotten.</p>
-        <p>The enemy of my enemy, it seems, doesn't always become my friend ... but sometimes his edits become surprisingly useful when theological stakes are high.</p>
+<p>The enemy of my enemy, it seems, doesn't always become my friend ... but sometimes his edits become surprisingly useful when theological stakes are high.</p>
 <h2>Follow the Textual Trail</h2>
 <p>To confirm this wasn't just scribal accident but deliberate <strong>theological realignment</strong>, consider three pieces of evidence that form an airtight case:</p>
-                <div class="evidence-card">
-                    <div class="evidence-header">Three Lines of Converging Evidence</div>
-                    
-                    <div class="evidence-item">
-                        <div class="evidence-number">1</div>
-                        <div class="evidence-text">
-                            <strong>The chronology aligns perfectly.</strong> Manuscripts from the late second century onward—<em>precisely</em> when anti-Marcionite theology was crystallizing—show the <strong>disappearance of Father-Creator language</strong> from Luke. The timing is too perfect to be coincidence.
-                        </div>
-                    </div>
-                    
-                    <div class="evidence-item">
-                        <div class="evidence-number">2</div>
-                        <div class="evidence-text">
-                            <strong>The pattern is too specific to be random.</strong> As we'll see in Chapter 3, at least <strong>SIX early Christian writers</strong> quote Jesus making "Father-Creator" statements that vanish from later manuscripts of both Luke and Mark. Six independent witnesses, all saying the same thing. Then? Silence.
-                        </div>
-                    </div>
-                    
-                    <div class="evidence-item">
-                        <div class="evidence-number">3</div>
-                        <div class="evidence-text">
-                            <strong>The theological motive is transparent.</strong> By the time Irenaeus was writing, Paul's <em>cosmic Christology</em> (Jesus as agent of creation) was gaining serious momentum. The Father-only-as-Creator model didn't just contradict this emerging consensus—it <strong>demolished</strong> it.
-                        </div>
-                    </div>
+<div class="evidence-card">
+<div class="evidence-header">Three Lines of Converging Evidence</div>
+<div class="evidence-item">
+<div class="evidence-number">1</div>
+<div class="evidence-text">
+<strong>The chronology aligns perfectly.</strong> Manuscripts from the late second century onward ... <em>precisely</em> when anti-Marcionite theology was crystallizing ... show the <strong>disappearance of Father-Creator language</strong> from Luke. The timing is too perfect to be coincidence.
                 </div>
-<p><em>Picture an Alexandrian scribe in the late second century. He's been rigorously trained to spot and eliminate Marcionite corruptions—it's his sacred duty to protect the text from heretical tampering. But then he encounters a passage where Jesus says "the Father is Creator of all," and something inside him hesitates.</em></p>
-<p><em>This isn't Marcionite—it's the exact opposite. But it contradicts what his bishop has been teaching, what the emerging creeds are declaring, what the church is beginning to believe about Jesus' role in creation. The line seems... problematic. Confusing. Maybe even dangerous in the wrong hands.</em></p>
-<p><em>Perhaps better to omit it. For clarity's sake. For the good of the church.</em></p>
-        <p>His decision, <strong>multiplied across scriptoria</strong> [copying centers where scribes reproduced manuscripts] throughout the Roman world ... from Alexandria to Antioch, from Carthage to Constantinople ... would quietly erase Jesus' own testimony about his Father's unique role as Creator. Not with malice. Not with conspiracy. But with the quiet confidence that he was protecting the faith.</p>
+</div>
+<div class="evidence-item">
+<div class="evidence-number">2</div>
+<div class="evidence-text">
+<strong>The pattern is too specific to be random.</strong> As we'll see in Chapter 3, at least <strong>SIX early Christian writers</strong> quote Jesus making "Father-Creator" statements that vanish from later manuscripts of both Luke and Mark. Six independent witnesses, all saying the same thing. Then? Silence.
+                </div>
+</div>
+<div class="evidence-item">
+<div class="evidence-number">3</div>
+<div class="evidence-text">
+<strong>The theological motive is transparent.</strong> By the time Irenaeus was writing, Paul's <em>cosmic Christology</em> (Jesus as agent of creation) was gaining serious momentum. The Father-only-as-Creator model didn't just contradict this emerging consensus ... it <strong>demolished</strong> it.
+                </div>
+</div>
+</div>
+<p>Picture an Alexandrian scribe in the late second century. He's been rigorously trained to spot and eliminate Marcionite corruptions ... it's his sacred duty to protect the text from heretical tampering. But then he encounters a passage where Jesus says "the Father is Creator of all," and something inside him hesitates.</p>
+<p>This isn't Marcionite ... it's the exact opposite. But it contradicts what his bishop has been teaching, what the emerging creeds are declaring, what the church is beginning to believe about Jesus' role in creation. The line seems... problematic. Confusing. Maybe even dangerous in the wrong hands.</p>
+<p>Perhaps better to omit it. For clarity's sake. For the good of the church.</p>
+<div class="img-card"><img alt="Ancient scribe contemplating manuscript decisions" class="portrait-img" src="../Images/scribes_dilemma.jpg"/></div>
+<p>His decision, <strong>multiplied across scriptoria</strong> [copying centers where scribes reproduced manuscripts] throughout the Roman world ... from Alexandria to Antioch, from Carthage to Constantinople ... would quietly erase Jesus' own testimony about his Father's unique role as Creator. Not with malice. Not with conspiracy. But with the quiet confidence that he was protecting the faith.</p>
 <h2>Marcion's Ironic Legacy</h2>
 <p>Ready for the <strong>final irony</strong>? It's a beautiful, tragic twist that would make a screenwriter weep.</p>
-        <p>Marcion ... Christianity's most <strong>notorious textual butcher</strong>, the man condemned for centuries as the arch-heretic who mutilated Scripture ... and the <em>orthodox scribes</em> who spent decades opposing him ultimately achieved <strong><em>the exact same outcome</em></strong>: they obscured Jesus' original words subordinating himself to the Father as sole Creator.</p>
-        <p>Their motives? <strong>Radically different</strong>. Marcion cut to <em>separate</em> his higher God from the Creator-villain of the Old Testament: Yahweh. Orthodox editors cut to <em>allow Jesus participation</em> in creation, elevating him to cosmic co-creator. Two opposite theological agendas, working from opposite directions.</p>
-        
-        <div class="img-card"><img alt="Two opposing theological agendas converging" src="../Images/two_agendas.jpg" class="portrait-img"/></div>
-        
-        <p>But the effect was <strong><em>identical</em></strong>: the Jesus who clearly said "the Father is Creator of all" <strong>disappeared</strong> from both versions. Erased. Gone. As if he never said those words at all.</p>
-        
-        <p>And here's the most exquisite irony of all: Luke's <em>authorial intent</em> actually survived ... just not where anyone was looking for it. Not in his carefully edited Gospel, but in <strong>Acts</strong>, where the prayer of the apostles (Acts 4:24) <em>still</em> identifies the Father alone as "maker of heaven and earth." Like a theological time capsule buried in plain sight, it testifies to what Luke believed, what the earliest church confessed, and what Jesus evidently taught about divine roles.</p>
-        
-        <div class="bible-quote">
-            <strong>Acts 4:24</strong><br/>
+<p>Marcion ... Christianity's most <strong>notorious textual butcher</strong>, the man condemned for centuries as the arch-heretic who mutilated Scripture ... and the <em>orthodox scribes</em> who spent decades opposing him ultimately achieved <strong><em>the exact same outcome</em></strong>: they obscured Jesus' original words subordinating himself to the Father as sole Creator.</p>
+<p>Their motives? <strong>Radically different</strong>. Marcion cut to <em>separate</em> his higher God from the Creator-villain of the Old Testament: Yahweh. Orthodox editors cut to <em>allow Jesus participation</em> in creation, elevating him to cosmic co-creator. Two opposite theological agendas, working from opposite directions.</p>
+<div class="img-card"><img alt="Two opposing theological agendas converging" class="portrait-img" src="../Images/two_agendas.jpg"/></div>
+<p>But the effect was <strong><em>identical</em></strong>: the Jesus who clearly said "the Father is Creator of all" <strong>disappeared</strong> from both versions. Erased. Gone. As if he never said those words at all.</p>
+<p>And here's the most exquisite irony of all: Luke's <em>authorial intent</em> actually survived ... just not where anyone was looking for it. Not in his carefully edited Gospel, but in <strong>Acts</strong>, where the prayer of the apostles (Acts 4:24) <em>still</em> identifies the Father alone as "maker of heaven and earth." Like a theological time capsule buried in plain sight, it testifies to what Luke believed, what the earliest church confessed, and what Jesus evidently taught about divine roles.</p>
+<div class="quote">
+<strong>Acts 4:24</strong><br/>
             "Sovereign Lord, you made the heavens and the earth and the sea, and everything in them."
         </div>
 <p>A <strong>theological fossil</strong>, preserved in scriptural amber while everything around it evolved.</p>
-        <p>As we turn to Chapter 3, where we'll examine six preserved quotations of the Father-Creator formula ... six voices crying out from the past ... remember this: Marcion's knife was not the only implement that carved away at Luke's theology. Sometimes the <strong>most effective censorship</strong> comes from those claiming to <em>protect</em> the very text they alter.</p>
+<p>As we turn to Chapter 3, where we'll examine six preserved quotations of the Father-Creator formula ... six voices crying out from the past ... remember this: Marcion's knife was not the only implement that carved away at Luke's theology. Sometimes the <strong>most effective censorship</strong> comes from those claiming to <em>protect</em> the very text they alter.</p>
 <p>Sometimes the <strong>guardians</strong> become the <strong>gatekeepers</strong>. Sometimes the <strong>protectors</strong> become the <strong>editors</strong>. And sometimes, the <strong><em>most dangerous changes</em></strong> are made by those who believe with <em>absolute certainty</em> that they're preserving the truth.</p>
-                <div style="background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%); border-left: 4px solid #4299e1; padding: 1.5rem; margin: 2rem 0; border-radius: 0.5rem;">
-                    <h3 style="color: #2c5282; margin-top: 0; margin-bottom: 1rem;">Chapter Summary</h3>
-                    <ul style="margin: 0; padding-left: 1.5rem;">
-                        <li>Marcion (AD 144) systematically deleted all passages where Jesus identified the Father as Creator ... hundreds of textual cuts driven by his theology</li>
-                        <li>The orthodox church condemned Marcion's deletions but never restored the specific "Father-Creator" passages to Luke</li>
-                        <li>Why? Because by the late 2nd century, Paul's cosmic Christology (Jesus as co-Creator) was gaining dominance ... making the Father-only-Creator verses theologically awkward</li>
-                        <li>The irony: Both Marcion and orthodox scribes achieved the same result ... erasing Jesus's words subordinating himself to the Father as sole Creator</li>
-                    </ul>
-                </div>
+<div style="background: linear-gradient(135deg, #f0f4f8 0%, #e6f0f7 100%); border-left: 4px solid #4299e1; padding: 1.5rem; margin: 2rem 0; border-radius: 0.5rem;">
+<h3 style="color: #2c5282; margin-top: 0; margin-bottom: 1rem;">Chapter Summary</h3>
+<ul style="margin: 0; padding-left: 1.5rem;">
+<li>Marcion (AD 144) systematically deleted all passages where Jesus identified the Father as Creator ... hundreds of textual cuts driven by his theology</li>
+<li>The orthodox church condemned Marcion's deletions but never restored the specific "Father-Creator" passages to Luke</li>
+<li>Why? Because by the late 2nd century, Paul's cosmic Christology (Jesus as co-Creator) was gaining dominance ... making the Father-only-Creator verses theologically awkward</li>
+<li>The irony: Both Marcion and orthodox scribes achieved the same result ... erasing Jesus's words subordinating himself to the Father as sole Creator</li>
+</ul>
+</div>
 
-        </div>
-    </div>
+</div>
+</body>
 </body>
 </html>
